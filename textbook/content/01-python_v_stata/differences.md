@@ -1,4 +1,4 @@
-# Python vs Stata
+# Summary of Differences
 
 While Python and Stata can both be effectively used for data analysis, they do have a few key differences, as summarized below:-
 

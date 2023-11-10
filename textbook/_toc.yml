@@ -7,6 +7,7 @@ sections:
     - file: content/01-python_v_stata/history.md
     - file: content/01-python_v_stata/differences.md
     - file: content/01-python_v_stata/install.md
+    # - file: content/01-python_v_stata/data_differences.md
 # - file: content/01-demand/index.md
 #   sections:
 #     - file: content/01-demand/01-demand.ipynb
