@@ -64,11 +64,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/01-python_v_stata/index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/01-python_v_stata/differences';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="History of the Languages" href="history.html" />
-    <link rel="prev" title="A Quick Overview" href="../intro.html" />
+    <link rel="next" title="Bibliography" href="../references.html" />
+    <link rel="prev" title="History of the Languages" href="history.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -164,9 +164,9 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Python vs Stata</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Python vs Stata</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="history.html">History of the Languages</a></li>
-<li class="toctree-l2"><a class="reference internal" href="differences.html">Python vs Stata</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Python vs Stata</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">Bibliography</a></li>
@@ -224,7 +224,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/content/01-python_v_stata/index.md" target="_blank"
+      <li><a href="../../_sources/content/01-python_v_stata/differences.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -293,7 +293,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -309,6 +311,20 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-purpose-vs-specialized">General Purpose vs Specialized</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#syntax">Syntax</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#packages-libraries">Packages/Libraries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-management">Data Management</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-curve">Learning Curve</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cost">Cost</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#community">Community</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -320,10 +336,35 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="python-vs-stata">
 <h1>Python vs Stata<a class="headerlink" href="#python-vs-stata" title="Permalink to this heading">#</a></h1>
-<p>This chapter is intended to give you a brief overview of the differences between Python and Stata. We will cover the history of the programming languages, how they function and key differences regarding how they interact with data.</p>
-<!-- For more information, please look at [Python's official page](https://www.python.org/) and [Stata's official page](https://www.stata.com/) respectively. -->
-<div class="toctree-wrapper compound">
-</div>
+<p>While Python and Stata can both be effectively used for data analysis, they do have a few key differences, as summarized below:-</p>
+<section id="general-purpose-vs-specialized">
+<h2>General Purpose vs Specialized<a class="headerlink" href="#general-purpose-vs-specialized" title="Permalink to this heading">#</a></h2>
+<p>Python is a versatile, general-purpose programming language that can be used for a wide variety of computing tasks, including web development, artificial intelligence, etc. It’s general-purpose nature makes it suitable for a wide range of tasks beyond statistical analysis, allowing users to build end-to-end data science solutions and integrate seamlessly with various technologies. On the other hand, Stata is a specialized programming language, designed specifically for statistical analysis and data management. This specialization makes Stata really efficient and easy to use when conducting statistical analyses, but it comes at the expense of general versatility.</p>
+</section>
+<section id="syntax">
+<h2>Syntax<a class="headerlink" href="#syntax" title="Permalink to this heading">#</a></h2>
+<p>Python has a general syntax, allowing for multiple programming paradigms, including procedural, object-oriented, and functional programming. This flexibility allows users to adopt different coding styles and adapt Python to various application domains. In contrast, Stata has a special command-driven syntax which works best for statistical analysis. This syntax is also designed to be intuitive and user-friendly, allowing it’s users to focus moreso on the results.</p>
+</section>
+<section id="packages-libraries">
+<h2>Packages/Libraries<a class="headerlink" href="#packages-libraries" title="Permalink to this heading">#</a></h2>
+<p>There are multiple packages which can be easily installed and used with Python. Several of these often complement each other, allowing lots of flexibility in how to conduct your analysis. On the other hand, Stata is more reliant on it’s built-in commands and functions. While there are user written packages in Stata, they lack the breadth of Python packages.</p>
+</section>
+<section id="data-management">
+<h2>Data Management<a class="headerlink" href="#data-management" title="Permalink to this heading">#</a></h2>
+<p>While both languages can be used for datasets of various sizes, Stata is known for being efficient when working with large datasets. However, Python is more flexible with handling diverse data structures beyond just databases.</p>
+</section>
+<section id="learning-curve">
+<h2>Learning Curve<a class="headerlink" href="#learning-curve" title="Permalink to this heading">#</a></h2>
+<p>Stat’s syntax is designed to be very intuitive and easy to use, allowing for a small learning curve and enabling users to focus moreso on the results. In contrast, Python’s learning curve may be steeper as it’s a general purpose programming language.</p>
+</section>
+<section id="cost">
+<h2>Cost<a class="headerlink" href="#cost" title="Permalink to this heading">#</a></h2>
+<p>Python is free and open-source, allowing anyone to use it. On the other hand, Stata requires a license to access, with different pricing tiers depending on what you may need. You can learn more about Stata’s pricing structure <a class="reference external" href="https://www.stata.com/order/">here</a>.</p>
+</section>
+<section id="community">
+<h2>Community<a class="headerlink" href="#community" title="Permalink to this heading">#</a></h2>
+<p>Python has a large and active community, with lots of tutorials, resources, and debugging assistance. While Stata also has an active community, it is not as large as Python’s, making debugging tasks and learning new techniques harder.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -357,20 +398,20 @@ document.write(`
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../intro.html"
+       href="history.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><a> A Quick Overview </a></p>
+        <p class="prev-next-title">History of the Languages</p>
       </div>
     </a>
     <a class="right-next"
-       href="history.html"
+       href="../references.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">History of the Languages</p>
+        <p class="prev-next-title">Bibliography</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -380,6 +421,26 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-purpose-vs-specialized">General Purpose vs Specialized</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#syntax">Syntax</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#packages-libraries">Packages/Libraries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-management">Data Management</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-curve">Learning Curve</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cost">Cost</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#community">Community</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
