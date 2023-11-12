@@ -11,6 +11,13 @@ sections:
 - file: content/03-regex/index.md
   sections:
       - file: content/03-regex/string_methods.ipynb
+      - file: content/03-regex/regex.ipynb
+- file: content/04-api/index.md
+- file: content/05-sql/index.md
+  sections:
+      - file: content/05-sql/sql_1.ipynb
+- file: content/06-sklearn/index.md
+- file: content/07-web-scraping/index.md
 # - file: content/01-demand/index.md
 #   sections:
 #     - file: content/01-demand/01-demand.ipynb
