@@ -4,8 +4,6 @@ In the early 1990s, Stata gained popularity as a tool for making data analysis e
 
 ## A Note to the Reader
 
-<!-- The idea for the class is to take students through a series of exercises to motivate and illustrate key concepts in Economics with examples in Python Jupyter notebooks. The class will cover concepts from Introductory Economics, MIcroeconomic Theory, Econometrics, Development Economics, Environmental Economics and Public Economics. The course will give data science students a pathway to apply python programming and data science concepts within the discipline of economics. The course will also give economics students a pathway to apply programming to reinforce fundamental concepts and to advance the level of study in upper division coursework and possible thesis work. -->
-
 This textbook is written assuming the reader has been trained in the tools of econometrics with Stata and would like to make the transition to Python. The first chapter will give a quick overview of the differences between Python and Stata, the second chapter will delve further into conducting econometric analysis in Python, and subsequent chapters will introduce the readers to additional tools in Python which are crucial for data analysis. Please note that this book only teaches you how to utilise econometric techniques with Python, it does not teach you what those techniques are and when it is appropriate to use them. If you are interested in learning quantitive economics and econometrics with Python, please consider [Intermediate Quantitative Economics with Python](https://python.quantecon.org/intro.html), made by [QuantEcon](https://quantecon.org/).
 
 ## Acknowledgements

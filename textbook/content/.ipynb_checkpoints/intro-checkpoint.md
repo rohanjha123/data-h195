@@ -1,20 +1,17 @@
-# Data 88E: Economic Models
+# <a> A Quick Overview </a>
 
-Economics is in the world around us, and so is Data Science! It's in our every day lives. As we connect Data Science with Economics, we will be exploring real life datasets to illustrate how Economics concepts are shaped and how decisions lead to real-life impacts. This is a textbook developed for UC Berkeley's course Data 88E: Economic Models. [Data 88](https://data-88.github.io) is a generic course listing for Data 8 connector courses.
+In the early 1990s, Stata gained popularity as a tool for making data analysis easier for the social sciences, especially economics. Several prominent economists were trained in Stata, and the software is still widely used today among academic economists. However, key data analysis tools have also been introduced in other modern programming languages. Using a modern programming language instead of Stata would help users have access to a broader range of tools for data analysis and computer processing, rather than being restricted to the smaller set of capabilities affored by Stata. Additionally, while Stata requires ~$425 USD to purchase for students in the US, using a modern programming language would be free, thus making economic tools more accessible. To support this cause, this book is intended to help users transition from Stata to Python in particular.
 
+## A Note to the Reader
 
-## Course Description
-
-The idea for the class is to take students through a series of exercises to motivate and illustrate key concepts in Economics with examples in Python Jupyter notebooks. The class will cover concepts from Introductory Economics, MIcroeconomic Theory, Econometrics, Development Economics, Environmental Economics and Public Economics. The course will give data science students a pathway to apply python programming and data science concepts within the discipline of economics. The course will also give economics students a pathway to apply programming to reinforce fundamental concepts and to advance the level of study in upper division coursework and possible thesis work.
+This textbook is written assuming the reader has been trained in the tools of econometrics with Stata and would like to make the transition to Python. The first chapter will give a quick overview of the differences between Python and Stata, the second chapter will delve further into conducting econometric analysis in Python, and subsequent chapters will introduce the readers to additional tools in Python which are crucial for data analysis. Please note that this book only teaches you how to utilise econometric techniques with Python, it does not teach you what those techniques are and when it is appropriate to use them. If you are interested in learning quantitive economics and econometrics with Python, please consider [Intermediate Quantitative Economics with Python](https://python.quantecon.org/intro.html), made by [QuantEcon](https://quantecon.org/).
 
 ## Acknowledgements
 
-**Course Instructor:** Eric Van Dusen
+**Textbook Author and Developer:** Rohan Jha
 
-**Textbook Developer:** [Christopher Pyles](https://chrispyles.io)
+**Acknowledgements:** Eric Van Dusen, as well as several other economics and data science courses at UC Berkeley which helped inspire the content of this book
 
-**Content Developers:** [Alan Liang](http://alanliang.me/), Amal Bhatnagar, Andrei Caprau, [Christopher Pyles](https://chrispyles.io), Eric Van Dusen, Matthew Yep, Rohan Jha, Shashank Dalmia, Umar Maniku
+<!-- ## License
 
-## License
-
-This textbook is licensed under a [BSD 3-Clause License](https://github.com/ds-connectors/econ-models-textbook/blob/master/LICENSE).
+This textbook is licensed under a [BSD 3-Clause License](https://github.com/ds-connectors/econ-models-textbook/blob/master/LICENSE). -->

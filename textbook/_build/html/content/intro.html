@@ -67,7 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/intro';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python vs Stata" href="01-python_v_stata/index.html" />
+    <link rel="next" title="Prerequisites" href="02-prereqs/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -163,21 +163,18 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="01-python_v_stata/index.html">Python vs Stata</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="01-python_v_stata/history.html">History of the Languages</a></li>
-<li class="toctree-l2"><a class="reference internal" href="01-python_v_stata/differences.html">Summary of Differences</a></li>
-<li class="toctree-l2"><a class="reference internal" href="01-python_v_stata/install.html">Installation and General Usage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="01-python_v_stata/syntax.html">Syntax</a></li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="02-prereqs/index.html">Prerequisites</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="02-prereqs/index.html">Prerequisites</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="02-prereqs/python.html">Python</a></li>
 <li class="toctree-l2"><a class="reference internal" href="02-prereqs/jupyter.html">Jupyter Notebooks</a></li>
 
 
+<li class="toctree-l2"><a class="reference internal" href="02-prereqs/numpy.html">Numpy</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="03-pandas/index.html">Pandas</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="03-pandas/index.html">Pandas</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="03-pandas/loading-looking.html">Loading in and Looking at the Data</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
@@ -342,7 +339,6 @@ document.write(`
 <p>In the early 1990s, Stata gained popularity as a tool for making data analysis easier for the social sciences, especially economics. Several prominent economists were trained in Stata, and the software is still widely used today among academic economists. However, key data analysis tools have also been introduced in other modern programming languages. Using a modern programming language instead of Stata would help users have access to a broader range of tools for data analysis and computer processing, rather than being restricted to the smaller set of capabilities affored by Stata. Additionally, while Stata requires ~$425 USD to purchase for students in the US, using a modern programming language would be free, thus making economic tools more accessible. To support this cause, this book is intended to help users transition from Stata to Python in particular.</p>
 <section id="a-note-to-the-reader">
 <h2>A Note to the Reader<a class="headerlink" href="#a-note-to-the-reader" title="Permalink to this heading">#</a></h2>
-<!-- The idea for the class is to take students through a series of exercises to motivate and illustrate key concepts in Economics with examples in Python Jupyter notebooks. The class will cover concepts from Introductory Economics, MIcroeconomic Theory, Econometrics, Development Economics, Environmental Economics and Public Economics. The course will give data science students a pathway to apply python programming and data science concepts within the discipline of economics. The course will also give economics students a pathway to apply programming to reinforce fundamental concepts and to advance the level of study in upper division coursework and possible thesis work. -->
 <p>This textbook is written assuming the reader has been trained in the tools of econometrics with Stata and would like to make the transition to Python. The first chapter will give a quick overview of the differences between Python and Stata, the second chapter will delve further into conducting econometric analysis in Python, and subsequent chapters will introduce the readers to additional tools in Python which are crucial for data analysis. Please note that this book only teaches you how to utilise econometric techniques with Python, it does not teach you what those techniques are and when it is appropriate to use them. If you are interested in learning quantitive economics and econometrics with Python, please consider <a class="reference external" href="https://python.quantecon.org/intro.html">Intermediate Quantitative Economics with Python</a>, made by <a class="reference external" href="https://quantecon.org/">QuantEcon</a>.</p>
 </section>
 <section id="acknowledgements">
@@ -387,11 +383,11 @@ This textbook is licensed under a [BSD 3-Clause License](https://github.com/ds-c
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="right-next"
-       href="01-python_v_stata/index.html"
+       href="02-prereqs/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Python vs Stata</p>
+        <p class="prev-next-title">Prerequisites</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
