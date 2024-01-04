@@ -177,6 +177,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="select_modify.html">Selecting and Modifying Rows/Columns</a></li>
 <li class="toctree-l2"><a class="reference internal" href="misc_funcs.html">Helpful Pandas Methods</a></li>
 <li class="toctree-l2"><a class="reference internal" href="groupby_pivot.html">GroupBys and Pivot Tables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="merge.html">Joins</a></li>
 </ul>
 </li>
 </ul>
@@ -365,7 +366,7 @@ document.write(`
 <h1>Loading in and Looking at the Data<a class="headerlink" href="#loading-in-and-looking-at-the-data" title="Permalink to this heading">#</a></h1>
 <p>Throughout this chapter, we will use <code class="docutils literal notranslate"><span class="pre">pandas</span></code> to explore a dataset on beer sales across 50 continental states in the US.
 Above, we have already imported in <code class="docutils literal notranslate"><span class="pre">pandas</span></code> as <code class="docutils literal notranslate"><span class="pre">pd</span></code>, a common nickname for <code class="docutils literal notranslate"><span class="pre">pandas</span></code> (similar to how <code class="docutils literal notranslate"><span class="pre">numpy</span></code> is often abbreviated to <code class="docutils literal notranslate"><span class="pre">np</span></code>).</p>
-<p>The dataset we’re using is sourced from <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/aer.99.4.1145"><em>Salience and Taxation: Theory and Evidence</em></a> by Chetty, Looney, and Kroft (AER 2010).  The dataset includes 7 columns:</p>
+<p>The dataset we’re using is sourced from <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/aer.99.4.1145"><em>Salience and Taxation: Theory and Evidence</em></a> by Chetty, Looney, and Kroft (AER 2009).  The dataset includes 7 columns:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">st_name</span></code>: the state abbreviation</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">year</span></code>: the year the data was recorded</p></li>
@@ -530,6 +531,14 @@ Above, we have already imported in <code class="docutils literal notranslate"><s
 <p>1708 rows × 7 columns</p>
 </div></div></div>
 </div>
+<p>Whenever we use a dataset, we ought to think about where it came from, how it was generated and what it represents. Doing so is absolutely crucial for good data science. Doing so will help us keep our eyes open for potential sources of bias in the data, avoiding unfortunate mistakes. Additionally, if we do not think about where we source our data from, we cannot truly consider the ethical implications of our analysis.</p>
+<p>Three important metrics you ought to consider with datasets are granularity, scope and temporality;</p>
+<ul class="simple">
+<li><p>Granularity: the granularity of a dataset can best be summarized as what each individual row in the dataset represents. A dataset with finer granularity than another dataset has more detailed records. For example, a dataset where each row represents a residential neighborhood has coarser (the opposite of finer) granularity than a dataset where each row represents a house in a residential neighborhood.</p></li>
+<li><p>Scope: the scope of the dataset is the subset of the population of interest that is covered by the data. For example, if you’re interested in alcohol information for all US states from 1970 until the present, the beer dataset we’re using has a scope of just beer data from 1970-2003.</p></li>
+<li><p>Temporality: the temporality of the dataset describes the time element of the dataset. We encourage you to consider which time period the data is measuring, when the data was originally measured and when it was most recently updated. For example, our beer dataset spans from 1970-2003 and was last updated presumably sometime shortly before 2009 (when the paper was published), but we would need to read the paper and it’s appendix to determine when the data was first measured.</p></li>
+</ul>
+<p>Finally, real world datasets are often messy. They have inaccuracies and mistakes. Whenever you obtain a dataset, the one of the first steps you ought to do is to see how ‘faithful’ the data is to the values it claims to describe. To do so, you should check for clearly incorrect values (e.g. a negative age value), possible typos from data entry, signs of data falsification (e.g. incorrect email addresses), unspecified or incorrect units, etc.</p>
 </section>
 <section id="dataframes-series-and-indices">
 <h2>DataFrames, Series and Indices<a class="headerlink" href="#dataframes-series-and-indices" title="Permalink to this heading">#</a></h2>

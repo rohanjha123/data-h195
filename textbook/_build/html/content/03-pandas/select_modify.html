@@ -177,6 +177,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Selecting and Modifying Rows/Columns</a></li>
 <li class="toctree-l2"><a class="reference internal" href="misc_funcs.html">Helpful Pandas Methods</a></li>
 <li class="toctree-l2"><a class="reference internal" href="groupby_pivot.html">GroupBys and Pivot Tables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="merge.html">Joins</a></li>
 </ul>
 </li>
 </ul>
@@ -360,7 +361,7 @@ document.write(`
 <section class="tex2jax_ignore mathjax_ignore" id="selecting-and-modifying-rows-columns">
 <h1>Selecting and Modifying Rows/Columns<a class="headerlink" href="#selecting-and-modifying-rows-columns" title="Permalink to this heading">#</a></h1>
 <p>This subchapter will go into greater detail on how you can select/modify rows and columns in <code class="docutils literal notranslate"><span class="pre">pandas</span></code>.</p>
-<p>First, let us load in the same dataset as the first subchapter in the <code class="docutils literal notranslate"><span class="pre">Pandas</span></code> chapter. As a reminder, this dataset has beer sales across 50 continental states in the US. It is sourced from <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/aer.99.4.1145"><em>Salience and Taxation: Theory and Evidence</em></a> by Chetty, Looney, and Kroft (AER 2010), and it includes 7 columns:</p>
+<p>First, let us load in the same dataset as the first subchapter in the <code class="docutils literal notranslate"><span class="pre">Pandas</span></code> chapter. As a reminder, this dataset has beer sales across 50 continental states in the US. It is sourced from <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/aer.99.4.1145"><em>Salience and Taxation: Theory and Evidence</em></a> by Chetty, Looney, and Kroft (AER 2009), and it includes 7 columns:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">st_name</span></code>: the state abbreviation</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">year</span></code>: the year the data was recorded</p></li>

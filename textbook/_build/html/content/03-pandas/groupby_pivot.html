@@ -67,6 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/03-pandas/groupby_pivot';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Joins" href="merge.html" />
     <link rel="prev" title="Helpful Pandas Methods" href="misc_funcs.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -176,6 +177,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="select_modify.html">Selecting and Modifying Rows/Columns</a></li>
 <li class="toctree-l2"><a class="reference internal" href="misc_funcs.html">Helpful Pandas Methods</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">GroupBys and Pivot Tables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="merge.html">Joins</a></li>
 </ul>
 </li>
 </ul>
@@ -348,7 +350,7 @@ document.write(`
 <section class="tex2jax_ignore mathjax_ignore" id="groupbys-and-pivot-tables">
 <h1>GroupBys and Pivot Tables<a class="headerlink" href="#groupbys-and-pivot-tables" title="Permalink to this heading">#</a></h1>
 <p>This subchapter goes over groupby’s and pivot table’s, two incredibly useful <code class="docutils literal notranslate"><span class="pre">pandas</span></code> methods.</p>
-<p>To start, let’s load in the same dataset as the first subchapter in the <code class="docutils literal notranslate"><span class="pre">Pandas</span></code> chapter. As a reminder, this dataset has beer sales across 50 continental states in the US. It is sourced from <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/aer.99.4.1145"><em>Salience and Taxation: Theory and Evidence</em></a> by Chetty, Looney, and Kroft (AER 2010), and it includes 7 columns:</p>
+<p>To start, let’s load in the same dataset as the first subchapter in the <code class="docutils literal notranslate"><span class="pre">Pandas</span></code> chapter. As a reminder, this dataset has beer sales across 50 continental states in the US. It is sourced from <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/aer.99.4.1145"><em>Salience and Taxation: Theory and Evidence</em></a> by Chetty, Looney, and Kroft (AER 2009), and it includes 7 columns:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">st_name</span></code>: the state abbreviation</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">year</span></code>: the year the data was recorded</p></li>
@@ -2848,6 +2850,15 @@ Name: c_beer, dtype: float64
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">Helpful Pandas Methods</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="merge.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Joins</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
