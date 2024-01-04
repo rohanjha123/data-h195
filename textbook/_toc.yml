@@ -30,7 +30,7 @@ sections:
 # - file: content/06-sql/index.md
 #   sections:
 #       - file: content/06-sql/sql_1.ipynb
-# - file: content/07-sklearn/index.md
+# - file: content/07-regressions/index.md
 # - file: content/08-web-scraping/index.md
 # - file: content/09-teachers-perspective/index.md
 # - file: content/references.md
