@@ -18,6 +18,7 @@ sections:
       - file: content/03-pandas/loading-looking.ipynb
       - file: content/03-pandas/select_modify.ipynb
       - file: content/03-pandas/misc_funcs.ipynb
+      - file: content/03-pandas/groupby_pivot.ipynb
   # sections:
   #     - file: content/03-pandas/tips-tricks.ipynb
 # - file: content/03-visualizations/index.md
