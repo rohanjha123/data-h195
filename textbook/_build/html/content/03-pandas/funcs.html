@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>SQL &#8212; Python for Economists</title>
+    <title>A Variety of Functions &#8212; Python for Economists</title>
   
   
   
@@ -64,9 +64,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/06-sql/index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/03-pandas/funcs';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Loading in and Looking at the Data" href="loading-looking.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -161,7 +162,7 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../02-prereqs/index.html">Prerequisites</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../02-prereqs/python.html">Python</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../02-prereqs/jupyter.html">Jupyter Notebooks</a></li>
@@ -170,9 +171,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../02-prereqs/numpy.html">Numpy</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../03-pandas/index.html">Pandas</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../03-pandas/loading-looking.html">Loading in and Looking at the Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../03-pandas/select_modify.html">Selecting and Modifying Rows/Columns</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Pandas</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="loading-looking.html">Loading in and Looking at the Data</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">A Variety of Functions</a></li>
 </ul>
 </li>
 </ul>
@@ -229,7 +230,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/content/06-sql/index.md" target="_blank"
+      <li><a href="../../_sources/content/03-pandas/funcs.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -239,7 +240,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -298,7 +299,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -309,11 +312,19 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>SQL</h1>
+    <h1>A Variety of Functions</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-selection">Conditional Selection</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -323,13 +334,182 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="sql">
-<h1>SQL<a class="headerlink" href="#sql" title="Permalink to this heading">#</a></h1>
-<p>We’ve looked at the pandas library, which offered us powerful tools to manipulate tabular data stored in (primarily) CSV files. CSVs work well when analyzing relatively small datasets that don’t need to be shared across many users. In research and industry, however, data scientists often need to access enormous bodies of data that cannot be easily stored in a CSV format. Collaborating with others when working with CSVs can also be tricky – a real-world data scientist or economist (or anyone involved in policy analysis) may run into problems when multiple users try to make modifications, or, even worse, security issues with who should and should not have access to the data.</p>
-<p>A <strong>database</strong> is a large, organized collection of data. Databases are administered by <strong>Database Management Systems (DBMS)</strong>, which are software systems that store, manage, and facilitate access to one or more databases. Databases help mitigate many of the issues that come with using CSVs for data storage: they provide reliable storage that can survive system crashes or disk failures, are optimized to compute on data that does not fit into memory, and contain special data structures to improve performance. Using databases rather than CSVs offers further benefits from the standpoint of data management. A DBMS can apply settings that configure how data is organized, block certain data anomalies (for example, enforcing non-negative weights or ages), and determine who is allowed access to the data. It can also ensure safe concurrent operations where multiple users reading and writing to the database will not lead to fatal errors.</p>
-<p>As you may have guessed, we can’t use our usual <code class="docutils literal notranslate"><span class="pre">pandas</span></code> methods to work with data in a database. Instead, we’ll turn to Structured Query Language.</p>
-<p><strong>Structured Query Language</strong>, or <strong>SQL</strong> (commonly pronounced “sequel,” though this is the subject of <a class="reference external" href="https://patorjk.com/blog/2012/01/26/pronouncing-sql-s-q-l-or-sequel/">fierce debate</a>), is a special programming language designed to communicate with databases. You may encounter it in classes like CS 61A or Data C88C. Unlike Python, it is a <strong>declarative programming language</strong> – this means that rather than writing the exact logic needed to complete a task, a piece of SQL code “declares” what the desired final output should be and leaves the program to determine what logic should be implemented.</p>
-<p>It is important to reiterate that SQL is an entirely different language from Python. However, Python <em>does</em> have special engines that allow us to run SQL code in a Jupyter notebook. While this is typically not how SQL is used outside of an educational setting, we will be using this workflow to illustrate how SQL queries are constructed using the tools we’ve already worked with this semester.</p>
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="a-variety-of-functions">
+<h1>A Variety of Functions<a class="headerlink" href="#a-variety-of-functions" title="Permalink to this heading">#</a></h1>
+<p>This subchapter will introduce you to many more miscellaneous pandas functions that are super helpful to use. First, let us load in the same dataset as the first subchapter in the <code class="docutils literal notranslate"><span class="pre">Pandas</span></code> chapter. As a reminder, this dataset has beer sales across 50 continental states in the US. It is sourced from <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/aer.99.4.1145"><em>Salience and Taxation: Theory and Evidence</em></a> by Chetty, Looney, and Kroft (AER 2010), and it includes 7 columns:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">st_name</span></code>: the state abbreviation</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">year</span></code>: the year the data was recorded</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">c_beer</span></code>: the quantity of beer consumed, in thousands of gallons</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">beer_tax</span></code>: the ad valorem tax, as a percentage</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">btax_dollars</span></code>: the excise tax, represented in dollars per case (24 cans) of beer</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">population</span></code>: the population of the state, in thousands</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">salestax</span></code>: the sales tax percentage</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/beer_tax.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>st_name</th>
+      <th>year</th>
+      <th>c_beer</th>
+      <th>beer_tax</th>
+      <th>btax_dollars</th>
+      <th>population</th>
+      <th>salestax</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AL</td>
+      <td>1970</td>
+      <td>33098</td>
+      <td>72.341130</td>
+      <td>2.370</td>
+      <td>3450</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AL</td>
+      <td>1971</td>
+      <td>37598</td>
+      <td>69.304600</td>
+      <td>2.370</td>
+      <td>3497</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AL</td>
+      <td>1972</td>
+      <td>42719</td>
+      <td>67.149190</td>
+      <td>2.370</td>
+      <td>3539</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AL</td>
+      <td>1973</td>
+      <td>46203</td>
+      <td>63.217026</td>
+      <td>2.370</td>
+      <td>3580</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AL</td>
+      <td>1974</td>
+      <td>49769</td>
+      <td>56.933796</td>
+      <td>2.370</td>
+      <td>3627</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1703</th>
+      <td>WY</td>
+      <td>1999</td>
+      <td>12423</td>
+      <td>0.319894</td>
+      <td>0.045</td>
+      <td>492</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>1704</th>
+      <td>WY</td>
+      <td>2000</td>
+      <td>12595</td>
+      <td>0.309491</td>
+      <td>0.045</td>
+      <td>494</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>1705</th>
+      <td>WY</td>
+      <td>2001</td>
+      <td>12808</td>
+      <td>0.300928</td>
+      <td>0.045</td>
+      <td>494</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>1706</th>
+      <td>WY</td>
+      <td>2002</td>
+      <td>13191</td>
+      <td>0.296244</td>
+      <td>0.045</td>
+      <td>499</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>1707</th>
+      <td>WY</td>
+      <td>2003</td>
+      <td>15535</td>
+      <td>0.289643</td>
+      <td>0.045</td>
+      <td>501</td>
+      <td>4.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>1708 rows × 7 columns</p>
+</div></div></div>
+</div>
+<section id="conditional-selection">
+<h2>Conditional Selection<a class="headerlink" href="#conditional-selection" title="Permalink to this heading">#</a></h2>
+<p>An important task we want to accomplish when looking at data is to filter out all rows that satisfy a certain condition. In other words, we want to extract all the rows <strong>where</strong> a certain thing is accomplished. Conditional selection helps us achieve exactly this, extracting all rows that satisfy a certain condition.</p>
+<p>In the <a class="reference internal" href="loading-looking.html"><span class="doc std std-doc">previous subchapter</span></a>, we briefly gave an example of how we can use <code class="docutils literal notranslate"><span class="pre">.loc</span></code> and <code class="docutils literal notranslate"><span class="pre">.iloc</span></code> to extract all rows that match certain values. To be more precise, when we pass in certain values for <code class="docutils literal notranslate"><span class="pre">.loc</span></code> and <code class="docutils literal notranslate"><span class="pre">iloc</span></code> to use, they generate an array of True/False values and use that to determine which values to include. This is very similar to our prior discussion on <a class="reference internal" href="../02-prereqs/numpy.html"><span class="doc std std-doc">NumPy slicing</span></a></p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -341,16 +521,16 @@ document.write(`
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "conda-env-sklearn-env-py"
         },
         kernelOptions: {
-            name: "python3",
-            path: "./content/06-sql"
+            name: "conda-env-sklearn-env-py",
+            path: "./content/03-pandas"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'conda-env-sklearn-env-py'</script>
 
                 </article>
               
@@ -362,12 +542,35 @@ document.write(`
                 <footer class="prev-next-footer">
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="loading-looking.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Loading in and Looking at the Data</p>
+      </div>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-selection">Conditional Selection</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

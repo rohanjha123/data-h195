@@ -16,6 +16,7 @@ sections:
 - file: content/03-pandas/index.md
   sections:
       - file: content/03-pandas/loading-looking.ipynb
+      - file: content/03-pandas/select_modify.ipynb
   # sections:
   #     - file: content/03-pandas/tips-tricks.ipynb
 # - file: content/03-visualizations/index.md

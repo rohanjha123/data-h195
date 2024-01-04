@@ -67,6 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/03-pandas/loading-looking';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Selecting and Modifying Rows/Columns" href="select_modify.html" />
     <link rel="prev" title="Pandas" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -173,6 +174,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Pandas</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Loading in and Looking at the Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="select_modify.html">Selecting and Modifying Rows/Columns</a></li>
 </ul>
 </li>
 </ul>
@@ -327,7 +329,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dataframe-attributes">DataFrame Attributes</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extracting-specific-data">Extracting Specific Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extracting-data-using-labels-and-indices">Extracting Data using Labels and Indices</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#head-and-tail">1. <code class="docutils literal notranslate"><span class="pre">.head</span></code> and <code class="docutils literal notranslate"><span class="pre">.tail</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loc">2. <code class="docutils literal notranslate"><span class="pre">.loc</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iloc">3. <code class="docutils literal notranslate"><span class="pre">.iloc</span></code></a></li>
@@ -359,7 +361,9 @@ document.write(`
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="loading-in-and-looking-at-the-data">
 <h1>Loading in and Looking at the Data<a class="headerlink" href="#loading-in-and-looking-at-the-data" title="Permalink to this heading">#</a></h1>
-<p>Throughout this chapter, we will use <code class="docutils literal notranslate"><span class="pre">pandas</span></code> to explore a dataset on beer sales across 50 continental states in the US. The dataset is sourced from <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/aer.99.4.1145"><em>Salience and Taxation: Theory and Evidence</em></a> by Chetty, Looney, and Kroft (AER 2010).  The dataset includes 7 columns:</p>
+<p>Throughout this chapter, we will use <code class="docutils literal notranslate"><span class="pre">pandas</span></code> to explore a dataset on beer sales across 50 continental states in the US.
+Above, we have already imported in <code class="docutils literal notranslate"><span class="pre">pandas</span></code> as <code class="docutils literal notranslate"><span class="pre">pd</span></code>, a common nickname for <code class="docutils literal notranslate"><span class="pre">pandas</span></code> (similar to how <code class="docutils literal notranslate"><span class="pre">numpy</span></code> is often abbreviated to <code class="docutils literal notranslate"><span class="pre">np</span></code>).</p>
+<p>The dataset we’re using is sourced from <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/aer.99.4.1145"><em>Salience and Taxation: Theory and Evidence</em></a> by Chetty, Looney, and Kroft (AER 2010).  The dataset includes 7 columns:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">st_name</span></code>: the state abbreviation</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">year</span></code>: the year the data was recorded</p></li>
@@ -881,10 +885,44 @@ Name: btax_dollars, Length: 1708, dtype: float64
 </div>
 </div>
 </div>
+<p>Moreover, <code class="docutils literal notranslate"><span class="pre">size</span></code> is another attributes that returns the number of rows times the number of columns, or the total number of datapoints, in the dataset.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">size</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>11956
+</pre></div>
+</div>
+</div>
+</div>
+<p>Finally, <code class="docutils literal notranslate"><span class="pre">dtypes</span></code> returns the data type of each column in the DataFrame.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>st_name          object
+year              int64
+c_beer            int64
+beer_tax        float64
+btax_dollars    float64
+population        int64
+salestax        float64
+dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<p>Note: the data type for the <code class="docutils literal notranslate"><span class="pre">st_name</span></code> column is <code class="docutils literal notranslate"><span class="pre">object</span></code> even though the column contains strings. Click <a class="reference external" href="https://stackoverflow.com/a/21020411">here</a> to learn why this happens.</p>
 </section>
 </section>
-<section id="extracting-specific-data">
-<h2>Extracting Specific Data<a class="headerlink" href="#extracting-specific-data" title="Permalink to this heading">#</a></h2>
+<section id="extracting-data-using-labels-and-indices">
+<h2>Extracting Data using Labels and Indices<a class="headerlink" href="#extracting-data-using-labels-and-indices" title="Permalink to this heading">#</a></h2>
 <p>There are four primary methods of looking at extracting specific information from/looking at subsets of DataFrames. They are :-</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">.head</span></code> and <code class="docutils literal notranslate"><span class="pre">.tail</span></code></p></li>
@@ -1814,6 +1852,7 @@ Name: btax_dollars, Length: 1708, dtype: float64
 </table>
 </div></div></div>
 </div>
+<p>In the next subchapter, we will talk about conditional selection, which allows us to view all rows that satisfy a certain condition.</p>
 </section>
 </section>
 </section>
@@ -1858,6 +1897,15 @@ Name: btax_dollars, Length: 1708, dtype: float64
         <p class="prev-next-title">Pandas</p>
       </div>
     </a>
+    <a class="right-next"
+       href="select_modify.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Selecting and Modifying Rows/Columns</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -1879,7 +1927,7 @@ Name: btax_dollars, Length: 1708, dtype: float64
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dataframe-attributes">DataFrame Attributes</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extracting-specific-data">Extracting Specific Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extracting-data-using-labels-and-indices">Extracting Data using Labels and Indices</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#head-and-tail">1. <code class="docutils literal notranslate"><span class="pre">.head</span></code> and <code class="docutils literal notranslate"><span class="pre">.tail</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loc">2. <code class="docutils literal notranslate"><span class="pre">.loc</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iloc">3. <code class="docutils literal notranslate"><span class="pre">.iloc</span></code></a></li>
