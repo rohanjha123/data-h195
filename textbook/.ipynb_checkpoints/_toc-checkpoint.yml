@@ -25,7 +25,6 @@ sections:
 # - file: content/03-visualizations/index.md
 # - file: content/04-regex/index.md
 #   sections:
-#       - file: content/04-regex/string_methods.ipynb
 #       - file: content/04-regex/regex.ipynb
 # - file: content/05-api/index.md
 # - file: content/06-sql/index.md
