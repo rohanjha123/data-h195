@@ -2402,7 +2402,8 @@ Name: c_beer, dtype: float64
 <p>While we could groupby multiple columns above, the resulting dataset was honestly a bit messy. If you’re interested in the relationship between two categorical variables and how they affect a third numerical variable, a pivot table is often best. For example, let us use a pivot table to visualize the average beer consumption across the decades for each state.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="s1">&#39;st_name&#39;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s1">&#39;decade&#39;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s1">&#39;c_beer&#39;</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="s1">&#39;st_name&#39;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s1">&#39;decade&#39;</span><span class="p">,</span> 
+               <span class="n">values</span><span class="o">=</span><span class="s1">&#39;c_beer&#39;</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2441,77 +2442,77 @@ Name: c_beer, dtype: float64
   <tbody>
     <tr>
       <th>AK</th>
-      <td>7715.900</td>
+      <td>7715.9</td>
       <td>13321.3</td>
       <td>14393.6</td>
       <td>14537.50</td>
     </tr>
     <tr>
       <th>AL</th>
-      <td>50665.600</td>
+      <td>50665.6</td>
       <td>73146.3</td>
       <td>85399.2</td>
       <td>94585.75</td>
     </tr>
     <tr>
       <th>AR</th>
-      <td>30060.500</td>
+      <td>30060.5</td>
       <td>43013.7</td>
       <td>48867.0</td>
       <td>51736.50</td>
     </tr>
     <tr>
       <th>AZ</th>
-      <td>57785.900</td>
+      <td>57785.9</td>
       <td>91379.6</td>
       <td>115175.2</td>
       <td>136681.75</td>
     </tr>
     <tr>
       <th>CA</th>
-      <td>460041.200</td>
+      <td>460041.2</td>
       <td>630967.9</td>
       <td>637368.5</td>
       <td>653313.75</td>
     </tr>
     <tr>
       <th>CO</th>
-      <td>60350.500</td>
+      <td>60350.5</td>
       <td>83809.1</td>
       <td>90452.1</td>
       <td>108031.75</td>
     </tr>
     <tr>
       <th>CT</th>
-      <td>55019.500</td>
+      <td>55019.5</td>
       <td>63606.1</td>
       <td>58895.2</td>
       <td>58480.50</td>
     </tr>
     <tr>
       <th>DC</th>
-      <td>17258.400</td>
+      <td>17258.4</td>
       <td>17290.4</td>
       <td>15789.8</td>
       <td>14452.25</td>
     </tr>
     <tr>
       <th>DE</th>
-      <td>12163.000</td>
+      <td>12163.0</td>
       <td>16415.8</td>
       <td>17936.4</td>
       <td>19900.25</td>
     </tr>
     <tr>
       <th>FL</th>
-      <td>186083.900</td>
+      <td>186083.9</td>
       <td>309504.6</td>
       <td>364002.4</td>
       <td>399874.25</td>
     </tr>
     <tr>
       <th>GA</th>
-      <td>80081.000</td>
+      <td>80081.0</td>
       <td>120273.0</td>
       <td>153751.9</td>
       <td>178871.50</td>
@@ -2522,279 +2523,6 @@ Name: c_beer, dtype: float64
       <td>30242.5</td>
       <td>30353.2</td>
       <td>28954.00</td>
-    </tr>
-    <tr>
-      <th>IA</th>
-      <td>63315.375</td>
-      <td>68454.4</td>
-      <td>66482.9</td>
-      <td>72531.50</td>
-    </tr>
-    <tr>
-      <th>ID</th>
-      <td>18909.600</td>
-      <td>22784.5</td>
-      <td>24164.9</td>
-      <td>26746.75</td>
-    </tr>
-    <tr>
-      <th>IL</th>
-      <td>245363.900</td>
-      <td>286188.3</td>
-      <td>277936.1</td>
-      <td>282745.50</td>
-    </tr>
-    <tr>
-      <th>IN</th>
-      <td>95803.300</td>
-      <td>121458.6</td>
-      <td>119631.8</td>
-      <td>124208.75</td>
-    </tr>
-    <tr>
-      <th>KS</th>
-      <td>43732.625</td>
-      <td>50133.4</td>
-      <td>50025.1</td>
-      <td>55573.50</td>
-    </tr>
-    <tr>
-      <th>KY</th>
-      <td>59063.100</td>
-      <td>70718.0</td>
-      <td>74089.2</td>
-      <td>77640.00</td>
-    </tr>
-    <tr>
-      <th>LA</th>
-      <td>79641.100</td>
-      <td>106051.9</td>
-      <td>114534.3</td>
-      <td>113477.75</td>
-    </tr>
-    <tr>
-      <th>MA</th>
-      <td>127292.200</td>
-      <td>142331.7</td>
-      <td>126944.9</td>
-      <td>131506.00</td>
-    </tr>
-    <tr>
-      <th>MD</th>
-      <td>92729.900</td>
-      <td>103573.5</td>
-      <td>97388.3</td>
-      <td>100758.50</td>
-    </tr>
-    <tr>
-      <th>ME</th>
-      <td>23890.100</td>
-      <td>26507.3</td>
-      <td>26067.2</td>
-      <td>28802.75</td>
-    </tr>
-    <tr>
-      <th>MI</th>
-      <td>212138.800</td>
-      <td>213411.4</td>
-      <td>209271.5</td>
-      <td>210076.25</td>
-    </tr>
-    <tr>
-      <th>MN</th>
-      <td>85857.875</td>
-      <td>98545.4</td>
-      <td>102679.1</td>
-      <td>110781.75</td>
-    </tr>
-    <tr>
-      <th>MO</th>
-      <td>101647.500</td>
-      <td>121365.5</td>
-      <td>126618.3</td>
-      <td>139590.75</td>
-    </tr>
-    <tr>
-      <th>MS</th>
-      <td>38553.000</td>
-      <td>53465.2</td>
-      <td>64195.0</td>
-      <td>71095.75</td>
-    </tr>
-    <tr>
-      <th>MT</th>
-      <td>21190.800</td>
-      <td>23699.2</td>
-      <td>23290.5</td>
-      <td>26011.50</td>
-    </tr>
-    <tr>
-      <th>NC</th>
-      <td>84298.700</td>
-      <td>122657.1</td>
-      <td>149317.9</td>
-      <td>180646.50</td>
-    </tr>
-    <tr>
-      <th>ND</th>
-      <td>14435.100</td>
-      <td>16473.4</td>
-      <td>16291.6</td>
-      <td>17352.25</td>
-    </tr>
-    <tr>
-      <th>NE</th>
-      <td>36317.100</td>
-      <td>40404.8</td>
-      <td>39998.2</td>
-      <td>44159.00</td>
-    </tr>
-    <tr>
-      <th>NH</th>
-      <td>25977.600</td>
-      <td>34831.4</td>
-      <td>36383.0</td>
-      <td>39763.75</td>
-    </tr>
-    <tr>
-      <th>NJ</th>
-      <td>144940.200</td>
-      <td>162064.3</td>
-      <td>149952.4</td>
-      <td>148010.25</td>
-    </tr>
-    <tr>
-      <th>NM</th>
-      <td>27483.600</td>
-      <td>40534.7</td>
-      <td>44560.2</td>
-      <td>49662.50</td>
-    </tr>
-    <tr>
-      <th>NV</th>
-      <td>19845.500</td>
-      <td>34540.0</td>
-      <td>52999.4</td>
-      <td>66785.75</td>
-    </tr>
-    <tr>
-      <th>NY</th>
-      <td>363802.000</td>
-      <td>379251.1</td>
-      <td>330378.6</td>
-      <td>322877.75</td>
-    </tr>
-    <tr>
-      <th>OH</th>
-      <td>221117.900</td>
-      <td>259514.5</td>
-      <td>259180.1</td>
-      <td>270481.75</td>
-    </tr>
-    <tr>
-      <th>OK</th>
-      <td>44541.600</td>
-      <td>59916.9</td>
-      <td>64681.2</td>
-      <td>68616.00</td>
-    </tr>
-    <tr>
-      <th>OR</th>
-      <td>50360.000</td>
-      <td>61922.9</td>
-      <td>69456.3</td>
-      <td>76394.00</td>
-    </tr>
-    <tr>
-      <th>PA</th>
-      <td>269740.800</td>
-      <td>301418.4</td>
-      <td>278761.7</td>
-      <td>300289.75</td>
-    </tr>
-    <tr>
-      <th>RI</th>
-      <td>22319.800</td>
-      <td>24712.0</td>
-      <td>22498.0</td>
-      <td>22472.75</td>
-    </tr>
-    <tr>
-      <th>SC</th>
-      <td>48564.300</td>
-      <td>74602.6</td>
-      <td>92116.6</td>
-      <td>105174.75</td>
-    </tr>
-    <tr>
-      <th>SD</th>
-      <td>12466.700</td>
-      <td>15289.7</td>
-      <td>17437.1</td>
-      <td>20081.00</td>
-    </tr>
-    <tr>
-      <th>TN</th>
-      <td>74220.600</td>
-      <td>96369.0</td>
-      <td>112573.4</td>
-      <td>124228.50</td>
-    </tr>
-    <tr>
-      <th>TX</th>
-      <td>312931.600</td>
-      <td>464783.0</td>
-      <td>509871.0</td>
-      <td>558865.75</td>
-    </tr>
-    <tr>
-      <th>UT</th>
-      <td>16625.700</td>
-      <td>22430.0</td>
-      <td>24942.9</td>
-      <td>29463.00</td>
-    </tr>
-    <tr>
-      <th>VA</th>
-      <td>94531.700</td>
-      <td>140723.7</td>
-      <td>141036.2</td>
-      <td>150068.75</td>
-    </tr>
-    <tr>
-      <th>VT</th>
-      <td>11568.000</td>
-      <td>14222.7</td>
-      <td>13730.1</td>
-      <td>14602.25</td>
-    </tr>
-    <tr>
-      <th>WA</th>
-      <td>80783.500</td>
-      <td>100184.9</td>
-      <td>111614.4</td>
-      <td>116227.75</td>
-    </tr>
-    <tr>
-      <th>WI</th>
-      <td>138446.900</td>
-      <td>156373.2</td>
-      <td>145226.7</td>
-      <td>150277.00</td>
-    </tr>
-    <tr>
-      <th>WV</th>
-      <td>28580.900</td>
-      <td>37362.2</td>
-      <td>38726.7</td>
-      <td>40984.50</td>
-    </tr>
-    <tr>
-      <th>WY</th>
-      <td>11349.625</td>
-      <td>13308.0</td>
-      <td>11647.0</td>
-      <td>13532.25</td>
     </tr>
   </tbody>
 </table>
