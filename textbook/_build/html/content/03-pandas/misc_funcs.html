@@ -341,6 +341,8 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#len"><code class="docutils literal notranslate"><span class="pre">len</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#string-slicing">String slicing</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contains"><code class="docutils literal notranslate"><span class="pre">contains</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#replace"><code class="docutils literal notranslate"><span class="pre">replace</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#upper-and-lower"><code class="docutils literal notranslate"><span class="pre">upper</span></code> and <code class="docutils literal notranslate"><span class="pre">lower</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#startswith-and-endswith"><code class="docutils literal notranslate"><span class="pre">startswith</span></code> and <code class="docutils literal notranslate"><span class="pre">endswith</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#split"><code class="docutils literal notranslate"><span class="pre">split</span></code></a></li>
 </ul>
@@ -1578,6 +1580,83 @@ Name: st_name, Length: 1708, dtype: bool
 </div>
 </div>
 </section>
+<section id="replace">
+<h3><code class="docutils literal notranslate"><span class="pre">replace</span></code><a class="headerlink" href="#replace" title="Permalink to this heading">#</a></h3>
+<p>Replaces a substring with the other substring.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;st_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0       aL
+1       aL
+2       aL
+3       aL
+4       aL
+        ..
+1703    WY
+1704    WY
+1705    WY
+1706    WY
+1707    WY
+Name: st_name, Length: 1708, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="upper-and-lower">
+<h3><code class="docutils literal notranslate"><span class="pre">upper</span></code> and <code class="docutils literal notranslate"><span class="pre">lower</span></code><a class="headerlink" href="#upper-and-lower" title="Permalink to this heading">#</a></h3>
+<p>Capitalizes or uncapitalizes a Series.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;st_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0       AL
+1       AL
+2       AL
+3       AL
+4       AL
+        ..
+1703    WY
+1704    WY
+1705    WY
+1706    WY
+1707    WY
+Name: st_name, Length: 1708, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;st_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0       al
+1       al
+2       al
+3       al
+4       al
+        ..
+1703    wy
+1704    wy
+1705    wy
+1706    wy
+1707    wy
+Name: st_name, Length: 1708, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 <section id="startswith-and-endswith">
 <h3><code class="docutils literal notranslate"><span class="pre">startswith</span></code> and <code class="docutils literal notranslate"><span class="pre">endswith</span></code><a class="headerlink" href="#startswith-and-endswith" title="Permalink to this heading">#</a></h3>
 <p>Returns if a string starts with or ends with the given substring.</p>
@@ -2521,6 +2600,8 @@ Name: year, Length: 1708, dtype: datetime64[ns]
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#len"><code class="docutils literal notranslate"><span class="pre">len</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#string-slicing">String slicing</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contains"><code class="docutils literal notranslate"><span class="pre">contains</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#replace"><code class="docutils literal notranslate"><span class="pre">replace</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#upper-and-lower"><code class="docutils literal notranslate"><span class="pre">upper</span></code> and <code class="docutils literal notranslate"><span class="pre">lower</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#startswith-and-endswith"><code class="docutils literal notranslate"><span class="pre">startswith</span></code> and <code class="docutils literal notranslate"><span class="pre">endswith</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#split"><code class="docutils literal notranslate"><span class="pre">split</span></code></a></li>
 </ul>
