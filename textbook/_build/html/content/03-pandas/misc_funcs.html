@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Miscellaneous Pandas Functions &#8212; Python for Economists</title>
+    <title>Helpful Pandas Methods &#8212; Python for Economists</title>
   
   
   
@@ -67,6 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/03-pandas/misc_funcs';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="GroupBys and Pivot Tables" href="groupby_pivot.html" />
     <link rel="prev" title="Selecting and Modifying Rows/Columns" href="select_modify.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -174,7 +175,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Pandas</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="loading-looking.html">Loading in and Looking at the Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="select_modify.html">Selecting and Modifying Rows/Columns</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Miscellaneous Pandas Functions</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Helpful Pandas Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="groupby_pivot.html">GroupBys and Pivot Tables</a></li>
 </ul>
 </li>
 </ul>
@@ -313,7 +315,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Miscellaneous Pandas Functions</h1>
+    <h1>Helpful Pandas Methods</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -330,7 +332,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sorting-counting-and-uniqueness">Sorting, Counting and Uniqueness</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sorting">Sorting</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#counting">Counting</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unique-and-duplicated-values">Unique and Duplicated Values</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unique-values-and-duplicates">Unique Values and Duplicates</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#missing-values">Missing Values</a></li>
 </ul>
 </li>
@@ -363,9 +365,9 @@ document.write(`
 </div>
 </div>
 </div>
-<section class="tex2jax_ignore mathjax_ignore" id="miscellaneous-pandas-functions">
-<h1>Miscellaneous Pandas Functions<a class="headerlink" href="#miscellaneous-pandas-functions" title="Permalink to this heading">#</a></h1>
-<p>This subchapter goes over a lot of simple but extremely useful <code class="docutils literal notranslate"><span class="pre">pandas</span></code> functions that you will likely use a lot.</p>
+<section class="tex2jax_ignore mathjax_ignore" id="helpful-pandas-methods">
+<h1>Helpful Pandas Methods<a class="headerlink" href="#helpful-pandas-methods" title="Permalink to this heading">#</a></h1>
+<p>This subchapter goes over a lot of simple but extremely useful <code class="docutils literal notranslate"><span class="pre">pandas</span></code> methods that you will likely use a lot.</p>
 <p>To start, let’s load in the same dataset as the first subchapter in the <code class="docutils literal notranslate"><span class="pre">Pandas</span></code> chapter. As a reminder, this dataset has beer sales across 50 continental states in the US. It is sourced from <a class="reference external" href="https://www.aeaweb.org/articles?id=10.1257/aer.99.4.1145"><em>Salience and Taxation: Theory and Evidence</em></a> by Chetty, Looney, and Kroft (AER 2010), and it includes 7 columns:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">st_name</span></code>: the state abbreviation</p></li>
@@ -873,7 +875,7 @@ Name: population, Length: 1708, dtype: int64
 </section>
 <section id="counting">
 <h3>Counting<a class="headerlink" href="#counting" title="Permalink to this heading">#</a></h3>
-<p>Often used for Series (although it can be used for DataFrames as well), the <code class="docutils literal notranslate"><span class="pre">.value_counts()</span></code> method counts the number of times a value (for Series) or row (for DataFrames) appears. For example,</p>
+<p>Often used for Series (although it can be used for DataFrames as well), the <code class="docutils literal notranslate"><span class="pre">.value_counts()</span></code> method counts the number of times a value (for Series) or row (for DataFrames) appears, and returns the values sorted from most common to least. For example,</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;st_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -962,8 +964,8 @@ Length: 1708, dtype: int64
 </div>
 </div>
 </section>
-<section id="unique-and-duplicated-values">
-<h3>Unique and Duplicated Values<a class="headerlink" href="#unique-and-duplicated-values" title="Permalink to this heading">#</a></h3>
+<section id="unique-values-and-duplicates">
+<h3>Unique Values and Duplicates<a class="headerlink" href="#unique-values-and-duplicates" title="Permalink to this heading">#</a></h3>
 <p>If we’re interested in just obtaining the unique values from a Series, we can use the <code class="docutils literal notranslate"><span class="pre">.unique()</span></code> method.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1479,12 +1481,12 @@ Name: st_name, Length: 1708, dtype: bool
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;st_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">any</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;st_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">any</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
 </pre></div>
 </div>
 </div>
@@ -2273,7 +2275,7 @@ Name: year, Length: 1708, dtype: datetime64[ns]
 </div>
 </div>
 </div>
-<p>The months are subtracted directly. As both of these months were set to June, there is no difference. Instead, to see the number of months between two dates, we must perform the following calculation.</p>
+<p>The months are subtracted directly. As both of these months were set to June, there is no difference. Instead, to see the number of months between two dates, we must first subtract the years, multiply that by 12, and then subtract the months and add that. The calculation has been done below.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">20</span><span class="p">,</span><span class="s1">&#39;year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">year</span> <span class="o">-</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">year</span><span class="p">)</span> <span class="o">*</span> <span class="mi">12</span> <span class="o">+</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">20</span><span class="p">,</span><span class="s1">&#39;year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">month</span> <span class="o">-</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">month</span><span class="p">)</span>
@@ -2479,6 +2481,15 @@ Name: year, Length: 1708, dtype: datetime64[ns]
         <p class="prev-next-title">Selecting and Modifying Rows/Columns</p>
       </div>
     </a>
+    <a class="right-next"
+       href="groupby_pivot.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">GroupBys and Pivot Tables</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -2501,7 +2512,7 @@ Name: year, Length: 1708, dtype: datetime64[ns]
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sorting-counting-and-uniqueness">Sorting, Counting and Uniqueness</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sorting">Sorting</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#counting">Counting</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unique-and-duplicated-values">Unique and Duplicated Values</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unique-values-and-duplicates">Unique Values and Duplicates</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#missing-values">Missing Values</a></li>
 </ul>
 </li>

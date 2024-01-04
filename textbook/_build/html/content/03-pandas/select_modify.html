@@ -67,7 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/03-pandas/select_modify';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Miscellaneous Pandas Functions" href="misc_funcs.html" />
+    <link rel="next" title="Helpful Pandas Methods" href="misc_funcs.html" />
     <link rel="prev" title="Loading in and Looking at the Data" href="loading-looking.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -175,7 +175,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Pandas</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="loading-looking.html">Loading in and Looking at the Data</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Selecting and Modifying Rows/Columns</a></li>
-<li class="toctree-l2"><a class="reference internal" href="misc_funcs.html">Miscellaneous Pandas Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc_funcs.html">Helpful Pandas Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="groupby_pivot.html">GroupBys and Pivot Tables</a></li>
 </ul>
 </li>
 </ul>
@@ -1665,7 +1666,7 @@ Name: st_name, Length: 1708, dtype: bool
 </section>
 <section id="multiple-labels">
 <h3>Multiple Labels<a class="headerlink" href="#multiple-labels" title="Permalink to this heading">#</a></h3>
-<p>If you want to keep all rows where a certain column is within a list of given values, you can use the <code class="docutils literal notranslate"><span class="pre">.isin()</span></code> method. This is easier than using the <code class="docutils literal notranslate"><span class="pre">|</span></code> operator multiple times. For example, below we get all rows corresponding to the states of California, Florida, Texas and Nebraska.</p>
+<p>If you want to keep all rows where a certain column is in a list of given values, you can use the <code class="docutils literal notranslate"><span class="pre">.isin()</span></code> method. This is logically equivalent to using the <code class="docutils literal notranslate"><span class="pre">|</span></code> operator multiple times, but it’s easier. For example, below we get all rows corresponding to the states of California, Florida, Texas and Nebraska.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;st_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;CA&#39;</span><span class="p">,</span><span class="s1">&#39;FL&#39;</span><span class="p">,</span><span class="s1">&#39;TX&#39;</span><span class="p">,</span><span class="s1">&#39;NE&#39;</span><span class="p">])</span>
@@ -3923,7 +3924,7 @@ Length: 1708, dtype: float64
 <p>1708 rows × 8 columns</p>
 </div></div></div>
 </div>
-<p>Finally, you can manually set the index equal to something else using the syntax below.</p>
+<p>Finally, you can manually set the index equal to something else by simply reassigning the DataFrame/Series attribute.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
@@ -4123,7 +4124,7 @@ Length: 1708, dtype: float64
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Miscellaneous Pandas Functions</p>
+        <p class="prev-next-title">Helpful Pandas Methods</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
