@@ -20,9 +20,9 @@ sections:
       - file: content/03-pandas/misc_funcs.ipynb
       - file: content/03-pandas/groupby_pivot.ipynb
       - file: content/03-pandas/merge.ipynb
-  # sections:
-  #     - file: content/03-pandas/tips-tricks.ipynb
-# - file: content/03-visualizations/index.md
+- file: content/04-visualizations/index.md
+  sections:
+      - file: content/04-visualizations/types.ipynb
 # - file: content/04-regex/index.md
 #   sections:
 #       - file: content/04-regex/regex.ipynb

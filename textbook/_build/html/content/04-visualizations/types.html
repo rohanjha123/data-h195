@@ -1,0 +1,833 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Basic Visualizations &#8212; Python for Economists</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/plotly.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/04-visualizations/types';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Visualizations" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Python for Economists</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    <a> A Quick Overview </a>
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../02-prereqs/index.html">Prerequisites</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../02-prereqs/python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../02-prereqs/jupyter.html">Jupyter Notebooks</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../02-prereqs/numpy.html">Numpy</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../03-pandas/index.html">Pandas</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../03-pandas/loading-looking.html">Loading in and Looking at the Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03-pandas/select_modify.html">Selecting and Modifying Rows/Columns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03-pandas/misc_funcs.html">Helpful Pandas Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03-pandas/groupby_pivot.html">GroupBys and Pivot Tables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03-pandas/merge.html">Joins</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Visualizations</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Basic Visualizations</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/content/04-visualizations/types.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Basic Visualizations</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-note-on-which-type-of-plot-to-create">A Note on Which Type of Plot to Create</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matplotlib-and-seaborn">Matplotlib and Seaborn</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="basic-visualizations">
+<h1>Basic Visualizations<a class="headerlink" href="#basic-visualizations" title="Permalink to this heading">#</a></h1>
+<p>In thus subchapter, we will go over some key types of plots, as well as how to create them using two of the most common plotting libraries in Python: <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> and <code class="docutils literal notranslate"><span class="pre">seaborn</span></code>. However, first we will need to load in the dataset we will be using for this analysis.</p>
+<p>For this analysis, we will be loading in a subset of <a class="reference external" href="https://datatopics.worldbank.org/education/">World Bank’s Education Statistics (EdStats) Dataset</a>. The subset we will be working with has data on a bunch of education metrics/indicators for 25 regions from 1970-2014. There are too many indicators to even begin describing all. We highly encourage you to explore World Bank’s data directly if you’re interested!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">wb_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/world_bank_education.csv&#39;</span><span class="p">)</span>
+<span class="n">wb_df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Country Name</th>
+      <th>Country Code</th>
+      <th>Indicator Name</th>
+      <th>Indicator Code</th>
+      <th>1970</th>
+      <th>1971</th>
+      <th>1972</th>
+      <th>1973</th>
+      <th>1974</th>
+      <th>1975</th>
+      <th>...</th>
+      <th>2005</th>
+      <th>2006</th>
+      <th>2007</th>
+      <th>2008</th>
+      <th>2009</th>
+      <th>2010</th>
+      <th>2011</th>
+      <th>2012</th>
+      <th>2013</th>
+      <th>2014</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Arab World</td>
+      <td>ARB</td>
+      <td>Adjusted net enrolment rate, primary, both sex...</td>
+      <td>SE.PRM.TENR</td>
+      <td>5.482212e+01</td>
+      <td>5.489414e+01</td>
+      <td>5.620944e+01</td>
+      <td>5.726711e+01</td>
+      <td>5.799114e+01</td>
+      <td>5.936554e+01</td>
+      <td>...</td>
+      <td>8.248949e+01</td>
+      <td>8.268551e+01</td>
+      <td>8.328034e+01</td>
+      <td>8.401187e+01</td>
+      <td>8.419596e+01</td>
+      <td>8.521200e+01</td>
+      <td>8.524514e+01</td>
+      <td>8.610167e+01</td>
+      <td>8.551194e+01</td>
+      <td>8.532015e+01</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Arab World</td>
+      <td>ARB</td>
+      <td>Adjusted net enrolment rate, primary, female (%)</td>
+      <td>SE.PRM.TENR.FE</td>
+      <td>4.335110e+01</td>
+      <td>4.331815e+01</td>
+      <td>4.464070e+01</td>
+      <td>4.584572e+01</td>
+      <td>4.644950e+01</td>
+      <td>4.836389e+01</td>
+      <td>...</td>
+      <td>7.947577e+01</td>
+      <td>7.960833e+01</td>
+      <td>8.058242e+01</td>
+      <td>8.147380e+01</td>
+      <td>8.169569e+01</td>
+      <td>8.287165e+01</td>
+      <td>8.286139e+01</td>
+      <td>8.440141e+01</td>
+      <td>8.391403e+01</td>
+      <td>8.382083e+01</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Arab World</td>
+      <td>ARB</td>
+      <td>Adjusted net enrolment rate, primary, gender p...</td>
+      <td>UIS.NERA.1.GPI</td>
+      <td>6.585700e-01</td>
+      <td>6.564000e-01</td>
+      <td>6.632900e-01</td>
+      <td>6.720400e-01</td>
+      <td>6.726100e-01</td>
+      <td>6.917600e-01</td>
+      <td>...</td>
+      <td>9.308400e-01</td>
+      <td>9.296200e-01</td>
+      <td>9.384600e-01</td>
+      <td>9.425000e-01</td>
+      <td>9.434700e-01</td>
+      <td>9.476200e-01</td>
+      <td>9.467000e-01</td>
+      <td>9.620800e-01</td>
+      <td>9.640900e-01</td>
+      <td>9.662000e-01</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Arab World</td>
+      <td>ARB</td>
+      <td>Adjusted net enrolment rate, primary, male (%)</td>
+      <td>SE.PRM.TENR.MA</td>
+      <td>6.582623e+01</td>
+      <td>6.599358e+01</td>
+      <td>6.730186e+01</td>
+      <td>6.821908e+01</td>
+      <td>6.905901e+01</td>
+      <td>6.991455e+01</td>
+      <td>...</td>
+      <td>8.538029e+01</td>
+      <td>8.563508e+01</td>
+      <td>8.586669e+01</td>
+      <td>8.644414e+01</td>
+      <td>8.659069e+01</td>
+      <td>8.745258e+01</td>
+      <td>8.752652e+01</td>
+      <td>8.772817e+01</td>
+      <td>8.703988e+01</td>
+      <td>8.675339e+01</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Arab World</td>
+      <td>ARB</td>
+      <td>Adjusted net intake rate to Grade 1 of primary...</td>
+      <td>UIS.NIRA.1</td>
+      <td>5.244892e+01</td>
+      <td>5.248975e+01</td>
+      <td>5.263559e+01</td>
+      <td>5.332700e+01</td>
+      <td>5.418465e+01</td>
+      <td>5.486563e+01</td>
+      <td>...</td>
+      <td>7.613177e+01</td>
+      <td>7.522256e+01</td>
+      <td>7.559570e+01</td>
+      <td>7.489394e+01</td>
+      <td>7.481455e+01</td>
+      <td>7.619704e+01</td>
+      <td>7.647497e+01</td>
+      <td>7.731937e+01</td>
+      <td>7.656671e+01</td>
+      <td>7.662057e+01</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>3412</th>
+      <td>World</td>
+      <td>WLD</td>
+      <td>Survival rate to the last grade of primary edu...</td>
+      <td>SE.PRM.PRSL.MA.ZS</td>
+      <td>6.707542e+01</td>
+      <td>6.657861e+01</td>
+      <td>6.629349e+01</td>
+      <td>6.593887e+01</td>
+      <td>6.625532e+01</td>
+      <td>6.682665e+01</td>
+      <td>...</td>
+      <td>6.825568e+01</td>
+      <td>6.920012e+01</td>
+      <td>6.931534e+01</td>
+      <td>7.040000e+01</td>
+      <td>6.939960e+01</td>
+      <td>6.849098e+01</td>
+      <td>6.795392e+01</td>
+      <td>6.678090e+01</td>
+      <td>6.694540e+01</td>
+      <td>7.019475e+01</td>
+    </tr>
+    <tr>
+      <th>3413</th>
+      <td>World</td>
+      <td>WLD</td>
+      <td>Teachers in primary education, both sexes (num...</td>
+      <td>SE.PRM.TCHR</td>
+      <td>1.428878e+07</td>
+      <td>1.459513e+07</td>
+      <td>1.529481e+07</td>
+      <td>1.582020e+07</td>
+      <td>1.627415e+07</td>
+      <td>1.674470e+07</td>
+      <td>...</td>
+      <td>2.688926e+07</td>
+      <td>2.709888e+07</td>
+      <td>2.752526e+07</td>
+      <td>2.777079e+07</td>
+      <td>2.814018e+07</td>
+      <td>2.864318e+07</td>
+      <td>2.910380e+07</td>
+      <td>2.938328e+07</td>
+      <td>3.047234e+07</td>
+      <td>3.067875e+07</td>
+    </tr>
+    <tr>
+      <th>3414</th>
+      <td>World</td>
+      <td>WLD</td>
+      <td>Teachers in primary education, female (number)</td>
+      <td>SE.PRM.TCHR.FE</td>
+      <td>7.874428e+06</td>
+      <td>8.001568e+06</td>
+      <td>8.262296e+06</td>
+      <td>8.498361e+06</td>
+      <td>8.663721e+06</td>
+      <td>8.810588e+06</td>
+      <td>...</td>
+      <td>1.665298e+07</td>
+      <td>1.679720e+07</td>
+      <td>1.703848e+07</td>
+      <td>1.723032e+07</td>
+      <td>1.753421e+07</td>
+      <td>1.796218e+07</td>
+      <td>1.832742e+07</td>
+      <td>1.859735e+07</td>
+      <td>1.931428e+07</td>
+      <td>1.952334e+07</td>
+    </tr>
+    <tr>
+      <th>3415</th>
+      <td>World</td>
+      <td>WLD</td>
+      <td>Teachers in secondary education, both sexes (n...</td>
+      <td>SE.SEC.TCHR</td>
+      <td>1.172561e+07</td>
+      <td>1.213650e+07</td>
+      <td>1.269944e+07</td>
+      <td>1.330712e+07</td>
+      <td>1.374928e+07</td>
+      <td>1.413025e+07</td>
+      <td>...</td>
+      <td>2.843753e+07</td>
+      <td>2.910475e+07</td>
+      <td>3.010238e+07</td>
+      <td>3.105815e+07</td>
+      <td>3.162800e+07</td>
+      <td>3.221992e+07</td>
+      <td>3.249828e+07</td>
+      <td>3.269860e+07</td>
+      <td>3.235300e+07</td>
+      <td>3.286152e+07</td>
+    </tr>
+    <tr>
+      <th>3416</th>
+      <td>World</td>
+      <td>WLD</td>
+      <td>Teachers in tertiary education programmes, bot...</td>
+      <td>SE.TER.TCHR</td>
+      <td>2.752715e+06</td>
+      <td>2.815567e+06</td>
+      <td>2.938241e+06</td>
+      <td>3.047319e+06</td>
+      <td>3.181207e+06</td>
+      <td>3.332724e+06</td>
+      <td>...</td>
+      <td>9.191711e+06</td>
+      <td>9.480116e+06</td>
+      <td>1.000710e+07</td>
+      <td>1.054032e+07</td>
+      <td>1.069500e+07</td>
+      <td>1.113321e+07</td>
+      <td>1.158810e+07</td>
+      <td>1.190016e+07</td>
+      <td>1.216735e+07</td>
+      <td>1.264785e+07</td>
+    </tr>
+  </tbody>
+</table>
+<p>3417 rows × 38 columns</p>
+</div></div></div>
+</div>
+<section id="a-note-on-which-type-of-plot-to-create">
+<h2>A Note on Which Type of Plot to Create<a class="headerlink" href="#a-note-on-which-type-of-plot-to-create" title="Permalink to this heading">#</a></h2>
+<p>The type of plot you should make should be closely informed by the types of variables you’re attempting to visualize. Here’s a quick visualization from <a class="reference external" href="https://ds100.org/">UC Berkeley’s Data 100</a> on a few of the variable types.</p>
+<p><img alt="vars" src="../../_images/var_types.png" /></p>
+<p>Here’s a quick description of each type of variable:</p>
+<ul class="simple">
+<li><p>Quantitative Continuous: Numerical data that can take any value within a range. It has an infinite number of possible values within any given interval. Economic examples include <a class="reference external" href="https://data.oecd.org/gdp/gross-domestic-product-gdp.htm#:~:text=Gross%20domestic%20product%20(GDP)%20is,and%20services%20(less%20imports).">GDP</a>, <a class="reference external" href="https://www.investopedia.com/terms/c/consumerpriceindex.asp">CPI</a>, inflation rate, etc.</p></li>
+<li><p>Quantitative Discrete: Numerical variables that take on distinct, separate values and do not have intermediate values. Economic examples include number of unemployed individuals, quantity of cars produced in a month, number of employees in a company, etc.</p></li>
+<li><p>Qualitative Ordinal: Qualitative ordinal variables represent categories with a meaningful order or ranking. The intervals between the categories are not uniform or well-defined. Economic examples include <a class="reference external" href="https://www.investopedia.com/terms/c/creditrating.asp">credit ratings</a>, income classes (low, middle or high), the <a class="reference external" href="https://hdr.undp.org/data-center/human-development-index#/indicies/HDI">HDI</a>, etc.</p></li>
+<li><p>Qualitative Nominal: Qualitative nominal variables represent categories or groups with no inherent order or ranking. They are distinct and unrelated categories. Economic examples include the various types of industries, the names of various currencies, the names of countries in a trade agreement, etc.</p></li>
+</ul>
+<p><strong>Important Note:</strong> Be careful between quantitative discrete and qualitative ordinal variables in particular. For example, someone may argue that the <a class="reference external" href="https://hdr.undp.org/data-center/human-development-index#/indicies/HDI">HDI</a> is a quantitative discrete variable. However, the difference between countries with HDIs of 0.9 vs 0.7 is not necessairly the same as the difference between countries with HDIs of 0.7 vs 0.5, something that we would expect from a quantitative variable. In other words, for the HDI, intervals between the categories are not necessarily uniform or well-defined. Another example of a confusing variable could be a child’s years in school, where the difference between year 12 and year 8 is not necessairly the same as the difference between year 8 and year 4.</p>
+</section>
+<section id="matplotlib-and-seaborn">
+<h2>Matplotlib and Seaborn<a class="headerlink" href="#matplotlib-and-seaborn" title="Permalink to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Matplotlib</span></code> and <code class="docutils literal notranslate"><span class="pre">Seaborn</span></code> are both plotting libraries useful for making graphs in Python. They both support a variety of different types of plots, and we shall give examples of various plots in each below. We have imported both the libraries at the top of the subchapter. Importantly, in order to view <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> plots in Jupyter notebooks, you have to include the <code class="docutils literal notranslate"><span class="pre">%matplotlib</span> <span class="pre">inline</span></code> command we used above (this is a cell magic command used by Jupyter notebooks, read more <a class="reference external" href="https://ipython.readthedocs.io/en/stable/interactive/magics.html">here</a>). As always, you are encouraged to read <a class="reference external" href="https://matplotlib.org/stable/"><code class="docutils literal notranslate"><span class="pre">Matplotlib</span></code>’s</a> and <a class="reference external" href="https://seaborn.pydata.org/"><code class="docutils literal notranslate"><span class="pre">Seaborn</span></code>’s</a> documentation.</p>
+<p>Fun fact: <code class="docutils literal notranslate"><span class="pre">seaborn</span></code> is actually built on top of <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> to make creating basic plots simpler and require less code. All <code class="docutils literal notranslate"><span class="pre">seaborn</span></code> plots are by definition also <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> plots. For example, when you’re plotting two variables from the same DataFrame against each other:</p>
+<ul class="simple">
+<li><p>In <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, you have to pull both of them out as Series and pass them into the function call. For example: <code class="docutils literal notranslate"><span class="pre">plt.scatter(x</span> <span class="pre">=</span> <span class="pre">df['x_name'],</span> <span class="pre">y</span> <span class="pre">=</span> <span class="pre">df['y_name']</span></code>.</p></li>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">seaborn</span></code>, you can simply pass in the DataFrame name and then the names of the variables. For example: <code class="docutils literal notranslate"><span class="pre">sns.scatter(data</span> <span class="pre">=</span> <span class="pre">df,</span> <span class="pre">x</span> <span class="pre">=</span> <span class="pre">'x_name',</span> <span class="pre">y</span> <span class="pre">=</span> <span class="pre">'y_name'</span></code>.</p></li>
+</ul>
+<p>Small things like this can help save a lot of time when producing quick plots. However, <code class="docutils literal notranslate"><span class="pre">seaborn</span></code> is less customizable than <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> and cannot produce all the plots <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> can.</p>
+<p>Regardless of the type of plot and the library you choose to create the plot, you should always give it a title, set axis labels, etc. There are several miscellanoues function calls you can use to set these settings regardless of plot. As <code class="docutils literal notranslate"><span class="pre">seaborn</span></code> is built on top of <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, these commands don’t differ between these two packages. We have listed a few of these commands below, but the list is not at all comprehensive. Read <a class="reference external" href="https://matplotlib.org/stable/api/pyplot_summary.html">here</a> for more details.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.title.html#matplotlib.pyplot.title"><code class="docutils literal notranslate"><span class="pre">plt.title()</span></code></a>: Set a title.</p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xlabel.html#matplotlib.pyplot.xlabel"><code class="docutils literal notranslate"><span class="pre">plt.xlabel()</span></code></a> and <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.ylabel.html#matplotlib.pyplot.ylabel"><code class="docutils literal notranslate"><span class="pre">plt.ylabel()</span></code></a>: Set the x-axis and y-axis labels.</p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xlim.html#matplotlib.pyplot.xlim"><code class="docutils literal notranslate"><span class="pre">plt.xlim()</span></code></a> and <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.ylim.html#matplotlib.pyplot.ylim"><code class="docutils literal notranslate"><span class="pre">plt.ylim()</span></code></a>: Set the limits/ranges for the x and y axis.</p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.legend.html#matplotlib.pyplot.legend"><code class="docutils literal notranslate"><span class="pre">plt.legend()</span></code></a>: Include a legend.</p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.annotate.html#matplotlib.pyplot.annotate"><code class="docutils literal notranslate"><span class="pre">plt.annotate()</span></code></a>: Annotate the plot.</p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.grid.html#matplotlib.pyplot.grid"><code class="docutils literal notranslate"><span class="pre">plt.grid()</span></code></a>: Configure the grid lines.</p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplots.html#matplotlib.pyplot.subplots"><code class="docutils literal notranslate"><span class="pre">plt.subplots()</span></code></a>: Create subplots within the plot.</p></li>
+</ul>
+<p><em>Note</em>: The list above assumes you have imported <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code> as <code class="docutils literal notranslate"><span class="pre">plt</span></code>. If not, you will need to replace <code class="docutils literal notranslate"><span class="pre">plt</span></code> with <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code> (or whatever other alias you choose to use).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">wb_df</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;Country Name&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/72aaaf6cb86aa50122725bd8a36456c2db6cb63b3ba7e93dbb4c21132c718a4a.png" src="../../_images/72aaaf6cb86aa50122725bd8a36456c2db6cb63b3ba7e93dbb4c21132c718a4a.png" />
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "conda-env-sklearn-env-py"
+        },
+        kernelOptions: {
+            name: "conda-env-sklearn-env-py",
+            path: "./content/04-visualizations"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'conda-env-sklearn-env-py'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Visualizations</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-note-on-which-type-of-plot-to-create">A Note on Which Type of Plot to Create</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matplotlib-and-seaborn">Matplotlib and Seaborn</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Rohan Jha
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
