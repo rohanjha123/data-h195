@@ -22,6 +22,7 @@ sections:
       - file: content/03-pandas/merge.ipynb
 - file: content/04-visualizations/index.md
   sections:
+      - file: content/04-visualizations/choosing.ipynb
       - file: content/04-visualizations/types.ipynb
 # - file: content/04-regex/index.md
 #   sections:
