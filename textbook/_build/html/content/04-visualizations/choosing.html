@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Jupyter Notebooks &#8212; Python for Economists</title>
+    <title>Choosing the Right Plot &#8212; Python for Economists</title>
   
   
   
@@ -64,11 +64,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/02-prereqs/jupyter';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/04-visualizations/choosing';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Numpy" href="numpy.html" />
-    <link rel="prev" title="Python" href="python.html" />
+    <link rel="next" title="Basic Visualizations" href="types.html" />
+    <link rel="prev" title="Visualizations" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -164,12 +164,12 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Prerequisites</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="python.html">Python</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Jupyter Notebooks</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../02-prereqs/index.html">Prerequisites</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../02-prereqs/python.html">Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../02-prereqs/jupyter.html">Jupyter Notebooks</a></li>
 
 
-<li class="toctree-l2"><a class="reference internal" href="numpy.html">Numpy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../02-prereqs/numpy.html">Numpy</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../03-pandas/index.html">Pandas</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -180,9 +180,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../03-pandas/merge.html">Joins</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../04-visualizations/index.html">Visualizations</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../04-visualizations/choosing.html">Choosing the Right Plot</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../04-visualizations/types.html">Basic Visualizations</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Visualizations</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Choosing the Right Plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types.html">Basic Visualizations</a></li>
 </ul>
 </li>
 </ul>
@@ -239,7 +239,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/content/02-prereqs/jupyter.ipynb" target="_blank"
+      <li><a href="../../_sources/content/04-visualizations/choosing.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -308,9 +308,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -321,28 +319,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Jupyter Notebooks</h1>
+    <h1>Choosing the Right Plot</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Jupyter Notebooks</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-layout">Basic Layout</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tips-and-tricks">Tips and Tricks</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#viewing-documentation">Viewing Documentation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importing-libraries">Importing Libraries</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#keyboard-shortcuts">Keyboard Shortcuts</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#running-cells">Running Cells</a></li>
-</ul>
-</li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -352,65 +333,18 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="jupyter-notebooks">
-<h1>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this heading">#</a></h1>
-<p>Throughout this textbook, we will be using <a class="reference external" href="https://jupyter.org/">Jupyter notebooks</a> to work with data. While you can use <code class="docutils literal notranslate"><span class="pre">pandas</span></code> without Jupyter notebooks, using notebooks is highly encouraged as it helps you interactively view datasets and easily see the results of multiple small iterations of data processing. If you do not already have Jupyter notebooks installed, you can see installation instructions <a class="reference internal" href="../01-python_v_stata/install.html"><span class="doc std std-doc">here</span></a>.</p>
-</section>
-<section id="basic-layout">
-<h1>Basic Layout<a class="headerlink" href="#basic-layout" title="Permalink to this heading">#</a></h1>
-<p>The basic layout of a Jupyter notebook is fairly intuitive. You can open multiple cells and perform different tasks in them. Each cell can either be a code cell, a markdown cell (often used for writing text, like the cell containing this paragraph), or a raw cell (don’t worry about these for now). You can run each code cell, and you can also run the entire notebook in one go via the menu bar at the top. Feel free to explore the menu bar at the top to get a better idea of what all you can do!</p>
-<p>Each time you open a Jupyter notebook, you are assigned a kernel, which is a computational engine that executes the code contained in a notebook document. Each kernel has a RAM limit, be careful you don’t exceed it! If you exceed it, your code will stop working. You can restart your kernel from the menu bar.</p>
-<p>If you’re interested, you can find a detailed guide <a class="reference external" href="https://www.youtube.com/watch?v=HW29067qVWk&amp;ab_channel=CoreySchafer">here</a>.</p>
-</section>
-<section id="tips-and-tricks">
-<h1>Tips and Tricks<a class="headerlink" href="#tips-and-tricks" title="Permalink to this heading">#</a></h1>
-<p>The rest of this subchapter will be focused on tips and tricks you can use to make life easier when working with Jupyter notebooks.</p>
-<section id="viewing-documentation">
-<h2>Viewing Documentation<a class="headerlink" href="#viewing-documentation" title="Permalink to this heading">#</a></h2>
-<p>You can use Jupyter to view the documentation of functions inside your notebook. The function must already be defined in the kernel (aka the cell defining the function must have already been run) for this to work.</p>
-<p>Below, click your mouse anywhere on the <code class="docutils literal notranslate"><span class="pre">print</span></code> block below and use <code class="docutils literal notranslate"><span class="pre">Shift</span></code> + <code class="docutils literal notranslate"><span class="pre">Tab</span></code> to view the function’s documentation.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;I hope you have a great day :)&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>I hope you have a great day :)
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="importing-libraries">
-<h2>Importing Libraries<a class="headerlink" href="#importing-libraries" title="Permalink to this heading">#</a></h2>
-<p>In Jupyter notebooks, we often work with functions from multiple libraries. It is a good practice to import any libraries you will be using at the top of the notebook. We have followed this practice throughout every chapter/subchapter in the course. Since we do not need any libraries for this subchapter, we have not imported anything.</p>
-</section>
-<section id="keyboard-shortcuts">
-<h2>Keyboard Shortcuts<a class="headerlink" href="#keyboard-shortcuts" title="Permalink to this heading">#</a></h2>
-<p>Even if you are familiar with Jupyter, we strongly encourage you to become proficient with keyboard shortcuts (this will save you time in the future). To learn about keyboard shortcuts, go to <strong>Help –&gt; Keyboard Shortcuts</strong> in the menu above.</p>
-<p>Here are a few that we like:</p>
-<ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span></code>/<code class="docutils literal notranslate"><span class="pre">Cmd</span></code> + <code class="docutils literal notranslate"><span class="pre">Return</span></code>: <em>Evaluate the current cell</em></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Shift</span></code> + <code class="docutils literal notranslate"><span class="pre">Return</span></code>: <em>Evaluate the current cell and move to the next</em></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span></code>/<code class="docutils literal notranslate"><span class="pre">Cmd</span></code> + <code class="docutils literal notranslate"><span class="pre">+</span></code> or <code class="docutils literal notranslate"><span class="pre">-</span></code>: <em>Zoom in or out</em></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span></code>/<code class="docutils literal notranslate"><span class="pre">Cmd</span></code> + <code class="docutils literal notranslate"><span class="pre">/</span></code>: <em>Comment or uncomment the selected code at once</em></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">ESC</span></code> : <em>command mode</em> (press before using any of the commands below)</p>
-<ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">a</span></code> : <em>create a cell above</em></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">b</span></code> : <em>create a cell below</em></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">dd</span></code> : <em>delete a cell</em></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">z</span></code> : <em>undo the last cell operation</em></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">m</span></code> : <em>convert a cell to markdown</em></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">y</span></code> : <em>convert a cell to code</em></p></li>
-</ol>
-</li>
-</ol>
-</section>
-<section id="running-cells">
-<h2>Running Cells<a class="headerlink" href="#running-cells" title="Permalink to this heading">#</a></h2>
-<p>Aside from keyboard shortcuts (specifically <code class="docutils literal notranslate"><span class="pre">Shift</span></code> + <code class="docutils literal notranslate"><span class="pre">Return</span></code>), you can also run a single cell by clicking the <code class="docutils literal notranslate"><span class="pre">Run</span></code> button in the menu bar at the top of your notebook. If you hover over the button, you will also find some other options that allow you to run multiple cells. Specifically, restarting your kernel clears all saved variables and frees up memory. The <code class="docutils literal notranslate"><span class="pre">Restart</span> <span class="pre">Kernel</span> <span class="pre">and</span> <span class="pre">Run</span> <span class="pre">upto</span> <span class="pre">Selected</span> <span class="pre">Cell</span></code> option is particularly useful for situations where you believe your code is fine but you’re running into stange memory issues.</p>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="choosing-the-right-plot">
+<h1>Choosing the Right Plot<a class="headerlink" href="#choosing-the-right-plot" title="Permalink to this heading">#</a></h1>
+<p>Choosing the right plot to make to visualize your data is crucial for making good data visualizations. The type of plot you should make should be closely informed by the types of variables you’re attempting to visualize. Here’s a quick visualization from <a class="reference external" href="https://ds100.org/">UC Berkeley’s Data 100</a> on types of variables.</p>
+<p><img alt="vars" src="../../_images/var_types.png" /></p>
+<p>Here’s a quick description of each type of variable:</p>
+<ul class="simple">
+<li><p><strong>Quantitative Continuous:</strong> Numerical data that can take any value within a range. It has an infinite number of possible values within any given interval. Economic examples include <a class="reference external" href="https://data.oecd.org/gdp/gross-domestic-product-gdp.htm#:~:text=Gross%20domestic%20product%20(GDP)%20is,and%20services%20(less%20imports).">GDP</a>, <a class="reference external" href="https://www.investopedia.com/terms/c/consumerpriceindex.asp">CPI</a>, inflation rate, etc.</p></li>
+<li><p><strong>Quantitative Discrete:</strong> Numerical variables that take on distinct, separate values and do not have intermediate values. Economic examples include number of unemployed individuals, quantity of cars produced in a month, number of employees in a company, etc.</p></li>
+<li><p><strong>Qualitative Ordinal:</strong> Qualitative ordinal variables represent categories with a meaningful order or ranking. The intervals between the categories are not uniform or well-defined. Economic examples include <a class="reference external" href="https://www.investopedia.com/terms/c/creditrating.asp#toc-credit-ratings-scale">credit ratings</a>, income classes (low, middle or high), the <a class="reference external" href="https://hdr.undp.org/data-center/human-development-index#/indicies/HDI">HDI</a>, etc.</p></li>
+<li><p><strong>Qualitative Nominal:</strong> Qualitative nominal variables represent categories or groups with no inherent order or ranking. They are distinct and unrelated categories. Economic examples include the various types of industries, the names of various currencies, the names of countries in a trade agreement, etc.</p></li>
+</ul>
+<p><strong>Important Note:</strong> Be careful between quantitative discrete and qualitative ordinal variables in particular. For example, someone may argue that the <a class="reference external" href="https://hdr.undp.org/data-center/human-development-index#/indicies/HDI">HDI</a> is a quantitative discrete variable. However, the difference between countries with HDIs of 0.9 vs 0.7 is not necessairly the same as the difference between countries with HDIs of 0.7 vs 0.5, something that we would expect from a quantitative variable. In other words, for the HDI, intervals between the categories are not necessarily uniform or well-defined. Another example of a confusing variable could be a child’s years in school, where the difference between year 12 and year 8 is not necessairly the same as the difference between year 8 and year 4.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -426,7 +360,7 @@ document.write(`
         },
         kernelOptions: {
             name: "conda-env-sklearn-env-py",
-            path: "./content/02-prereqs"
+            path: "./content/04-visualizations"
         },
         predefinedOutput: true
     }
@@ -444,20 +378,20 @@ document.write(`
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="python.html"
+       href="index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Python</p>
+        <p class="prev-next-title">Visualizations</p>
       </div>
     </a>
     <a class="right-next"
-       href="numpy.html"
+       href="types.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Numpy</p>
+        <p class="prev-next-title">Basic Visualizations</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -467,29 +401,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Jupyter Notebooks</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-layout">Basic Layout</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tips-and-tricks">Tips and Tricks</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#viewing-documentation">Viewing Documentation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importing-libraries">Importing Libraries</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#keyboard-shortcuts">Keyboard Shortcuts</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#running-cells">Running Cells</a></li>
-</ul>
-</li>
-</ul>
-
-  </nav></div>
-
-</div></div>
               
             
           </div>

@@ -67,7 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/04-visualizations/types';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="prev" title="Visualizations" href="index.html" />
+    <link rel="prev" title="Choosing the Right Plot" href="choosing.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,6 +180,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Visualizations</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="choosing.html">Choosing the Right Plot</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Basic Visualizations</a></li>
 </ul>
 </li>
@@ -329,8 +330,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-note-on-which-type-of-plot-to-create">A Note on Which Type of Plot to Create</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matplotlib-and-seaborn">Matplotlib and Seaborn</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matplotlib-and-seaborn">Matplotlib and Seaborn</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matplotlib-plot-customizations">Matplotlib Plot Customizations</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -675,19 +678,6 @@ document.write(`
 <p>3417 rows × 38 columns</p>
 </div></div></div>
 </div>
-<section id="a-note-on-which-type-of-plot-to-create">
-<h2>A Note on Which Type of Plot to Create<a class="headerlink" href="#a-note-on-which-type-of-plot-to-create" title="Permalink to this heading">#</a></h2>
-<p>The type of plot you should make should be closely informed by the types of variables you’re attempting to visualize. Here’s a quick visualization from <a class="reference external" href="https://ds100.org/">UC Berkeley’s Data 100</a> on a few of the variable types.</p>
-<p><img alt="vars" src="../../_images/var_types.png" /></p>
-<p>Here’s a quick description of each type of variable:</p>
-<ul class="simple">
-<li><p>Quantitative Continuous: Numerical data that can take any value within a range. It has an infinite number of possible values within any given interval. Economic examples include <a class="reference external" href="https://data.oecd.org/gdp/gross-domestic-product-gdp.htm#:~:text=Gross%20domestic%20product%20(GDP)%20is,and%20services%20(less%20imports).">GDP</a>, <a class="reference external" href="https://www.investopedia.com/terms/c/consumerpriceindex.asp">CPI</a>, inflation rate, etc.</p></li>
-<li><p>Quantitative Discrete: Numerical variables that take on distinct, separate values and do not have intermediate values. Economic examples include number of unemployed individuals, quantity of cars produced in a month, number of employees in a company, etc.</p></li>
-<li><p>Qualitative Ordinal: Qualitative ordinal variables represent categories with a meaningful order or ranking. The intervals between the categories are not uniform or well-defined. Economic examples include <a class="reference external" href="https://www.investopedia.com/terms/c/creditrating.asp">credit ratings</a>, income classes (low, middle or high), the <a class="reference external" href="https://hdr.undp.org/data-center/human-development-index#/indicies/HDI">HDI</a>, etc.</p></li>
-<li><p>Qualitative Nominal: Qualitative nominal variables represent categories or groups with no inherent order or ranking. They are distinct and unrelated categories. Economic examples include the various types of industries, the names of various currencies, the names of countries in a trade agreement, etc.</p></li>
-</ul>
-<p><strong>Important Note:</strong> Be careful between quantitative discrete and qualitative ordinal variables in particular. For example, someone may argue that the <a class="reference external" href="https://hdr.undp.org/data-center/human-development-index#/indicies/HDI">HDI</a> is a quantitative discrete variable. However, the difference between countries with HDIs of 0.9 vs 0.7 is not necessairly the same as the difference between countries with HDIs of 0.7 vs 0.5, something that we would expect from a quantitative variable. In other words, for the HDI, intervals between the categories are not necessarily uniform or well-defined. Another example of a confusing variable could be a child’s years in school, where the difference between year 12 and year 8 is not necessairly the same as the difference between year 8 and year 4.</p>
-</section>
 <section id="matplotlib-and-seaborn">
 <h2>Matplotlib and Seaborn<a class="headerlink" href="#matplotlib-and-seaborn" title="Permalink to this heading">#</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">Matplotlib</span></code> and <code class="docutils literal notranslate"><span class="pre">Seaborn</span></code> are both plotting libraries useful for making graphs in Python. They both support a variety of different types of plots, and we shall give examples of various plots in each below. We have imported both the libraries at the top of the subchapter. Importantly, in order to view <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> plots in Jupyter notebooks, you have to include the <code class="docutils literal notranslate"><span class="pre">%matplotlib</span> <span class="pre">inline</span></code> command we used above (this is a cell magic command used by Jupyter notebooks, read more <a class="reference external" href="https://ipython.readthedocs.io/en/stable/interactive/magics.html">here</a>). As always, you are encouraged to read <a class="reference external" href="https://matplotlib.org/stable/"><code class="docutils literal notranslate"><span class="pre">Matplotlib</span></code>’s</a> and <a class="reference external" href="https://seaborn.pydata.org/"><code class="docutils literal notranslate"><span class="pre">Seaborn</span></code>’s</a> documentation.</p>
@@ -697,6 +687,8 @@ document.write(`
 <li><p>In <code class="docutils literal notranslate"><span class="pre">seaborn</span></code>, you can simply pass in the DataFrame name and then the names of the variables. For example: <code class="docutils literal notranslate"><span class="pre">sns.scatter(data</span> <span class="pre">=</span> <span class="pre">df,</span> <span class="pre">x</span> <span class="pre">=</span> <span class="pre">'x_name',</span> <span class="pre">y</span> <span class="pre">=</span> <span class="pre">'y_name'</span></code>.</p></li>
 </ul>
 <p>Small things like this can help save a lot of time when producing quick plots. However, <code class="docutils literal notranslate"><span class="pre">seaborn</span></code> is less customizable than <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> and cannot produce all the plots <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> can.</p>
+<section id="matplotlib-plot-customizations">
+<h3>Matplotlib Plot Customizations<a class="headerlink" href="#matplotlib-plot-customizations" title="Permalink to this heading">#</a></h3>
 <p>Regardless of the type of plot and the library you choose to create the plot, you should always give it a title, set axis labels, etc. There are several miscellanoues function calls you can use to set these settings regardless of plot. As <code class="docutils literal notranslate"><span class="pre">seaborn</span></code> is built on top of <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, these commands don’t differ between these two packages. We have listed a few of these commands below, but the list is not at all comprehensive. Read <a class="reference external" href="https://matplotlib.org/stable/api/pyplot_summary.html">here</a> for more details.</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.title.html#matplotlib.pyplot.title"><code class="docutils literal notranslate"><span class="pre">plt.title()</span></code></a>: Set a title.</p></li>
@@ -710,14 +702,40 @@ document.write(`
 <p><em>Note</em>: The list above assumes you have imported <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code> as <code class="docutils literal notranslate"><span class="pre">plt</span></code>. If not, you will need to replace <code class="docutils literal notranslate"><span class="pre">plt</span></code> with <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code> (or whatever other alias you choose to use).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">wb_df</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;Country Name&#39;</span><span class="p">);</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">wb_df</span><span class="p">[</span><span class="s1">&#39;Country Name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">wb_df</span><span class="p">[</span><span class="s1">&#39;Country Name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/72aaaf6cb86aa50122725bd8a36456c2db6cb63b3ba7e93dbb4c21132c718a4a.png" src="../../_images/72aaaf6cb86aa50122725bd8a36456c2db6cb63b3ba7e93dbb4c21132c718a4a.png" />
+<img alt="../../_images/26772b33799531313980eca8db8f1e3624a241c4f10190c3ad0ded6b3dd0d3f4.png" src="../../_images/26772b33799531313980eca8db8f1e3624a241c4f10190c3ad0ded6b3dd0d3f4.png" />
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">wb_df</span><span class="p">[</span><span class="s1">&#39;Country Name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">wb_df</span><span class="p">[</span><span class="s1">&#39;Country Name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;BarContainer object of 25 artists&gt;
+</pre></div>
+</div>
+<img alt="../../_images/30dd7a9564c023a1d91fc78d7c8b7f1c55ce79137d6bfe3d1503ce7ba1d06732.png" src="../../_images/30dd7a9564c023a1d91fc78d7c8b7f1c55ce79137d6bfe3d1503ce7ba1d06732.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">wb_df</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;Country Name&#39;</span><span class="p">,</span> 
+              <span class="n">order</span> <span class="o">=</span> <span class="n">wb_df</span><span class="p">[</span><span class="s1">&#39;Country Name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">()</span><span class="o">.</span><span class="n">index</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/0f7651511c94584c14260f9fa44b3a4881f88403b5547f02a785008492a065be.png" src="../../_images/0f7651511c94584c14260f9fa44b3a4881f88403b5547f02a785008492a065be.png" />
+</div>
+</div>
+</section>
 </section>
 </section>
 
@@ -752,12 +770,12 @@ document.write(`
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="index.html"
+       href="choosing.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Visualizations</p>
+        <p class="prev-next-title">Choosing the Right Plot</p>
       </div>
     </a>
 </div>
@@ -775,8 +793,10 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-note-on-which-type-of-plot-to-create">A Note on Which Type of Plot to Create</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matplotlib-and-seaborn">Matplotlib and Seaborn</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matplotlib-and-seaborn">Matplotlib and Seaborn</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matplotlib-plot-customizations">Matplotlib Plot Customizations</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
