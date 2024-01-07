@@ -579,12 +579,10 @@ document.write(`
 </div>
 </div>
 </div>
-<p>There are also some built in character classes to help minimize typing, they are summarized below.</p>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Character Class</p></th>
 <th class="head"><p>Description</p></th>
-<th class="head"><p>Syntax Example</p></th>
 <th class="head"><p>Matches</p></th>
 <th class="head"><p>Doesn’t Match</p></th>
 </tr>
@@ -592,49 +590,42 @@ document.write(`
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">[a-z]</span></code></p></td>
 <td><p>All lowercase letters</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">[a-z]</span></code></p></td>
 <td><p>a <br /> m <br /> z</p></td>
 <td><p>A <br /> 1 <br /> $</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">[A-Z]</span></code></p></td>
 <td><p>All uppercase letters</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">[A-Z]</span></code></p></td>
 <td><p>A <br /> M <br /> Z</p></td>
 <td><p>a <br /> 1 <br /> $</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">[0-9]</span></code></p></td>
 <td><p>Digits</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">[0-9]</span></code></p></td>
 <td><p>0 <br /> 5 <br /> 9</p></td>
 <td><p>a <br /> A <br /> $</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">\w</span></code></p></td>
 <td><p>Word characters (letters + digits + underscore)</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">\w</span></code></p></td>
 <td><p>a <br /> 5 <br /> _</p></td>
 <td><p>$ <br /> % <br /> -</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">\d</span></code></p></td>
 <td><p>Digits</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">\d</span></code></p></td>
 <td><p>0 <br /> 7 <br /> 9</p></td>
 <td><p>a <br /> A <br /> $</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">\s</span></code></p></td>
 <td><p>All whitespace characters, including tabs and new lines</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">\s</span></code></p></td>
 <td><p>space <br /> tab <br /> newline</p></td>
 <td><p>A <br /> 1 <br /> $</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">.</span></code></p></td>
 <td><p>All characters except newline</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">.</span></code></p></td>
 <td><p>space <br /> a <br /> $</p></td>
 <td><p>newline</p></td>
 </tr>
 </tbody>
 </table>
-<p><code class="docutils literal notranslate"><span class="pre">\W</span></code>, <code class="docutils literal notranslate"><span class="pre">\D</span></code> and <code class="docutils literal notranslate"><span class="pre">\S</span></code> are the complements (match the exact opposite things) of <code class="docutils literal notranslate"><span class="pre">\w</span></code>, <code class="docutils literal notranslate"><span class="pre">\d</span></code> and <code class="docutils literal notranslate"><span class="pre">\s</span></code> respectively.</p>
+<p><code class="docutils literal notranslate"><span class="pre">\W</span></code>, <code class="docutils literal notranslate"><span class="pre">\D</span></code>, and <code class="docutils literal notranslate"><span class="pre">\S</span></code> are the complements (match the exact opposite things) of <code class="docutils literal notranslate"><span class="pre">\w</span></code>, <code class="docutils literal notranslate"><span class="pre">\d</span></code>, and <code class="docutils literal notranslate"><span class="pre">\s</span></code> respectively.</p>
 </section>
 <section id="positions">
 <h3>Positions<a class="headerlink" href="#positions" title="Permalink to this heading">#</a></h3>
