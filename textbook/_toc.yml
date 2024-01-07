@@ -24,6 +24,7 @@ sections:
   sections:
       - file: content/04-visualizations/choosing.ipynb
       - file: content/04-visualizations/types.ipynb
+      - file: content/04-visualizations/advanced.ipynb
 # - file: content/04-regex/index.md
 #   sections:
 #       - file: content/04-regex/regex.ipynb
