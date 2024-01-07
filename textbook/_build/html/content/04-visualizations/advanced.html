@@ -70,6 +70,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/04-visualizations/advanced';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="RegEx" href="../05-regex/regex.html" />
     <link rel="prev" title="Basic Visualizations" href="types.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -188,6 +189,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">More Advanced Visualizations</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../05-regex/regex.html">RegEx</a></li>
 </ul>
 
     </div>
@@ -336,9 +338,9 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transformations">Transformations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tukey-mosteller-bulge-diagram">Tukey-Mosteller Bulge Diagram</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kernel-density-estimation">Kernel Density Estimation</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kernel-density-estimation">Kernel Density Estimation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geospatial-data">Geospatial Data</a></li>
 </ul>
             </nav>
@@ -726,12 +728,12 @@ document.write(`
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Male Adult Literacy to the fourth power vs Log GNI per capita for various countries&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Log GNI per capita (Log US dollars, 2016)&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Male Adult Literacy to the fourth power (%^4, 2005-2014)&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="o">**</span><span class="mi">6</span><span class="p">,</span><span class="mf">10.02</span><span class="o">**</span><span class="mi">8</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span> <span class="o">-</span> <span class="p">(</span><span class="mi">100</span><span class="o">**</span><span class="mi">3</span><span class="p">),(</span><span class="mi">100</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="mi">100</span><span class="o">**</span><span class="mi">3</span><span class="p">));</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/7a641ebd3c4eec4dd3be342e85cb289807a25f17e30a85052776cd50789a389c.png" src="../../_images/7a641ebd3c4eec4dd3be342e85cb289807a25f17e30a85052776cd50789a389c.png" />
+<img alt="../../_images/033654a05cc7a8df3b2c04c7b760f249324b557a5ec368c35fba432d8610a33f.png" src="../../_images/033654a05cc7a8df3b2c04c7b760f249324b557a5ec368c35fba432d8610a33f.png" />
 </div>
 </div>
 <p>This looks great! However, we made a logical leap there by knowing to take the log of the x-variable and raise the y-variable to the fourth power. How did we know to do this?</p>
@@ -741,8 +743,9 @@ document.write(`
 <p><img alt="" src="../../_images/tukey_mosteller.png" /></p>
 <p>In the diagram above, each curve represents a direction that your data can trend in. For example, our original adult literacy vs GNI graph was trending towards the top left, corresponding to the top-left of the Tukey-Mosteller diagram. Looking at the top left curve, we can see that it is surrounded by several suggestions, namely <span class="math notranslate nohighlight">\(\log{X}, \sqrt{X}, Y^2\)</span> and <span class="math notranslate nohighlight">\(Y^3\)</span>. Looking at the pattern, it seems like we want to transform the x-axis to increase slower and/or transform the y-axis to increase faster. From there, we can trial and error a bunch of different transformations until we find something that works! Note that we don’t have to use both a x-axis and a y-axis transformation, a lot of times just a single transformation is enough!</p>
 </section>
+</section>
 <section id="kernel-density-estimation">
-<h3>Kernel Density Estimation<a class="headerlink" href="#kernel-density-estimation" title="Permalink to this heading">#</a></h3>
+<h2>Kernel Density Estimation<a class="headerlink" href="#kernel-density-estimation" title="Permalink to this heading">#</a></h2>
 <p>A kernel density estimate (KDE) is a smooth, continuous function that is meant to give us a general idea of where the data lies along a dataset. You can think of it as attempting to approximate a histogram with a single line. For example, we can add a KDE on top of the histogram made in the <a class="reference internal" href="types.html"><span class="doc std std-doc">previous subchapter</span></a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -837,9 +840,9 @@ document.write(`
 </div>
 </div>
 </section>
-</section>
 <section id="geospatial-data">
 <h2>Geospatial Data<a class="headerlink" href="#geospatial-data" title="Permalink to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Geopandas</span></code> and <code class="docutils literal notranslate"><span class="pre">Plotly</span></code> can be used to make some awesome geospatial maps in pandas. Read <a class="reference external" href="https://towardsdatascience.com/visualizing-geospatial-data-in-python-e070374fe621">here</a> to learn more about plotting with <code class="docutils literal notranslate"><span class="pre">geopandas</span></code> and read <a class="reference external" href="https://plotly.com/python/choropleth-maps/">here</a> to learn more about plotting with <code class="docutils literal notranslate"><span class="pre">plotly's</span> <span class="pre">chloropleth</span></code> maps.</p>
 </section>
 </section>
 
@@ -882,6 +885,15 @@ document.write(`
         <p class="prev-next-title">Basic Visualizations</p>
       </div>
     </a>
+    <a class="right-next"
+       href="../05-regex/regex.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">RegEx</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -899,9 +911,9 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transformations">Transformations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tukey-mosteller-bulge-diagram">Tukey-Mosteller Bulge Diagram</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kernel-density-estimation">Kernel Density Estimation</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kernel-density-estimation">Kernel Density Estimation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geospatial-data">Geospatial Data</a></li>
 </ul>
   </nav></div>
