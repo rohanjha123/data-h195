@@ -55,6 +55,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="../../_static/plotly.min.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
@@ -308,7 +309,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -324,6 +327,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-guide">General Guide</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -344,7 +355,17 @@ document.write(`
 <li><p><strong>Qualitative Ordinal:</strong> Qualitative ordinal variables represent categories with a meaningful order or ranking. The intervals between the categories are not uniform or well-defined. Economic examples include <a class="reference external" href="https://www.investopedia.com/terms/c/creditrating.asp#toc-credit-ratings-scale">credit ratings</a>, income classes (low, middle or high), the <a class="reference external" href="https://hdr.undp.org/data-center/human-development-index#/indicies/HDI">HDI</a>, etc.</p></li>
 <li><p><strong>Qualitative Nominal:</strong> Qualitative nominal variables represent categories or groups with no inherent order or ranking. They are distinct and unrelated categories. Economic examples include the various types of industries, the names of various currencies, the names of countries in a trade agreement, etc.</p></li>
 </ul>
-<p><strong>Important Note:</strong> Be careful between quantitative discrete and qualitative ordinal variables in particular. For example, someone may argue that the <a class="reference external" href="https://hdr.undp.org/data-center/human-development-index#/indicies/HDI">HDI</a> is a quantitative discrete variable. However, the difference between countries with HDIs of 0.9 vs 0.7 is not necessairly the same as the difference between countries with HDIs of 0.7 vs 0.5, something that we would expect from a quantitative variable. In other words, for the HDI, intervals between the categories are not necessarily uniform or well-defined. Another example of a confusing variable could be a child’s years in school, where the difference between year 12 and year 8 is not necessairly the same as the difference between year 8 and year 4.</p>
+<p><strong>Important Note:</strong> Be careful between quantitative discrete and qualitative ordinal variables in particular. For example, someone may argue that the <a class="reference external" href="https://hdr.undp.org/data-center/human-development-index#/indicies/HDI">HDI</a> is a quantitative discrete variable. However, the difference between countries with HDIs of 0.9 vs 0.7 is not necessairly the same as the difference between countries with HDIs of 0.7 vs 0.5, something that we would expect from a quantitative variable. In other words, for the HDI, intervals between the categories are not necessarily uniform or well-defined. Another example of a confusing variable could be a child’s grade/year in school, where the difference between grade 12 and grade 8 is not necessairly the same as the difference between grade 8 and grade 4.</p>
+<section id="general-guide">
+<h2>General Guide<a class="headerlink" href="#general-guide" title="Permalink to this heading">#</a></h2>
+<p>Below, we’ve included a general guide on which kind of plot to use when plotting different variable types. While we simply suggest which plots to make here, the next two subchapters elaborate on these types of plots in more detail, read those if you have any questions. This guide is by no means comprehensive, and ultimately the kind of plot you should make depends on the data you need to visualize. For example, if you need to visualize differences between countries, a geographic plot may be better than any of the plots below.</p>
+<ul class="simple">
+<li><p>If you are plotting two quantitative continuous variables, a scatter plot or 2D KDE plot could be helpful.</p></li>
+<li><p>If you are plotting a qualitative variable and a quantitative continuous variable, overlaid histograms or side-by-side box/violinplots could be helpful.</p></li>
+<li><p>If you are plotting a qualitative variable and a quantitative discrete variable, a bar chart could be helpful.</p></li>
+<li><p>If you are plotting time data, a line plot could be helpful.</p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -401,6 +422,20 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-guide">General Guide</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
