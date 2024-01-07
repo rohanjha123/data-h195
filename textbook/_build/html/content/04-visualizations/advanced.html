@@ -339,6 +339,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kernel-density-estimation">Kernel Density Estimation</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geospatial-data">Geospatial Data</a></li>
 </ul>
             </nav>
         </div>
@@ -742,7 +743,103 @@ document.write(`
 </section>
 <section id="kernel-density-estimation">
 <h3>Kernel Density Estimation<a class="headerlink" href="#kernel-density-estimation" title="Permalink to this heading">#</a></h3>
+<p>A kernel density estimate (KDE) is a smooth, continuous function that is meant to give us a general idea of where the data lies along a dataset. You can think of it as attempting to approximate a histogram with a single line. For example, we can add a KDE on top of the histogram made in the <a class="reference internal" href="types.html"><span class="doc std std-doc">previous subchapter</span></a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">wb_df</span><span class="p">[</span><span class="s1">&#39;Primary completion rate: Female: </span><span class="si">% o</span><span class="s1">f relevant age group: 2015&#39;</span><span class="p">],</span><span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">stat</span><span class="o">=</span><span class="s1">&#39;density&#39;</span><span class="p">);</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Percent of Females who Completed their Primary Education across Various Countries in 2015&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Percent Completing Primary School&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Density&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/a1ed5c251333d066c449abec95c1cd71b75dbfc2bea0aa7559716ce01d676da6.png" src="../../_images/a1ed5c251333d066c449abec95c1cd71b75dbfc2bea0aa7559716ce01d676da6.png" />
+</div>
+</div>
+<p>As you can see, the kernel density estimate does a fairly decent job of approximating the distribution of the data. Look <a class="reference external" href="https://mathisonian.github.io/kde/">here</a> for a beautiful explanation of how KDEs are calculated.</p>
+<p>There are also multiple ways you can use KDE’s to visualize 2D distributions of data. Some examples are shown below using <code class="docutils literal notranslate"><span class="pre">seaborn's</span></code> <code class="docutils literal notranslate"><span class="pre">.jointplot()</span></code> and <code class="docutils literal notranslate"><span class="pre">.kdeplot()</span></code>. We plot the primary school completion rate for males vs females across different countries in 2015.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">jointplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">wb_df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Primary completion rate: Female: </span><span class="si">% o</span><span class="s1">f relevant age group: 2015&#39;</span><span class="p">,</span>
+                <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Primary completion rate: Male: </span><span class="si">% o</span><span class="s1">f relevant age group: 2015&#39;</span><span class="p">);</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Primary Schooling Completion Rate (2015)&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mf">1.02</span><span class="p">)</span> 
+<span class="c1"># sup title helps us move the title further up</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Females (%)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Males (%)&#39;</span><span class="p">);</span>
+<span class="c1"># No KDE here, just a scatter with histograms</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/e657b5d96c1550931a3ddc514222ec386fbb28e0dec6eb7b736ac289781b51be.png" src="../../_images/e657b5d96c1550931a3ddc514222ec386fbb28e0dec6eb7b736ac289781b51be.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">jointplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">wb_df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Primary completion rate: Female: </span><span class="si">% o</span><span class="s1">f relevant age group: 2015&#39;</span><span class="p">,</span>
+                <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Primary completion rate: Male: </span><span class="si">% o</span><span class="s1">f relevant age group: 2015&#39;</span><span class="p">,</span><span class="n">kind</span> <span class="o">=</span> <span class="s1">&#39;reg&#39;</span><span class="p">);</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Primary Schooling Completion Rate (2015)&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mf">1.02</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Females (%)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Males (%)&#39;</span><span class="p">);</span>
+<span class="c1"># A KDE, histograms and a regression line here</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/70e633fb027048e2aa56072b3c0f09d10ccb7357fd9fafcdafb125c5f5e8db42.png" src="../../_images/70e633fb027048e2aa56072b3c0f09d10ccb7357fd9fafcdafb125c5f5e8db42.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">jointplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">wb_df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Primary completion rate: Female: </span><span class="si">% o</span><span class="s1">f relevant age group: 2015&#39;</span><span class="p">,</span>
+                <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Primary completion rate: Male: </span><span class="si">% o</span><span class="s1">f relevant age group: 2015&#39;</span><span class="p">,</span><span class="n">kind</span> <span class="o">=</span> <span class="s1">&#39;kde&#39;</span><span class="p">);</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Primary Schooling Completion Rate (2015)&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mf">1.02</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Females (%)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Males (%)&#39;</span><span class="p">);</span>
+<span class="c1"># Only KDEs here</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/d061be1fe6967b41bd05a4dab38d7ccfbf1e393f6ca8b027b7b4a3d39d9a1d8b.png" src="../../_images/d061be1fe6967b41bd05a4dab38d7ccfbf1e393f6ca8b027b7b4a3d39d9a1d8b.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">kdeplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">wb_df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Primary completion rate: Female: </span><span class="si">% o</span><span class="s1">f relevant age group: 2015&#39;</span><span class="p">,</span>
+                <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Primary completion rate: Male: </span><span class="si">% o</span><span class="s1">f relevant age group: 2015&#39;</span><span class="p">);</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Primary Schooling Completion Rate (2015)&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mf">1.02</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Females (%)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Males (%)&#39;</span><span class="p">);</span>
+<span class="c1"># The same kde plot as with jointplot, but without fancy axes</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/d96c8dddb5ce6aca32ecd93c0c06629ca86e89fac625bbfdceca140488fbdbac.png" src="../../_images/d96c8dddb5ce6aca32ecd93c0c06629ca86e89fac625bbfdceca140488fbdbac.png" />
+</div>
+</div>
+<p>The two plots above are 2-dimensional KDE plots. There are more points where the lines are closer together, and fewer points where they are further apart. We can also set the <code class="docutils literal notranslate"><span class="pre">fill</span></code> parameter to <code class="docutils literal notranslate"><span class="pre">True</span></code> to shade in our 2D KDE plot and get a <a class="reference external" href="https://www.quanthub.com/what-are-density-plots/">density plot</a> where the darker shades represent more data points.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">jointplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">wb_df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Primary completion rate: Female: </span><span class="si">% o</span><span class="s1">f relevant age group: 2015&#39;</span><span class="p">,</span>
+                <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Primary completion rate: Male: </span><span class="si">% o</span><span class="s1">f relevant age group: 2015&#39;</span><span class="p">,</span><span class="n">kind</span> <span class="o">=</span> <span class="s1">&#39;kde&#39;</span><span class="p">,</span> 
+              <span class="n">fill</span> <span class="o">=</span> <span class="kc">True</span><span class="p">);</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Primary Schooling Completion Rate (2015)&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mf">1.02</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Females (%)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Males (%)&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/7775bc2ac35d20ffcd2154db1a98050fcb0fb292f50c34759a3b435aa2331ab1.png" src="../../_images/7775bc2ac35d20ffcd2154db1a98050fcb0fb292f50c34759a3b435aa2331ab1.png" />
+</div>
+</div>
 </section>
+</section>
+<section id="geospatial-data">
+<h2>Geospatial Data<a class="headerlink" href="#geospatial-data" title="Permalink to this heading">#</a></h2>
 </section>
 </section>
 
@@ -805,6 +902,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kernel-density-estimation">Kernel Density Estimation</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geospatial-data">Geospatial Data</a></li>
 </ul>
   </nav></div>
 
