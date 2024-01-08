@@ -335,7 +335,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#groupbys">GroupBys</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#groupbys">GroupBys</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aggregate">Aggregate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#filter">Filter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-columns-and-aggregations">Multiple Columns and Aggregations</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pivot-tables">Pivot Tables</a></li>
 </ul>
             </nav>
@@ -590,6 +595,8 @@ ________________________________________________________________________
 </div>
 </div>
 </div>
+<section id="aggregate">
+<h3>Aggregate<a class="headerlink" href="#aggregate" title="Permalink to this heading">#</a></h3>
 <p>Now, we wish to collapse all the groupby objects into a single row, and return a DataFrame that has all the single rows across all groupby objects. We can do that with the help of an aggregation function which tells <code class="docutils literal notranslate"><span class="pre">pandas</span></code> how to combine the rows. For example, the aggregation function <code class="docutils literal notranslate"><span class="pre">.mean()</span></code> tells <code class="docutils literal notranslate"><span class="pre">pandas</span></code> to take the mean of the rows in the groupby object. We do this below.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1839,6 +1846,326 @@ Name: c_beer, dtype: float64
 </div>
 </div>
 <p>Selecting the relevant columns like this is especially important if you may have other strings in your DataFrame and you’re attempting to do an aggregation function which doesn’t work with strings (for example, it makes no sense to try to take the mean of strings). If you try to use an aggregation function on a type of data it cannot work with, your code will error.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>st_name</th>
+      <th>year</th>
+      <th>c_beer</th>
+      <th>beer_tax</th>
+      <th>btax_dollars</th>
+      <th>population</th>
+      <th>salestax</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AL</td>
+      <td>1970</td>
+      <td>33098</td>
+      <td>72.341130</td>
+      <td>2.370</td>
+      <td>3450</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AL</td>
+      <td>1971</td>
+      <td>37598</td>
+      <td>69.304600</td>
+      <td>2.370</td>
+      <td>3497</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AL</td>
+      <td>1972</td>
+      <td>42719</td>
+      <td>67.149190</td>
+      <td>2.370</td>
+      <td>3539</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AL</td>
+      <td>1973</td>
+      <td>46203</td>
+      <td>63.217026</td>
+      <td>2.370</td>
+      <td>3580</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AL</td>
+      <td>1974</td>
+      <td>49769</td>
+      <td>56.933796</td>
+      <td>2.370</td>
+      <td>3627</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1703</th>
+      <td>WY</td>
+      <td>1999</td>
+      <td>12423</td>
+      <td>0.319894</td>
+      <td>0.045</td>
+      <td>492</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>1704</th>
+      <td>WY</td>
+      <td>2000</td>
+      <td>12595</td>
+      <td>0.309491</td>
+      <td>0.045</td>
+      <td>494</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>1705</th>
+      <td>WY</td>
+      <td>2001</td>
+      <td>12808</td>
+      <td>0.300928</td>
+      <td>0.045</td>
+      <td>494</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>1706</th>
+      <td>WY</td>
+      <td>2002</td>
+      <td>13191</td>
+      <td>0.296244</td>
+      <td>0.045</td>
+      <td>499</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>1707</th>
+      <td>WY</td>
+      <td>2003</td>
+      <td>15535</td>
+      <td>0.289643</td>
+      <td>0.045</td>
+      <td>501</td>
+      <td>4.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>1708 rows × 7 columns</p>
+</div></div></div>
+</div>
+</section>
+<section id="filter">
+<h3>Filter<a class="headerlink" href="#filter" title="Permalink to this heading">#</a></h3>
+<p>Aggregate functions collapse all the groupby objects into a single row. Filter functions instead return a <code class="docutils literal notranslate"><span class="pre">True/False</span></code> for each groupby object and only keep the rows for whom the groupby object returned true. For example, let’s say we want to keep all the states where the <code class="docutils literal notranslate"><span class="pre">beer_tax</span></code> was larger than 50% at least once. We could accomplish that using the following line of code.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;st_name&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="s1">&#39;beer_tax&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">50</span><span class="p">)</span><span class="o">.</span><span class="n">any</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>st_name</th>
+      <th>year</th>
+      <th>c_beer</th>
+      <th>beer_tax</th>
+      <th>btax_dollars</th>
+      <th>population</th>
+      <th>salestax</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AL</td>
+      <td>1970</td>
+      <td>33098</td>
+      <td>72.341130</td>
+      <td>2.370</td>
+      <td>3450</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AL</td>
+      <td>1971</td>
+      <td>37598</td>
+      <td>69.304600</td>
+      <td>2.370</td>
+      <td>3497</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AL</td>
+      <td>1972</td>
+      <td>42719</td>
+      <td>67.149190</td>
+      <td>2.370</td>
+      <td>3539</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AL</td>
+      <td>1973</td>
+      <td>46203</td>
+      <td>63.217026</td>
+      <td>2.370</td>
+      <td>3580</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AL</td>
+      <td>1974</td>
+      <td>49769</td>
+      <td>56.933796</td>
+      <td>2.370</td>
+      <td>3627</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1365</th>
+      <td>SC</td>
+      <td>1999</td>
+      <td>101782</td>
+      <td>12.283935</td>
+      <td>1.728</td>
+      <td>3975</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>1366</th>
+      <td>SC</td>
+      <td>2000</td>
+      <td>104116</td>
+      <td>11.884457</td>
+      <td>1.728</td>
+      <td>4023</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>1367</th>
+      <td>SC</td>
+      <td>2001</td>
+      <td>105525</td>
+      <td>11.555637</td>
+      <td>1.728</td>
+      <td>4060</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>1368</th>
+      <td>SC</td>
+      <td>2002</td>
+      <td>108000</td>
+      <td>11.375785</td>
+      <td>1.728</td>
+      <td>4104</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>1369</th>
+      <td>SC</td>
+      <td>2003</td>
+      <td>103058</td>
+      <td>11.122302</td>
+      <td>1.728</td>
+      <td>4147</td>
+      <td>5.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>102 rows × 7 columns</p>
+</div></div></div>
+</div>
+<p>In the above code, the <a class="reference external" href="https://www.freecodecamp.org/news/python-lambda-function-explained/#:~:text=They're%20commonly%20referred%20to,to%20use%20the%20function%20once."><code class="docutils literal notranslate"><span class="pre">lambda</span></code> function</a> defines a Python function that takes in a groupby object named <code class="docutils literal notranslate"><span class="pre">x</span></code>. The function then extracts the <code class="docutils literal notranslate"><span class="pre">beer_tax</span></code> Series from that groupby object, compares it to 50 and returns an array of <code class="docutils literal notranslate"><span class="pre">True/Falses</span></code> indicating whether or not the original value was greater than 50. Then, <code class="docutils literal notranslate"><span class="pre">.any()</span></code> outputs whether any (in other words: one or more) of those comparisons are true. If yes, the lambda function outputs true (meaning the filter keeps the rows from that groupby object) and if no, the lambda function outputs false (meaning the filter removes the rows from that groupby object). As you can see from the code below, only Alabama, Georgia and South Carolina have ever had <code class="docutils literal notranslate"><span class="pre">beer_tax</span></code> larger than 50%.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;st_name&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="s1">&#39;beer_tax&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">50</span><span class="p">)</span><span class="o">.</span><span class="n">any</span><span class="p">())[</span><span class="s1">&#39;st_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;AL&#39;, &#39;GA&#39;, &#39;SC&#39;], dtype=object)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="multiple-columns-and-aggregations">
+<h3>Multiple Columns and Aggregations<a class="headerlink" href="#multiple-columns-and-aggregations" title="Permalink to this heading">#</a></h3>
 <p>Finally, we can also groupby multiple columns. To demonstrate this, let us first create another categorical variable by adding in a <code class="docutils literal notranslate"><span class="pre">decade</span></code> column representing which decade the data is from.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2406,6 +2733,7 @@ Name: c_beer, dtype: float64
 </div></div></div>
 </div>
 </section>
+</section>
 <section id="pivot-tables">
 <h2>Pivot Tables<a class="headerlink" href="#pivot-tables" title="Permalink to this heading">#</a></h2>
 <p>While we could groupby multiple columns above, the resulting dataset was honestly a bit messy. If you’re interested in the relationship between two categorical variables and how they affect a third numerical variable, a pivot table is often best. For example, let us use a pivot table to visualize the average beer consumption across the decades for each state.</p>
@@ -2612,7 +2940,12 @@ Name: c_beer, dtype: float64
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#groupbys">GroupBys</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#groupbys">GroupBys</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aggregate">Aggregate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#filter">Filter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-columns-and-aggregations">Multiple Columns and Aggregations</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pivot-tables">Pivot Tables</a></li>
 </ul>
   </nav></div>
