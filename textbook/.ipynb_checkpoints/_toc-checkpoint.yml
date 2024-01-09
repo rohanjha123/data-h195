@@ -27,9 +27,7 @@ sections:
       - file: content/04-visualizations/advanced.ipynb
 - file: content/05-regex/regex.ipynb
 - file: content/06-api/api.ipynb
-# - file: content/06-sql/index.md
-#   sections:
-#       - file: content/06-sql/sql_1.ipynb
+- file: content/07-sql/sql.ipynb
 # - file: content/07-regressions/index.md
 # - file: content/08-web-scraping/index.md
 # - file: content/09-teachers-perspective/index.md
