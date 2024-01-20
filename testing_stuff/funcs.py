@@ -3,6 +3,8 @@ import pandas as pd
 from scipy import stats
 import matplotlib.pyplot as plt
 import regex as re
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
 
 def ttest(string, df_name = 'df'):
     if "ttest" in string and "by(" in string:
