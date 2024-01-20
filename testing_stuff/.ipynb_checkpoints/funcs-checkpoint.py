@@ -33,7 +33,7 @@ def ttest(string, df_name = 'df'):
         print(f"p_val = ttest.pvalue")
         print("print(f'T-stat: {t_stat}, P-value: {p_val}')")
 
-def filter_gen(df_name, string):
+def filter_gen(string, df_name='df'):
     if string.startswith("gen"):
         string = string.replace("gen ", "")
         str_split = string.split("=",1)
@@ -60,7 +60,7 @@ def describe(string, df_name='df'):
     if string.startswith('describe'):
         print(f'{df_name}.describe()')
             
-def corr(df_name, string):
+def corr(string, df_name='df'):
     if string.startswith("pwcorr"):
         string = string.replace("pwcorr ", "")
         words_lst = re.findall(r'[a-zA-Z]+',string)
