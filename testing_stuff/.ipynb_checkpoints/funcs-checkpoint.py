@@ -24,7 +24,6 @@ def main(string, df_name = 'df'):
     else:
         raise ValueError(f'Your function is not supported')
         
-
 def ttest(string, df_name = 'df'):
     eq_var = True
     nan_pol = 'propagate'
@@ -209,5 +208,5 @@ def reg(string, df_name = 'df'):
     elif "vce" in second_half and "cluster" in second_half:
         print(f"result = model.fit(cov_type='cluster', cov_kwds={{'groups': {df_name}{clustering_vars}}})")
     else:
-        raise ValueError(f'VCE type not recognize')
+        raise ValueError(f'VCE type not recognized')
     print("result.summary()")
