@@ -110,3 +110,92 @@ def hist(string, df_name='df'):
             print(f"{df_name}.hist(column='{str_split[0]}');")
         else:
             print(f"{df_name}.hist(column='{str_split[0]}',bins={num_bins});")
+            
+def reg(string, df_name = 'df'):
+    string = string[4:]
+    first_half, second_half = string, string
+    if "," in string:
+        first_half = string.split(",")[0]
+        second_half = string.split(",")[1]
+    if "if" in first_half:
+        if_statement = first_half.split("if")[1].strip()
+        first_half = first_half.split("if")[0].strip()
+        if "=" in if_statement:
+            splitted_if = if_statement.split("=")
+            print(f"{df_name}_filtered = {df_name}[{df_name}['{splitted_if[0].strip()}'] == {splitted_if[1].strip()}]")
+        elif "<" in if_statement:
+            splitted_if = if_statement.split("<")
+            print(f"{df_name}_filtered = {df_name}[{df_name}['{splitted_if[0].strip()}'] < {splitted_if[1].strip()}]")
+        elif ">" in if_statement:
+            splitted_if = if_statement.split(">")
+            print(f"{df_name}_filtered = {df_name}[{df_name}['{splitted_if[0].strip()}'] > {splitted_if[1].strip()}]")
+        else:
+            raise ValueError(f'Could not interpret if statement')
+        df_name = df_name + "_filtered"
+    y_var = first_half.split(" ")[0]
+    x_var = "'" + "', '".join(first_half.split(" ")[1:]) + "'"
+    if "vce" in second_half and "cluster" in second_half:
+        second_half_split = second_half.split("cluster")
+        clustering_vars = second_half_split[1][:-1].strip().split(" ")
+    if ' ' not in x_var:
+        if clustering_vars:
+            x_var_temp = x_var + ", '" + "', '".join(clustering_vars) + "'"
+            print(f"{df_name}_no_na = {df_name}[[{x_var_temp},'{y_var}']].dropna()")
+        else:
+            print(f"{df_name}_no_na = {df_name}[[{x_var},'{y_var}']].dropna()")
+        df_name = df_name + "_no_na"
+        print(f"x_df = {df_name}[{x_var}]")
+    elif "i." in x_var:
+        print(f"{df_name}_with_dummies = {df_name}.copy()")
+        pollution_with_dummies = pollution.copy()
+        df_name = df_name + "_with_dummies"
+        print(f"x_var = \"{x_var}\"")
+        x_var_new = "'" + "', '".join([i.strip("'") for i in x_var.split(", ") if not i.strip("'").startswith("i.")]) + "'"
+        print("x_var_new = \"'\" + \"', '\".join([i.strip(\"'\") for i in x_var.split(\", \") if not i.strip(\"'\").startswith(\"i.\")]) + \"'\"")
+        print(f"indicator_list = [m.strip(\"'\") for m in x_var.split('i.')[1:]]")
+        print("for indicator in indicator_list:")
+        print(f"    dummies = pd.get_dummies({df_name}[indicator])")
+        print(f"    dummies = dummies.iloc[:,1:]")
+        print(f"    dummies.columns = [str(x) + '_' + str(indicator) for x in dummies.columns]")
+        print(f"    {df_name} = pd.concat([{df_name},dummies],axis=1)")
+        print("    x_var_new = x_var_new + \", '\" + \"', '\".join(dummies.columns) + \"'\"")
+        print("x_var = x_var_new")
+        indicator_list = [m.strip("'") for m in x_var.split('i.')[1:]]
+        for indicator in indicator_list:
+            dummies = pd.get_dummies(pollution_with_dummies[indicator])
+            dummies = dummies.iloc[:,1:]
+            dummies.columns = [str(x) + '_' + str(indicator) for x in dummies.columns]
+            pollution_with_dummies = pd.concat([pollution_with_dummies,dummies],axis=1)
+            x_var_new = x_var_new + ", '" + "', '".join(dummies.columns) + "'"
+        x_var = x_var_new
+        if clustering_vars:
+            x_var_temp = x_var + ", '" + "', '".join(clustering_vars) + "'"
+            print(f"{df_name}_no_na = {df_name}[[{x_var_temp},'{y_var}']].dropna()")
+        else:
+            print(f"{df_name}_no_na = {df_name}[[{x_var},'{y_var}']].dropna()")
+        df_name = df_name + "_no_na"
+        print(f"x_df = {df_name}[[{x_var}]]")
+    else:
+        if clustering_vars:
+            x_var_temp = x_var + ", '" + "', '".join(clustering_vars) + "'"
+            print(f"{df_name}_no_na = {df_name}[[{x_var_temp},'{y_var}']].dropna()")
+        else:
+            print(f"{df_name}_no_na = {df_name}[[{x_var},'{y_var}']].dropna()")
+        df_name = df_name + "_no_na"
+        print(f"x_df = {df_name}[[{x_var}]]")
+
+    print(f"y_df = {df_name}['{y_var}']")
+    if 'noconstant' in second_half:
+        print("model = sm.OLS(y_df, x_df)")
+    else:
+        print("model = sm.OLS(y_df, sm.add_constant(x_df))")
+    if "vce" not in second_half:
+        print("result = model.fit()")
+    elif "vce" in second_half and "robust" in second_half:
+        print("result = model.fit(cov_type='HC3')")
+    elif "vce" in second_half and "cluster" in second_half:
+        #print(f"{df_name}{clustering_vars}") # {df_name}{clustering_vars}
+        print(f"result = model.fit(cov_type='cluster', cov_kwds={{'groups': {df_name}{clustering_vars}}})")
+    else:
+        raise ValueError(f'VCE type not recognize')
+    print("result.summary()")
