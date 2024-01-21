@@ -1,5 +1,5 @@
 [build-system]
-requires = ["hatchling","pandas","numpy","matplotlib","statsmodels","scipy"]
+requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
@@ -10,7 +10,7 @@ authors = [
 ]
 description = "Takes in Stata commands and outputs their Python equivalent"
 readme = "README.md"
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -19,12 +19,9 @@ classifiers = [
 ]
 dependencies = [
   "pandas",
-  "numpy",
-  "matplotlib",
-  "statsmodels",
-  "scipy",
 ]
 
 [project.urls]
-"Repository" = "https://github.com/rohanjha123/data-h195/blob/main/defining_funcs/funcs.py"
-"Bug Tracker" = "https://github.com/rohanjha123/data-h195/issues"
+Repository = "https://github.com/rohanjha123/data-h195/tree/main/creating_package"
+Functions = "https://github.com/rohanjha123/data-h195/blob/main/creating_package/src/stata2python/funcs.py"
+Issues = "https://github.com/rohanjha123/data-h195/issues"

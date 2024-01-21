@@ -1,10 +1,5 @@
-import numpy as np
 import pandas as pd
-from scipy import stats
-import matplotlib.pyplot as plt
 import regex as re
-import statsmodels.api as sm
-import statsmodels.formula.api as smf
 
 def main(string, df_name = 'df'):
     if string.startswith("ttest"):
