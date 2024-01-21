@@ -139,12 +139,12 @@ def reg(string, df_name = 'df'):
             raise ValueError(f'Could not interpret if statement')
         df_name = df_name + "_filtered"
     y_var = first_half.split(" ")[0]
-    print(f"y_var = \"{y_var}\"")
     x_var = "'" + "', '".join(first_half.split(" ")[1:]) + "'"
     if "vce" in second_half and "cluster" in second_half:
+        print(f"y_var = \"{y_var}\"")
         second_half_split = second_half.split("cluster")
         clustering_vars = second_half_split[1][:-1].strip().split(" ")
-    print(f"clustering_vars = {clustering_vars}")
+        print(f"clustering_vars = {clustering_vars}")
     if ' ' not in x_var:
         if clustering_vars:
             x_var_temp = x_var + ", '" + "', '".join(clustering_vars) + "'"
