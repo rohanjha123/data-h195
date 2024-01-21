@@ -17,9 +17,6 @@ classifiers = [
     "Operating System :: OS Independent",
     "Development Status :: 3 - Alpha",
 ]
-dependencies = [
-  "pandas",
-]
 
 [project.urls]
 Repository = "https://github.com/rohanjha123/data-h195/tree/main/creating_package"
