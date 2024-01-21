@@ -63,8 +63,8 @@ def describe(string, df_name='df'):
         print(f'{df_name}.describe()')
             
 def corr(string, df_name='df'):
-    if string.startswith("pwcorr"):
-        string = string.replace("pwcorr ", "")
+    if string.startswith("corr"):
+        string = string.replace("corr ", "")
         words_lst = re.findall(r'[a-zA-Z]+',string)
         print(f"{df_name}[{words_lst}].corr()")
     
