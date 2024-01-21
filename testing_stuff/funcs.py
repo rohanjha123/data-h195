@@ -7,7 +7,7 @@ import statsmodels.api as sm
 import statsmodels.formula.api as smf
 
 def main(string, df_name = 'df'):
-    if "ttest" in string:
+    if string.startswith("ttest"):
         ttest(string, df_name)
     elif string.startswith("gen"):
         filter_gen(string, df_name)
