@@ -1,6 +1,6 @@
 import regex as re
 
-def convert_s2p(string, df_name = 'df'):
+def stata2python(string, df_name = 'df'):
     if string.startswith("ttest"):
         ttest(string, df_name)
     elif string.startswith("gen"):
