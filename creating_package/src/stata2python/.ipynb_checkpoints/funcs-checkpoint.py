@@ -1,6 +1,6 @@
 import regex as re
 
-def main(string, df_name = 'df'):
+def stata2python(string, df_name = 'df'):
     if string.startswith("ttest"):
         ttest(string, df_name)
     elif string.startswith("gen"):
@@ -19,6 +19,8 @@ def main(string, df_name = 'df'):
         raise ValueError(f'Your function is not supported')
         
 def ttest(string, df_name = 'df'):
+    print("import numpy as np")
+    print("from scipy import stats")
     eq_var = True
     nan_pol = 'propagate'
 
@@ -32,7 +34,7 @@ def ttest(string, df_name = 'df'):
     if 'if !missing' in var:
         var = var.split(" ")[0]
         nan_pol = 'omit'
-
+        
     print(f"catvar_vals = np.unique({df_name}['{catvar}'])")
     print(f"if len(catvar_vals) != 2:")
     print(f"    raise ValueError(f'The categorical variable ({catvar}) doesn\\'t have 2 groups')")
@@ -77,6 +79,7 @@ def corr(string, df_name='df'):
     print(f"{df_name}[{words_lst}].corr()")
     
 def scatter(string, df_name = 'df'):
+    print("import matplotlib.pyplot as plt")
     string = string.replace("twoway (","")[:-2]
     command = string.split(",")[0].strip()
     customizations = string.split(",")[1].strip()
@@ -103,6 +106,7 @@ def scatter(string, df_name = 'df'):
             print(f"plt.ylabel('{ytitle}');")
 
 def hist(string, df_name='df'):
+    print("import matplotlib.pyplot as plt")
     string = string.replace('histogram ','')
     str_split = string.split(", ")
     num_bins_change = False
@@ -117,6 +121,7 @@ def hist(string, df_name='df'):
         print(f"{df_name}.hist(column='{str_split[0]}',bins={num_bins});")
             
 def reg(string, df_name = 'df'):
+    print("import statsmodels.api as sm")
     string = string[4:]
     clustering_vars = ''
     first_half, second_half = string, string
