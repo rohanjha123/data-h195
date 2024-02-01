@@ -1,6 +1,7 @@
 import regex as re
 
 def stata2python(string, df_name = 'df'):
+    print("import pandas as pd")
     if string.startswith("ttest"):
         ttest(string, df_name)
     elif string.startswith("gen"):
