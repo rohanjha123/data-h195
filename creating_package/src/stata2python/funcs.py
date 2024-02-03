@@ -34,20 +34,11 @@ def ttest(string, df_name = 'df'):
     var = catvar_split[0].split(",")[0]
     if 'if !missing' in var:
         var = var.split(" ")[0]
-        nan_pol = 'omit'
-        
+        nan_pol = 'omit'    
     print(f"catvar_vals = np.unique({df_name}['{catvar}'])")
-    print(f"if len(catvar_vals) != 2:")
-    print(f"    raise ValueError(f'The categorical variable ({catvar}) doesn\\'t have 2 groups')")
-
     print(f"df_1 = {df_name}[{df_name}['{catvar}'] == catvar_vals[0]]")
     print(f"df_2 = {df_name}[{df_name}['{catvar}'] == catvar_vals[1]]")
-
-    print(f"ttest = stats.ttest_ind(df_1['{var}'], df_2['{var}'], equal_var={eq_var}, nan_policy='{nan_pol}')")
-
-    print(f"t_stat = ttest.statistic")
-    print(f"p_val = ttest.pvalue")
-    print("print(f'T-stat: {t_stat}, P-value: {p_val}')")
+    print(f"stats.ttest_ind(df_1['{var}'], df_2['{var}'], equal_var={eq_var}, nan_policy='{nan_pol}')")
 
 def filter_gen(string, df_name='df'):
     string = string.replace("gen ", "")
