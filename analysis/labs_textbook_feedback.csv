@@ -1,0 +1,724 @@
+﻿Lab Number,Timestamp,Email Address,How relevant was this lab to the content taught in lecture?,How difficult did you find this lab?,How much time did you spend on this lab?,Anything you like about this lab?,Anything you dislike about this lab?,Anything else you'd like to tell us?,Which of these classes have you taken before?,How much did you use the textbook while working through this lab?,"If you did use the textbook, did you find it helpful?","If you did not use the textbook, why not?",What are your thoughts on the textbook? What does it do well; what could it do better?,Did you spot any blatant mistakes in the textbook?,The codeword for this lab is
+1,1/18/24 17:53,,5,3,2 - 3 hours,,,,"Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+1,1/18/24 19:03,,3,2,1 - 2 hours,-,Pretty basic stuff,-,None of the above,1,3,"I have always used documentation and Stack Overflow when having problems. Thus, I did not really think about the textbook I just started looking at the documentation when I had problems – probably could have done it faster if I had used the textbook.",Still have not gotten used to using it,NIL,I got it!
+1,1/18/24 20:38,,4,3,30 minutes - 1 hour,I like how it refreshed my memory of basic functions,"For some of the questions I had correct code, but the autograder did not pass and I was confused as to why",,"Data 8, CS 61A/CS 88/CS 61B",1,,Did not really need it,,,I got it!
+1,1/18/24 21:49,,3,4,1 - 2 hours,,,,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",2,2,,,,I got it!
+1,1/18/24 22:05,,5,3,Less than 30 minutes,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,3,,,,I got it!
+1,1/18/24 22:43,,3,3,30 minutes - 1 hour,,"the wordings for inflation, GDP deflator, real price are really confusing.",,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,I use the pandas.pydata.org website to help me with different DataFrame techniques I can use,,,I got it!
+1,1/18/24 22:47,,3,3,1 - 2 hours,,"I think the hint was a bit confusing. ""some numpy function"" is pretty vague and I don't think specifying np.arange gives too much away",,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,I have seen Pandas before,,,I got it!
+1,1/19/24 10:13,mingsennteo@berkeley.edu,4,2,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",2,3,,,,I got it!
+1,1/19/24 10:52,sakkolli@berkeley.edu,4,2,30 minutes - 1 hour,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",3,4,,,,I got it!
+1,1/19/24 11:13,wjustin9@berkeley.edu,3,3,Less than 30 minutes,,,,"Data 8, Data 100",1,,,,,I got it!
+1,1/19/24 12:49,thomascl@berkeley.edu,3,1,Less than 30 minutes,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+1,1/19/24 14:45,chanjoo0427@berkeley.edu,3,5,More than 4 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,1,I already know the techniques,,,I got it!
+1,1/19/24 14:59,thomashu@berkeley.edu,3,3,1 - 2 hours,N/A,N/A,N/A,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,I knew how to do the questions,,,I got it!
+1,1/19/24 16:04,xesxwindlle@berkeley.edu,1,1,1 - 2 hours,,,,Data 100,1,1,,,,I got it!
+1,1/19/24 17:48,ericjm117@berkeley.edu,2,5,3 - 4 hours,,,I have to review a lot :),None of the above,3,2,,,,I got it!
+1,1/19/24 18:33,jingyaxia@berkeley.edu,3,2,30 minutes - 1 hour,,,1.13 tests seem to be wrong,"Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,3,didn't feel the need to,,,I got it!
+1,1/20/24 8:26,lisaycliu@berkeley.edu,5,3,30 minutes - 1 hour,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+1,1/20/24 16:39,erinlakshmanan@berkeley.edu,3,4,1 - 2 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",1,1,,,,I got it!
+1,1/20/24 17:57,nuochen329@berkeley.edu,4,3,1 - 2 hours,Use real application data,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",2,2,i like to self learn and mix use of study materials,,,I got it!
+1,1/20/24 19:09,malvesn25@berkeley.edu,3,2,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,Material covered was review.,,,I got it!
+1,1/20/24 19:56,20020618sxk@berkeley.edu,3,3,30 minutes - 1 hour,Cool,More instructions! Please,,"Data 8, Data 100, Stat 20",3,4,,,,I got it!
+1,1/20/24 21:08,qianzzz@berkeley.edu,4,3,Less than 30 minutes,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+1,1/21/24 11:03,stephenliu@berkeley.edu,4,2,30 minutes - 1 hour,,,,"Stat 20, CS 61A/CS 88/CS 61B",2,2,,,,I got it!
+1,1/21/24 13:34,mckenziediep@berkeley.edu,4,4,2 - 3 hours,,,,Stat 20,5,5,,,,I got it!
+1,1/21/24 15:28,weissik@berkeley.edu,2,4,2 - 3 hours,,,"Maybe its just because the content is going to be covered in Tuesday's lecture but I felt like nothing that we did in the lab, except for sort_values, was talked about in lecture. Lecture seemed to mainly be about Github, where Google stores their computers, what Jupyter notebooks is, etc. I felt like I had to just read the textbook + look at pandas documentation online to self learn and figure out the lab. Nonetheless, the lab was interesting and fun though!","Data 8, Stat 20",4,3,"I used the textbook, but I used pandas documentation online a lot more actually. It was just simpler and quicker to find what I was looking for. Also on https://pandas.pydata.org/ I get to see all the arguments that a method or function takes, sometimes the textbook doesn't explain all possible arguments which I think is helpful.",,,I got it!
+1,1/21/24 17:03,shuran1030@berkeley.edu,4,5,1 - 2 hours,,,,,3,3,,,,I got it!
+1,1/21/24 20:14,adibose@berkeley.edu,4,3,30 minutes - 1 hour,I think it was a good balance - wasn't too overwhelming but still learned something!,,,CS 61A/CS 88/CS 61B,2,,,,,I got it!
+1,1/21/24 21:21,gdeng24@berkeley.edu,3,4,30 minutes - 1 hour,it was good,,would like walkthrough videos like data100,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,1,Did not need to,didnt use it,no,I got it!
+1,1/21/24 21:31,serena.gu@berkeley.edu,5,2,Less than 30 minutes,I like being able to apply pandas to relevant economic concepts. The grader check function is also pretty cool.,,,"Stat 20, CS 61A/CS 88/CS 61B",1,,I mainly referenced the online documentation for pandas.,,,I got it!
+1,1/22/24 9:36,varmin.44@berkeley.edu,3,2,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,1,"other resources are more direct, like the pandas api.",,,I got it!
+1,1/22/24 9:50,atticus.ginsborg@berkeley.edu,4,1,30 minutes - 1 hour,It was enjoyable going through the prices and seeing how it changed.,"I think that the wording on 1.13 as is can be quite confusing. Personally I think it should maybe rephrased in the following way: ""Sort the dataframe `prices` by the `price` column, in descending order. Notice how the result should be sorting the dataframe itself, not a copy of the dataframe. You should be able to do this in one line of code.",,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,I did not need it due to my previous experience.,,,I got it!
+1,1/22/24 11:06,nbrewer@berkeley.edu,4,3,1 - 2 hours,"I appreciate how the lab is made up of smaller questions that build upon previous ones, so you don't ever get stuck with no ideas on how to proceed.","I wish some of the smaller questions were left to the student such as 1.14. As a complete newbie to Python, it would be more beneficial to my learning to see an example and then have to do it myself.",,None of the above,5,4,,"I like that it is example driven with little snippets of code. I like that it doesn't waste time with documentation and details that aren't necessary for our purposes. I did find it a little difficult to track down certain information about filtering data frames, I was expecting it to be near where .loc, .iloc, and [] are introduced so it took me a sec to find it in the next section.",,I got it!
+1,1/22/24 11:08,j3n___j3n@berkeley.edu,3,4,3 - 4 hours,None,It was only hard for me because I never learned python so I asked for a lot of help and watch many videos to get this done.,,Stat 20,1,,I didn't find out there was a textbook until I finished the lab.,It could include more codes,,I got it!
+1,1/22/24 12:06,althea9200@berkeley.edu,3,3,30 minutes - 1 hour,"It folds out progressively and gradually, with a right pace to review the Data8 things.",,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,I googled everything I forgot about pandas---maybe it's not that difficult to use textbook,,,I got it!
+1,1/22/24 12:30,krxxll@berkeley.edu,3,2,1 - 2 hours,,,,None of the above,2,2,,,,I got it!
+1,1/22/24 12:33,krxxll@berkeley.edu,3,3,1 - 2 hours,,,,None of the above,3,3,,,,I got it!
+1,1/22/24 14:20,athenahz@berkeley.edu,3,3,30 minutes - 1 hour,,,,Data 8,2,,,,,I got it!
+1,1/22/24 17:48,cstec15@berkeley.edu,5,3,30 minutes - 1 hour,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+1,1/22/24 20:33,maxgm@berkeley.edu,4,4,2 - 3 hours,I liked how some questions encouraged us to find creative ways to get the code to run.,"It made it a bit harder because each question immediately builds on the previous question, so it's hard to get subsequent questions right.",,Data 8,1,,I found it more helpful to go over the problems I was facing during my discussion section. In the future I plan on using the textbook if I can't figure out how to answer a particular question.,,,I got it!
+1,1/22/24 22:26,ariti@berkeley.edu,3,4,3 - 4 hours,"I thought it was pretty clear. I am a beginner coder and I think I'm able to pick up the patterns, plus the additional help on Ed is great.",,,Stat 20,5,5,,I think the examples are great so that's really helpful,,I got it!
+1,1/23/24 9:38,gulianxiao@berkeley.edu,3,3,1 - 2 hours,,,,,3,,,,,I got it!
+1,1/23/24 9:39,kamal.nahas@berkeley.edu,3,3,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+1,1/23/24 10:33,asrithd@berkeley.edu,4,3,1 - 2 hours,Really good refresher on the lecture and using pandas!,"Some of the errors are a bit buggy, ex. when I reindexed the dates in the dataframe, the rest of my code was erroring and I had to rerun the whole thing to avoid getting the error.",Nope!,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,Did not need!,,,I got it!
+1,1/23/24 10:58,zhaohungtan1209@berkeley.edu,5,2,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+1,1/23/24 11:06,christinechen3993@berkeley.edu,3,4,2 - 3 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+1,1/23/24 13:06,adorawen@berkeley.edu,4,3,1 - 2 hours,I like how applicable it is to real-world economic research!,"Perhaps a bit non-beginner friendly, especially because there were a lot of commands that I was not exposed to before.",,"Data 8, CS 61A/CS 88/CS 61B",3,5,,,,I got it!
+1,1/23/24 13:40,yifanbao@berkeley.edu,1,3,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",4,4,,,,I got it!
+1,1/23/24 13:45,sgutta@berkeley.edu,3,3,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+1,1/23/24 14:10,aryakrishnan@berkeley.edu,5,1,30 minutes - 1 hour,I liked how it walked through pandas and explained how to use its basic functions.,no.,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,Most information is readily available online on the documentation. That is all I used to solve this lab.,,,I got it!
+1,1/23/24 14:56,bharathr@berkeley.edu,5,2,Less than 30 minutes,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,5,,,,I got it!
+1,1/23/24 15:06,thgiacalone@berkeley.edu,3,4,1 - 2 hours,,,,"Data 8, Stat 20",3,5,,Fantastic layout,Nope,I got it!
+1,1/23/24 15:07,farihababar02@berkeley.edu,5,2,30 minutes - 1 hour,"I liked looking at inflation, so some econ being intertwined with pandas practice!",N/A,N/A,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,3,I was able to google pandas sites for commands I didn't remember.,It seems to have a good amount of detail!,No,I got it!
+1,1/23/24 15:11,felipe_mach@berkeley.edu,5,4,2 - 3 hours,Creates some sort of familiarity with pandas.,Nothing.,N/A,"Stat 20, CS 61A/CS 88/CS 61B",3,5,I used.,I like the textbook is simple and easy to navigate.,No.,I got it!
+1,1/23/24 16:09,pkq2002@berkeley.edu,5,2,30 minutes - 1 hour,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+1,1/23/24 16:29,ajaymadala2025@berkeley.edu,3,3,2 - 3 hours,,,,Stat 20,3,3,,,,I got it!
+1,1/23/24 16:33,s_edwards@berkeley.edu,5,3,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,I am already familiar with Pandas,,,I got it!
+1,1/23/24 16:38,david_fan1@berkeley.edu,5,2,Less than 30 minutes,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,1,Already familiar with basic pandas operation,,,I got it!
+1,1/23/24 16:48,kavya1106@berkeley.edu,4,3,Less than 30 minutes,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",2,,,,,I got it!
+1,1/23/24 16:56,saiftali@berkeley.edu,5,1,Less than 30 minutes,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+1,1/23/24 16:57,annyshe@berkeley.edu,5,2,1 - 2 hours,I like how concise and effective the lab was in teaching my the skills I need. I liked all the resources provided too.,No.,N/A,"Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,I utilized the resources/links provided in the lab or just googled panda functions.,,,I got it!
+1,1/23/24 17:21,yini21@berkeley.edu,5,3,Less than 30 minutes,,,,"Data 8, Stat 20",5,4,,,,I got it!
+1,1/23/24 17:46,arnavgurudatt@berkeley.edu,5,2,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+1,1/23/24 17:48,cmurran26@berkeley.edu,4,3,1 - 2 hours,I appreciate the way it allowed us to practice the methods and syntax of pandas,The only thing I would maybe suggest is that it's not easy to understand the error message on the failed test case. Maybe pandas error messaging is simply less helpful; I only mention it because error messaging in other coding classes I've taken has always been very helpful.,N/A,"Stat 20, CS 61A/CS 88/CS 61B",1,,I mostly used the slides. I honestly just didn't think to use the textbook I'm sure I will next time.,Haven't taken a look yet.,^,I got it!
+1,1/23/24 18:07,ishani@berkeley.edu,5,2,Less than 30 minutes,,,typo for 1.8 - should be rows/columns for filtered_prices not filtered_prices_subset (which we don't even create until 1.9),"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+1,1/23/24 18:34,alexisbala@berkeley.edu,5,3,1 - 2 hours,"I liked how we included concepts we learn in other econ classes, like inflation.","For one of the questions (1.11), we had to change the code to make the real price incorrect in order to pass the test case, which was confusing.",,"Data 8, Stat 20",4,4,,"The textbook is helpful through its use of examples, but some explanations of what the code is doing exactly (like why it's written the way it is, what each argument means, kind of similar to documentation) would be helpful.",Not that I noticed.,I got it!
+1,1/23/24 21:34,alec.morgan@berkeley.edu,5,2,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,"Forgot about it as a resource, wasn't necessary due to lecture and discussion",,,I got it!
+1,1/23/24 23:35,yigao@berkeley.edu,5,3,3 - 4 hours,autograder save my life,,,Data 8,5,5,,,,I got it!
+1,1/24/24 1:41,luyi0915@berkeley.edu,3,3,More than 4 hours,,,,Data 8,3,3,,,,I got it!
+1,1/24/24 11:42,joanna_li@berkeley.edu,4,4,3 - 4 hours,,,,"Data 8, Stat 20",5,2,,,,I got it!
+1,1/24/24 16:06,moria123zhut@berkeley.edu,2,4,More than 4 hours,"I liked that everything was elaborate really good and specifications were made It made it easier for me (no background in Python, Jupyter or Jupyter Labs , only R - Tidyverse ) to understand how I need to reach these tasks and start practice on this library.","We only reviewed past lab material on Tuesday, at the same time a new lab was posted. I didn't grasp the lab concepts until the last class, which left no time to figure out how things should be done in this task. This sequence has left me feeling behind, despite keeping pace with the schedule, because the instruction came much later than needed.",,None of the above,4,4,,,,I got it!
+1,1/24/24 16:59,zmfong@berkeley.edu,3,3,2 - 3 hours,,"Q13 was a little confusing because I first did "" prices.sort_values(by='price', ascending=False) "" but was graded as wrong. Then I tried "" prices.sort_values(by='price', ascending=False, inplace=True) "" which spit out the same dataframe but that was marked as correct.",,Data 8,4,4,,It is good and helpful; I wish there was more detail but I understand it is fairly new.,,I got it!
+1,1/24/24 17:03,mgarcia182@berkeley.edu,5,5,More than 4 hours,I like how the autograder was used so that we knew when we were wrong. I also like how question 10 showed us a glimpse of what the final outcome should look like.,"I don't really like datahub, but I think that it was a really useful platform.",Looking forward to learning in this class!,None of the above,1,,I completely forgot that there was a textbook. No wonder why I was struggling so much.,,,I got it!
+1,1/24/24 17:17,ventimdg@berkeley.edu,3,1,Less than 30 minutes,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+1,1/24/24 17:37,hoon1130@berkeley.edu,4,4,2 - 3 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",4,4,,,,I got it!
+1,1/24/24 18:26,lorene.li@berkeley.edu,4,4,1 - 2 hours,,,,Data 8,2,3,,,,I got it!
+1,1/24/24 20:56,zhiningcui1010@berkeley.edu,5,4,3 - 4 hours,kind of hard but not too hard,some of the answers are given,,"Stat 20, CS 61A/CS 88/CS 61B",4,5,,,,I got it!
+1,1/24/24 20:59,anasannia@berkeley.edu,4,4,2 - 3 hours,,,,Stat 20,5,4,,,,I got it!
+1,1/24/24 21:26,alexramos@berkeley.edu,4,4,1 - 2 hours,It was fun to be walked through it,I didn't like that the lecture material had to catch up to the lab questions. I wish it had been assigned after the relevant slides were reviewed in class.,,Stat 20,1,,Forgot about it,,,I got it!
+1,1/24/24 22:12,zhangtianxiang@berkeley.edu,5,3,30 minutes - 1 hour,no,no,no,"Data 8, Data 100, CS 61A/CS 88/CS 61B",2,4,,,,I got it!
+1,1/24/24 22:14,biancarein@berkeley.edu,4,3,1 - 2 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",2,2,,,,I got it!
+1,1/24/24 22:25,elaine.shi@berkeley.edu,2,3,2 - 3 hours,Good introduction to Python,There were a good amount of errors on the lab.,It would be helpful for more relevant functions to be taught/highlighted when doing this lab.,Stat 20,1,,I mostly used google and Ed,,,I got it!
+1,1/24/24 22:41,sejalgoel@berkeley.edu,4,4,1 - 2 hours,,,,"Data 8, Stat 20",1,1,,,,I got it!
+1,1/24/24 23:25,wilsonlai@berkeley.edu,5,3,30 minutes - 1 hour,Nominal/real prices. But also that it is not too tedious and relevant.,,,"Data 8, CS 61A/CS 88/CS 61B",1,3,,,,I got it!
+1,1/24/24 23:40,aneeshpatel@berkeley.edu,3,1,Less than 30 minutes,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+1,1/25/24 0:10,sineaddecleir@berkeley.edu,2,3,1 - 2 hours,I liked that it forced me to use a variety of skills and that there were multiple ways to answer questions.,,,Stat 20,1,,I found it easier to use slack overflow. I do not know how to navigate the textbook.,,,I got it!
+1,1/25/24 1:33,andrew.zhang38@berkeley.edu,5,3,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+1,1/25/24 3:58,bluemgzn@berkeley.edu,3,3,2 - 3 hours,,,,"Stat 20, CS 61A/CS 88/CS 61B",3,,,,,I got it!
+1,1/25/24 10:35,michelle-hom@berkeley.edu,5,3,3 - 4 hours,,,,Stat 20,5,5,,"It does good in reviewing the material and showing the example code. Also, it is easy to find the code I need.",,I got it!
+1,1/25/24 11:10,alice.modica@berkeley.edu,3,3,3 - 4 hours,how it relates to economics,,,Stat 20,4,4,,More complex examples could be useful,,I got it!
+1,1/25/24 11:26,yyzheng@berkeley.edu,4,3,30 minutes - 1 hour,,,,Stat 20,1,3,,,,I got it!
+1,1/25/24 12:18,leahperez@berkeley.edu,4,3,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+1,1/25/24 13:25,vincen_le@berkeley.edu,5,3,1 - 2 hours,,,,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",2,3,,,,I got it!
+1,1/25/24 13:35,bennettfees@berkeley.edu,5,4,30 minutes - 1 hour,good descriptions of the problems,a few minor issues that resulted in errors in the auto grader when some problems was re-run,Nope!,Stat 20,1,1,Didn't feel like I needed it and thought it was a work in progress,Havn't looked at it yet,no,I got it!
+1,1/25/24 13:47,eduardohinojosa@berkeley.edu,4,3,1 - 2 hours,It challenged me to try coding in a different way.,,,"Data 8, CS 61A/CS 88/CS 61B",1,,I genuinely forgot about the textbook while I was working on the lab. Will use it in the future,,,I got it!
+1,1/25/24 14:05,jocelynquach@berkeley.edu,2,4,1 - 2 hours,It was an interesting lab to complete and made me use my coding skills I haven't used in a while.,"I understand this class does not go through python, but I think the assignments should have maybe a small coding guide linked to it so for more new coders we aren't as lost compared to more experienced ones. This class, again, is still an Economics class with data 8 as a recommended prereq, however most of us probably took the class a while ago and haven't refreshed our coding skills in Python.",,Data 8,3,,I didn't know there was a textbook.,,,I got it!
+1,1/25/24 14:32,tenleygonor@berkeley.edu,4,3,1 - 2 hours,Good intro to Pandas,Nope,,"Stat 20, CS 61A/CS 88/CS 61B",3,4,,I like how organized it is by each section and covers all types of code we need for the lab.,No,I got it!
+1,1/25/24 14:53,shine_like_ruby@berkeley.edu,4,5,More than 4 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,Because all of them are things we've learned in other classes.,,,I got it!
+1,1/25/24 15:08,pmelnick@berkeley.edu,4,3,1 - 2 hours,Understood mostly from lecture + extra work done OYO,,,Stat 20,1,,Used lecture notebooks and slides + pre-rec lab instead,,,I got it!
+1,1/25/24 15:09,arianasiordia@berkeley.edu,3,2,1 - 2 hours,n/a,n/a,"I thought this lab was nice, simple, in the futire I would like to see hypothetical rreal world issues and manipulating, visualizing, and analyzing that","Data 8, CS 61A/CS 88/CS 61B",1,,I did not need it,,,I got it!
+1,1/25/24 16:40,davidcao8717@berkeley.edu,2,3,2 - 3 hours,,,,"Data 8, Stat 20",1,1,,,,I got it!
+1,1/25/24 16:41,awsafarko@berkeley.edu,3,4,3 - 4 hours,It's a good introduction,I wish there were more resources to know about the functions and syntaxes we would need,More examples of table manipulation with a syntax guide would be helpful,"Data 8, Stat 20",1,,,,,I got it!
+1,1/25/24 17:21,cissycai615@berkeley.edu,3,3,2 - 3 hours,,,,Data 8,3,3,,,,I got it!
+1,1/25/24 17:59,varunagarwal004@berkeley.edu,5,1,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+1,1/25/24 19:22,alexisdang@berkeley.edu,3,4,2 - 3 hours,,,,"Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+1,1/25/24 19:34,ryan.liou@berkeley.edu,4,3,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",3,,,,,I got it!
+1,1/25/24 19:54,michaelyip0219@berkeley.edu,4,4,2 - 3 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",4,4,,,,I got it!
+1,1/25/24 20:19,andrew49875@berkeley.edu,3,3,1 - 2 hours,,,,"Data 8, Data 100, Stat 20",4,3,Searching is more useful,,,I got it!
+1,1/25/24 20:59,hernandez31.yvette@berkeley.edu,2,5,More than 4 hours,,I struggled a lot with the coding :(,I think it would be great if we can shorten the amount of questions,Data 8,5,3,,more examples,,I got it!
+1,1/25/24 22:22,zakpuno@berkeley.edu,4,4,1 - 2 hours,I enjoyed utilizing some dataframe manipulation functions like loc and iloc that we learned in class.,"The question 1.11 was a great question but just took me a while to do. I understand that knowing how to calculate nominal and real GDP wasn't absolutely essential to the completion of this problem, but it would have been nice to have gone into the problem with a little more context (perhaps a short overview during lecture).",Q1.13 is giving me problems but I am going to post on Ed right now! Thank you!!,Data 8,4,5,,,,I got it!
+1,1/25/24 22:32,czycai@berkeley.edu,2,5,More than 4 hours,,,,"Data 100, Stat 20, CS 61A/CS 88/CS 61B",5,4,,,,I got it!
+1,1/25/24 22:38,qilizhang@berkeley.edu,4,4,More than 4 hours,,,,Stat 20,2,2,I personally refer the pandas official web book.,,,I got it!
+1,1/25/24 23:11,mjyoshida@berkeley.edu,3,3,1 - 2 hours,I thought the lab was informative on data table creation,N/A,N/A,"Data 8, Data 100, CS 61A/CS 88/CS 61B",3,3,N.A,Textbook is good so far,NA,I got it!
+1,1/25/24 23:19,erenzulfikar@berkeley.edu,4,3,30 minutes - 1 hour,,,,Data 100,2,,,,,I got it!
+1,1/25/24 23:20,juicyucbkid_zhz@berkeley.edu,3,3,2 - 3 hours,Everything,Nothing,Nothing,Data 8,3,3,I use google,It's perfect,no,I got it!
+1,1/26/24 0:34,lilile@berkeley.edu,4,4,More than 4 hours,The hints,,,Stat 20,3,4,,I like that there are text next to the code to describe what the code actually does,,I got it!
+1,1/26/24 0:57,milenalu@berkeley.edu,3,3,30 minutes - 1 hour,This lab really helps me knowing Python in deep.,None,None,Stat 20,3,3,,It looks great,None,I got it!
+1,1/26/24 1:20,ximiaowang@berkeley.edu,4,4,3 - 4 hours,,,,Stat 20,5,5,,,,I got it!
+1,1/26/24 2:09,egalindo@berkeley.edu,5,2,2 - 3 hours,The variety and difficulty level of the questions (for it being our first lab).,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+1,1/26/24 3:52,tracey.ley@berkeley.edu,3,3,1 - 2 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,I struggled more with the economic concepts like the gdp deflation and real price than the coding.,,,I got it!
+1,1/26/24 9:49,khadija2002@berkeley.edu,4,4,30 minutes - 1 hour,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,I wasn't aware there is a textbook,,,I got it!
+1,1/26/24 12:27,joshua.gunning@berkeley.edu,3,3,1 - 2 hours,The instructions were very clear and gave helpful hints.,This lab had no issues.,Keep up the good work with how these labs are organized and structured :),Stat 20,2,3,N/A,The textbook was very straightforward and easy to read.,I could not find any mistakes.,I got it!
+1,1/26/24 13:18,alexcal2025@berkeley.edu,4,2,30 minutes - 1 hour,"straightforward, helpful documentation",not a lot of analysis,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,used lecture slides and google search for commands,,,I got it!
+1,1/26/24 13:37,gaelf.gutierrez@berkeley.edu,4,3,30 minutes - 1 hour,,,,Stat 20,1,,The lecture slides were sufficient.,,,I got it!
+1,1/26/24 13:44,caglakirdar@berkeley.edu,5,2,30 minutes - 1 hour,The question were very clear and there wasn't any confusion due to the wording/nature of the questions.,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,No need.,,,"There's something wrong, and I will contact the course staff"
+1,1/26/24 14:04,madelinedm@berkeley.edu,5,3,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+1,1/26/24 14:57,dedeliu@berkeley.edu,4,4,1 - 2 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",2,4,,,,I got it!
+1,1/26/24 16:03,mileschun@berkeley.edu,4,3,2 - 3 hours,I liked that it was a refresher on some common python code we need to know,no,no,Data 8,1,,I just used online libraries to figure out what code I needed to solve the problems,N/A`,N/A,I got it!
+1,1/26/24 16:23,zaiyana@berkeley.edu,4,3,30 minutes - 1 hour,no,no,no,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",3,3,,,no,I got it!
+1,1/26/24 16:31,vrinda26@berkeley.edu,4,4,3 - 4 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+1,1/26/24 16:52,artemgev@berkeley.edu,3,4,1 - 2 hours,,,I found the discussion very helpful and am excited to continue going to it,"Data 8, CS 61A/CS 88/CS 61B",2,,,,,I got it!
+1,1/26/24 17:18,jelee25@berkeley.edu,5,3,2 - 3 hours,,,,"Data 8, Stat 20",1,,,,,I got it!
+1,1/26/24 17:30,82sookim@berkeley.edu,4,4,1 - 2 hours,I liked how the data frame (prices) was connected to economics.,"There were some minor errors, but the clarifications on ed helped me figure it out!",Thank you :) I love this class,"Data 8, CS 61A/CS 88/CS 61B",3,4,,,,I got it!
+1,1/26/24 17:41,brandonbui@berkeley.edu,3,4,2 - 3 hours,,,,CS 61A/CS 88/CS 61B,2,,,,,I got it!
+1,1/26/24 18:12,ianseklawi@berkeley.edu,3,5,More than 4 hours,,,,Data 8,2,4,,,,I got it!
+1,1/26/24 18:26,walton_bullard25@berkeley.edu,3,3,1 - 2 hours,,,,Stat 20,1,,,,,I got it!
+1,1/26/24 18:57,oduk5732@berkeley.edu,3,4,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,1,,,,I got it!
+1,1/26/24 19:58,christianw@berkeley.edu,4,3,1 - 2 hours,knowing right away if our code passes the test.,n/a,"very fun, and very educational","Stat 20, CS 61A/CS 88/CS 61B",2,3,,"Relatively useful, a little dense at times.",Not to my knowledge,I got it!
+1,1/26/24 20:03,jingnan_yu@berkeley.edu,5,3,2 - 3 hours,I like that there are sufficient explanations and some hints,no,,Stat 20,5,5,,It does well demonstrating codes and I like the use of various examples,,I got it!
+1,1/26/24 20:15,chloebyun@berkeley.edu,2,4,2 - 3 hours,,It would be nice if the questions were bolded or in bigger font so it is easier to locate.,,Stat 20,5,5,,More coding examples,,I got it!
+1,1/26/24 20:23,huaxiao@berkeley.edu,3,3,30 minutes - 1 hour,,,,"Data 8, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+1,1/26/24 20:48,egalindo@berkeley.edu,5,3,2 - 3 hours,,,"I think there's a mistake with the test for 1.13, there shouldn't be an assertion error? Or I'm just not understanding the error.","Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",3,4,,,,I got it!
+1,1/26/24 20:48,anup.nadesan@berkeley.edu,3,3,2 - 3 hours,N/A,N/A,N/A,"Data 8, Stat 20",3,4,I used it,It is brilliant,N/A,I got it!
+1,1/26/24 21:28,casbill@berkeley.edu,3,3,1 - 2 hours,,,,"Stat 20, CS 61A/CS 88/CS 61B",1,,I forgot it existed,,,I got it!
+1,1/26/24 21:41,dolgormaabasbayar@berkeley.edu,4,3,2 - 3 hours,the emojis!,-,-,"Stat 20, CS 61A/CS 88/CS 61B",1,1,-,-,-,I got it!
+1,1/26/24 22:51,angelali28@berkeley.edu,1,5,3 - 4 hours,,,I feel very lost in that there isn't a documentation like the Python Reference in data8 that we had and the API documentation was too complex to look at.,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",2,2,,,,I got it!
+1,1/26/24 22:53,nabeelq@berkeley.edu,4,3,30 minutes - 1 hour,,,,,1,,,,,I got it!
+1,1/26/24 23:10,kikihu1209@berkeley.edu,2,4,2 - 3 hours,,Question 1.11 took me way too much time as I had difficulty using list comprehension and numpy function...,,"Data 8, CS 61A/CS 88/CS 61B",1,,I forgot,,,I got it!
+1,1/26/24 23:43,a.ydenchi@berkeley.edu,4,3,1 - 2 hours,"First time seeing autograder, pretty cool",Autograder error could be somewhat confusing,,Stat 20,1,,I used pandas reference website,,,I got it!
+1,1/27/24 0:07,jessqwy@berkeley.edu,3,3,2 - 3 hours,,,,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+1,1/27/24 17:25,laiching06@berkeley.edu,4,4,2 - 3 hours,,,,Stat 20,1,,,,,I got it!
+1,1/31/24 23:44,aaravkapur03@berkeley.edu,4,3,2 - 3 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",4,4,,,,I got it!
+1,2/2/24 19:02,elisamarconell@berkeley.edu,5,3,2 - 3 hours,,,,Stat 20,2,,Lectures were enough!,,,I got it!
+1,2/5/24 20:54,jlee1112@berkeley.edu,5,4,More than 4 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+1,2/20/24 18:15,jnpnguyen@berkeley.edu,4,2,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+2,1/24/24 14:30,nbrewer@berkeley.edu,4,4,2 - 3 hours,,,,None of the above,3,3,,,,I got it!
+2,1/24/24 14:32,johan.oelgaard@berkeley.edu,3,2,2 - 3 hours,,It would be nice if there had been a link to the FRED documentation – the request link does not really do anything,It would be nice if labs were released after the topic was covered in class not before,None of the above,3,2,,,,I got it!
+2,1/24/24 14:33,jgte29@berkeley.edu,5,4,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+2,1/24/24 16:45,nuochen329@berkeley.edu,4,3,1 - 2 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,3,,,,I got it!
+2,1/24/24 17:15,chanjoo0427@berkeley.edu,3,5,3 - 4 hours,,,,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",3,2,,,,I got it!
+2,1/24/24 19:05,krxxll@berkeley.edu,3,4,More than 4 hours,,,,None of the above,4,2,,,,I got it!
+2,1/24/24 22:18,thomashu@berkeley.edu,3,3,1 - 2 hours,I liked the exploration of API keys,NA,NA,"Data 8, Data 100, Stat 20",1,,Didn't know it was done!,,,I got it!
+2,1/24/24 23:58,thomascl@berkeley.edu,3,5,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+2,1/25/24 1:13,sarahkiefer@berkeley.edu,5,3,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+2,1/25/24 12:27,mingsennteo@berkeley.edu,4,2,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,I have seen this material previously based on my extracurricular activities and I know where to find specific resources for it.,,,I got it!
+2,1/25/24 14:08,wjustin9@berkeley.edu,3,2,30 minutes - 1 hour,,API was a bit confusing,,"Data 8, Data 100",4,4,,,,I got it!
+2,1/25/24 14:46,ishani@berkeley.edu,5,3,1 - 2 hours,,API/fetch section was confusing - need more information/background than just linking some documentation,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",2,4,,,,I got it!
+2,1/25/24 14:53,kavya1106@berkeley.edu,3,2,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+2,1/25/24 15:00,quang.nguyenln@berkeley.edu,5,4,3 - 4 hours,,,,"Stat 20, CS 61A/CS 88/CS 61B",4,4,,,,I got it!
+2,1/25/24 15:06,gulianxiao@berkeley.edu,3,3,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+2,1/25/24 19:44,leahperez@berkeley.edu,3,4,1 - 2 hours,I've taken a ton of data and cs classes here and this is the first time I learned about using APIs so that was really cool and felt like practical knowledge.,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+2,1/25/24 23:14,jingyaxia@berkeley.edu,3,4,1 - 2 hours,,"I was really confused because I worked on the first version of the lab, and it felt like there were duplicate questions etc. Then theres a new version somehow? but I wasted a lot of time in the process.",,"Data 100, Stat 20, CS 61A/CS 88/CS 61B",2,3,,,,I got it!
+2,1/26/24 16:17,sakkolli@berkeley.edu,2,3,1 - 2 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",4,5,,,,I got it!
+2,1/26/24 19:26,aryakrishnan@berkeley.edu,4,2,30 minutes - 1 hour,Lab was a great representation of the information provided in lecture,I would have liked a little information on how to do the api stuff but for the most part it was very straightforward.,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,Most information is readily available on the docs online. This is what I used to solve this lab.,,,I got it!
+2,1/27/24 23:29,madelinedm@berkeley.edu,4,3,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+2,1/28/24 21:36,stephenliu@berkeley.edu,4,4,1 - 2 hours,,,,"Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+2,1/29/24 2:01,shuran1030@berkeley.edu,5,3,30 minutes - 1 hour,Love the PPC and API parts!!!,,,,1,,,,,I got it!
+2,1/29/24 10:37,joanna_li@berkeley.edu,3,4,More than 4 hours,,,,Data 8,5,4,,,,I got it!
+2,1/29/24 10:50,vincen_le@berkeley.edu,5,3,1 - 2 hours,,,,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",3,4,,,,I got it!
+2,1/29/24 11:20,christinechen3993@berkeley.edu,4,2,2 - 3 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",3,5,,,,I got it!
+2,1/29/24 18:22,varunagarwal004@berkeley.edu,4,4,2 - 3 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",2,3,,,,I got it!
+2,1/29/24 21:14,20020618sxk@berkeley.edu,3,3,2 - 3 hours,,,,"Data 8, Data 100, Stat 20",3,3,,,,I got it!
+2,1/29/24 21:17,tmdals6033@berkeley.edu,3,4,More than 4 hours,.,.,.,None of the above,3,3,.,.,.,I got it!
+2,1/30/24 0:08,malvesn25@berkeley.edu,3,4,1 - 2 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",4,4,,,,I got it!
+2,1/30/24 1:53,sophiasung@berkeley.edu,4,4,1 - 2 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",4,5,,,,I got it!
+2,1/30/24 13:50,sgutta@berkeley.edu,4,4,1 - 2 hours,,,,,5,,,,,I got it!
+2,1/30/24 14:14,lisaycliu@berkeley.edu,3,3,1 - 2 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+2,1/30/24 14:20,atticus.ginsborg@berkeley.edu,4,2,1 - 2 hours,I found investigating college majors really interesting.,"Having not worked with api's before that much I found the ""/..."" really confusing as I thought we didn't have to replace the `...` as normally ellipsis are on their own not with a slash in front if you want us to replace it.",Somewhere in question 2 you skipped to 3.2 from 2.1 which was confusing.,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",2,5,,,,I got it!
+2,1/30/24 14:56,j3n___j3n@berkeley.edu,3,3,2 - 3 hours,the beginning of the lab where it was straight up basic codes,API code part,,Stat 20,1,2,,put in more codes,,I got it!
+2,1/30/24 16:38,ariti@berkeley.edu,5,4,3 - 4 hours,,,,Stat 20,4,5,,,,I got it!
+2,1/30/24 17:11,minsittaung@berkeley.edu,3,4,More than 4 hours,I thought it was cool to learn how to retrieve data from the Fed and use it for future analysis!,"I think it was a little long, but that was just me.",nope!,"Data 8, CS 61A/CS 88/CS 61B",5,5,,,,I got it!
+2,1/30/24 17:27,qianzzz@berkeley.edu,3,3,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+2,1/30/24 17:51,michelle-hom@berkeley.edu,4,4,2 - 3 hours,I like how it uses real data and is applicable to real life,,,Stat 20,4,4,,I wish it called more attention to the FRED API documentation and how we could reference the documentation to find the parameters.,,I got it!
+2,1/30/24 18:41,arnavgurudatt@berkeley.edu,3,2,1 - 2 hours,First time using FRED API!,"I think it was a little unclear on how to do the fetch call (I didn't realize I had to change the endpoint to something specific and even looking at online documentation wasn't that helpful), maybe just make the endpoint explicitly written next time?",,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,I felt like I could do the problems without it,,,I got it!
+2,1/30/24 18:41,sejalgoel@berkeley.edu,4,4,More than 4 hours,,,,"Data 8, Stat 20",2,2,,,,I got it!
+2,1/30/24 19:14,cstec15@berkeley.edu,5,4,1 - 2 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+2,1/30/24 20:15,pkq2002@berkeley.edu,3,4,1 - 2 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",4,2,,,,I got it!
+2,1/30/24 20:25,biancarein@berkeley.edu,4,3,1 - 2 hours,Learning APIs and how to navigate,All the typos,the numbering for section 2 still says section 3,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+2,1/30/24 20:37,aneeshpatel@berkeley.edu,5,2,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+2,1/30/24 21:05,felipe_mach@berkeley.edu,5,4,2 - 3 hours,Working with API keys.,Nothing.,N/A,"Stat 20, CS 61A/CS 88/CS 61B",1,1,I mostly used Google and documentation from FRED.,"The textbook is great, I just didn't use it this time.",No,I got it!
+2,1/30/24 22:35,david_fan1@berkeley.edu,4,3,1 - 2 hours,API practice,could be more clear the need to change the endpoint parameter,,"Stat 20, CS 61A/CS 88/CS 61B, None of the above",1,,Already familiar with pandas,,,I got it!
+2,1/30/24 23:50,adorawen@berkeley.edu,4,4,1 - 2 hours,super applicable!!!,,,"Data 8, CS 61A/CS 88/CS 61B",4,5,,,,I got it!
+2,1/31/24 14:36,delatorredk@berkeley.edu,2,4,3 - 4 hours,,,"In previous CS/DS classes I have taken they provide a lab/hw guide as you're working through the assignment and it's very helpful. For example, in C88C there are homework and lab instructions that give me information about the lab, and each individual problem, and they go into further details. These labs, nor the homework have much of a reference or guide.","Data 8, Stat 20, CS 61A/CS 88/CS 61B",4,3,,,,I got it!
+2,1/31/24 15:11,michaelyip0219@berkeley.edu,4,4,2 - 3 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+2,1/31/24 16:38,zmfong@berkeley.edu,2,4,3 - 4 hours,Helpful to learn .groupby .,"I found the API part confusing, despite reading the textbook and referring to the lecture slides (which I felt didn't connect super well to the lab).",,Data 8,4,4,,,,I got it!
+2,1/31/24 16:38,mckenziediep@berkeley.edu,2,4,3 - 4 hours,,,,Stat 20,4,4,,,,I got it!
+2,1/31/24 16:53,athenahz@berkeley.edu,3,5,2 - 3 hours,,,,,1,,,,,I got it!
+2,1/31/24 17:27,wilsonlai@berkeley.edu,5,3,1 - 2 hours,I like how this lab teach us how to use APIs!,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",4,5,,,,I got it!
+2,1/31/24 17:33,serena.gu@berkeley.edu,4,3,30 minutes - 1 hour,,,,"Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+2,1/31/24 20:38,xesxwindlle@berkeley.edu,3,3,More than 4 hours,fetching data from an officail website is quite interesting,,,"Data 100, Stat 20, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+2,1/31/24 21:15,huaxiao@berkeley.edu,3,3,1 - 2 hours,,,,,3,,,,,I got it!
+2,1/31/24 21:24,alexisdang@berkeley.edu,4,4,2 - 3 hours,,,,"Stat 20, CS 61A/CS 88/CS 61B",5,5,,,,I got it!
+2,1/31/24 22:34,lorene.li@berkeley.edu,4,4,2 - 3 hours,,,,Data 8,4,3,,,,I got it!
+2,1/31/24 22:42,lilile@berkeley.edu,3,4,More than 4 hours,,,,Stat 20,4,3,,,,I got it!
+2,1/31/24 22:55,moria123zhut@berkeley.edu,4,5,More than 4 hours,"
+The division of tasks into segments was beneficial for clarity, allowing me to grasp each step's objectives and the specific elements I needed to focus on, particularly for question 4.","Would like to get more hands-on with stuff like JOIN, PIVOT, and GROUP BY. I want to get to a point where using them more flow.",Spent a lot of time on the API part -- had no idea what to do there for a while,Stat 20,4,4,,,,I got it!
+2,2/1/24 1:49,yigao@berkeley.edu,5,4,More than 4 hours,its nice i get the idea of where i do wrong by looking at the auto grader,,,Data 8,5,5,,,,I got it!
+2,2/1/24 12:12,zhaohungtan1209@berkeley.edu,2,3,1 - 2 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+2,2/1/24 13:56,alec.morgan@berkeley.edu,5,4,1 - 2 hours,,,missing Q3.3 in this lab? It went from Q3.2 -> Q3.4,"Data 8, Data 100, CS 61A/CS 88/CS 61B",2,5,,"Textbook is necessary to complete lab almost, had a really difficult time finding where series_id were listed out on FRED website until pulling up textbook",,I got it!
+2,2/1/24 14:20,emmaeeckhout@berkeley.edu,3,3,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,2,,,,I got it!
+2,2/1/24 14:23,elaine.shi@berkeley.edu,2,4,2 - 3 hours,,"An extra section after the optional section :(, please put an optional section last.",,Stat 20,4,4,,,,I got it!
+2,2/1/24 14:44,ericjm117@berkeley.edu,2,5,More than 4 hours,,,,None of the above,3,2,,,,I got it!
+2,2/1/24 14:47,pmelnick@berkeley.edu,4,4,3 - 4 hours,,,,Stat 20,3,5,,,,I got it!
+2,2/1/24 15:20,bluemgzn@berkeley.edu,3,3,2 - 3 hours,,,,,3,,,,,I got it!
+2,2/1/24 15:22,alexcal2025@berkeley.edu,4,4,3 - 4 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",5,5,,,,I got it!
+2,2/1/24 15:41,weissik@berkeley.edu,4,4,3 - 4 hours,,,,"Data 8, Stat 20",4,3,,,,I got it!
+2,2/1/24 15:50,bennettfees@berkeley.edu,4,4,3 - 4 hours,good,no,beans?,Stat 20,1,3,didn't need to,good,no,I got it!
+2,2/1/24 15:50,ventimdg@berkeley.edu,4,3,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+2,2/1/24 16:02,alexisbala@berkeley.edu,5,3,2 - 3 hours,I really liked using real data from FRED! It made doing my own research studies or just explorations of data seem much more feasible.,,,"Data 8, Stat 20",5,5,,"I think the explanations make a lot of sense and the examples are helpful, but I learn best when I see multiple examples of different situations so including a few extra could be helpful.",,I got it!
+2,2/1/24 16:28,dolgormaabasbayar@berkeley.edu,5,3,3 - 4 hours,The real life connections,the length :'),-,"Stat 20, CS 61A/CS 88/CS 61B",4,5,-,-,-,I got it!
+2,2/1/24 16:29,ajaymadala2025@berkeley.edu,3,3,2 - 3 hours,,,,Stat 20,3,3,,,,I got it!
+2,2/1/24 17:00,tenleygonor@berkeley.edu,5,4,2 - 3 hours,It was easier to find example codes in the lecture slides for this lab,The API key code part was very tricky for me,,"Stat 20, CS 61A/CS 88/CS 61B",4,4,,I think its organized very well and has all the right information to do the labs,NO,I got it!
+2,2/1/24 17:33,mollypigot@berkeley.edu,4,4,1 - 2 hours,I liked the first part with the major data... it felt quite straightforward,The questions relating to API data were difficult to navigate with the parameters,,Data 8,4,4,,,,I got it!
+2,2/1/24 17:55,anasannia@berkeley.edu,2,5,2 - 3 hours,,,,Stat 20,4,3,,,,I got it!
+2,2/1/24 18:01,ryan.liou@berkeley.edu,4,4,1 - 2 hours,,,,"Data 8, Data 100",2,,,,,I got it!
+2,2/1/24 18:28,caglakirdar@berkeley.edu,4,3,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+2,2/1/24 19:19,s_edwards@berkeley.edu,5,4,30 minutes - 1 hour,I like that we were able to actually use an API and obtain data with it.,I feel like it was a little unclear on how to properly use the api. It would've been nice to receive a little more guidance.,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,"I have familiarity with these libraries. Anything I forgot or didn't know, I simply looked it up on Google.",,,I got it!
+2,2/1/24 19:37,khadija2002@berkeley.edu,3,3,1 - 2 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+2,2/1/24 20:46,casbill@berkeley.edu,5,2,30 minutes - 1 hour,,,I passed the autograder checks but was still getting errors with fetch,"Stat 20, CS 61A/CS 88/CS 61B",2,4,,,,I got it!
+2,2/1/24 20:47,alexramos@berkeley.edu,4,5,3 - 4 hours,cool start to learning about APIs,"I got stuck in the API part with all the jargon. The textbook was helpful, but not knowing what the lab meant by ""endpoint"" made it difficult.",,Stat 20,3,3,,"search function is amazing, it could potentially be organized by lab",,I got it!
+2,2/1/24 21:32,cmurran26@berkeley.edu,4,3,2 - 3 hours,I like the introduction of graphs,I passed some of the tests but my code seemed to error anyways. Unsure of whats happening there.,n/A,"Stat 20, CS 61A/CS 88/CS 61B",4,4,n/a,I like the material in the textbook I just wished there was some more coding content and examples that could help with labs,no,I got it!
+2,2/1/24 22:41,alice.modica@berkeley.edu,4,3,2 - 3 hours,,,,Stat 20,4,4,,,,I got it!
+2,2/1/24 23:18,milenalu@berkeley.edu,3,4,1 - 2 hours,I feel like more confident in “filter” data.,None. It’s a pretty good lab,None,Stat 20,5,5,,It does great,None,I got it!
+2,2/1/24 23:56,maxgm@berkeley.edu,2,5,More than 4 hours,I think most of the questions on this lab were very interesting and I liked how it used real-world data.,Question 4.3 was too confusing because we didn't learn how to use APIs in that way during the lectures or discussions.,,None of the above,3,2,,,,I got it!
+2,2/2/24 0:41,maphan1402@berkeley.edu,5,4,2 - 3 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",5,5,,,,I got it!
+2,2/2/24 0:55,jocelynquach@berkeley.edu,4,4,2 - 3 hours,,,,Data 8,5,5,,,,I got it!
+2,2/2/24 3:11,mileschun@berkeley.edu,4,4,3 - 4 hours,I liked that it was more straightforward at the beginning,I didn't like the end sections,N/A,Data 8,3,3,,I think it's helpful but maybe just offering more sub-sections in the margin on the left so that it's easier to navigate,No,I got it!
+2,2/2/24 10:34,yifanbao@berkeley.edu,2,4,2 - 3 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",5,3,,,,I got it!
+2,2/2/24 12:24,andrew.zhang38@berkeley.edu,3,3,2 - 3 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+2,2/2/24 12:38,asrithd@berkeley.edu,4,4,1 - 2 hours,,,,Data 100,4,3,,,,I got it!
+2,2/2/24 14:08,eduardohinojosa@berkeley.edu,5,3,1 - 2 hours,I liked how we had to extract real world data to solve a question we could genuinely have. It was not a predetermined dataset cleaned up for us. Knowing how to use APIs is something I find very interesting and useful.,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+2,2/2/24 15:24,mjyoshida@berkeley.edu,3,4,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+2,2/2/24 16:20,cissycai615@berkeley.edu,3,3,3 - 4 hours,,,,Data 8,3,4,,,,I got it!
+2,2/2/24 16:26,walton_bullard25@berkeley.edu,4,4,1 - 2 hours,,,,Stat 20,2,2,,,,I got it!
+2,2/2/24 16:51,zaiyana@berkeley.edu,3,2,1 - 2 hours,,,,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",2,,,,,I got it!
+2,2/2/24 16:53,yini21@berkeley.edu,4,4,More than 4 hours,,,,"Data 8, Stat 20",5,4,,,,I got it!
+2,2/2/24 17:09,arianasiordia@berkeley.edu,5,5,2 - 3 hours,I liked that we were working with real API's I would like more practice with that,"It was very difficult to do on my own, the instruction were not clear when it came to doing section four. How was I supposed to know that I needed to look at the skeleton of a url link I think there needs to be more instructione specially when its the first time doing something.",n/a,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+2,2/2/24 17:12,angelali28@berkeley.edu,4,4,3 - 4 hours,I liked that everything we needed to know was in the textbook. Great job with the textbook Rohan!,,,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",5,5,,It touches on everything we need to know for the most part!,"I didn't know how to fill out the endpoint blank so I had to head over to Google to figure out that information on my own, but it was no big deal.",I got it!
+2,2/2/24 17:16,adibose@berkeley.edu,4,3,1 - 2 hours,,,,CS 61A/CS 88/CS 61B,2,2,"The textbook is a bit tough to search through. For example, if I want to figure out how to use a dictionary to convert the integer encoding to its canonical name, I look up ""encoding"" ""dictionary"" and scroll through results but it was much easier to look up ""how to convert dataframe using dictionary of encodings"".",,,I got it!
+2,2/2/24 17:20,laiching06@berkeley.edu,4,4,More than 4 hours,,,,Stat 20,3,4,,,,I got it!
+2,2/2/24 17:30,gdeng24@berkeley.edu,4,3,2 - 3 hours,Good applications of the API,all good,,"Data 8, Data 100, Stat 20",2,3,,"Pretty good, could use a bit more coding examples and other python commands (for non coding people)",no,I got it!
+2,2/2/24 17:39,anup.nadesan@berkeley.edu,2,3,2 - 3 hours,I liked the first part,I wish we spent more time on API coding and structure,N/A,"Data 8, Stat 20",2,4,N/A,N/A,N/A,I got it!
+2,2/2/24 17:53,varmin.44@berkeley.edu,4,4,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",2,3,,,,I got it!
+2,2/2/24 18:07,oduk5732@berkeley.edu,3,5,More than 4 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",4,4,,,,I got it!
+2,2/2/24 18:10,juicyucbkid_zhz@berkeley.edu,3,3,2 - 3 hours,Everything,nothing,nothing,Data 8,3,3,I use google,its perfect,no,I got it!
+2,2/2/24 18:24,zakpuno@berkeley.edu,2,4,3 - 4 hours,Tough lab but very interesting content!,,,Data 8,4,4,,,,I got it!
+2,2/2/24 18:27,ianseklawi@berkeley.edu,4,4,More than 4 hours,I thought it was cool how this lab connected to the economics we learned in class.,,,Data 8,4,4,,,,I got it!
+2,2/2/24 19:16,dedeliu@berkeley.edu,4,5,2 - 3 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+2,2/2/24 19:43,saiftali@berkeley.edu,2,2,30 minutes - 1 hour,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+2,2/2/24 20:13,jelee25@berkeley.edu,3,4,3 - 4 hours,,,,"Data 8, Stat 20",5,5,,,,I got it!
+2,2/2/24 20:29,hoon1130@berkeley.edu,4,5,3 - 4 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",5,4,,,,I got it!
+2,2/2/24 20:53,erinlakshmanan@berkeley.edu,1,5,2 - 3 hours,,the API stuff was really confusing and not taught.,,"Data 8, CS 61A/CS 88/CS 61B",4,3,,,,I got it!
+2,2/2/24 21:13,82sookim@berkeley.edu,4,4,3 - 4 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",4,4,,,,I got it!
+2,2/2/24 21:24,chiarapilato@berkeley.edu,3,4,3 - 4 hours,,,,Stat 20,3,3,,,,I got it!
+2,2/2/24 21:32,chloebyun@berkeley.edu,3,4,3 - 4 hours,,,,Stat 20,4,4,,,,I got it!
+2,2/2/24 21:32,joshua.gunning@berkeley.edu,4,4,3 - 4 hours,Instructions were thorough,N/A,N/A,Stat 20,2,2,N/A,N/A,N/A,I got it!
+2,2/2/24 21:39,egalindo@berkeley.edu,4,4,3 - 4 hours,,,,,1,,,,,I got it!
+2,2/2/24 21:40,kikihu1209@berkeley.edu,3,5,More than 4 hours,,"There is no examples for API, the textbook is kind of different from the homework...",Please more examples in the textbook or demo,"Data 8, CS 61A/CS 88/CS 61B",3,2,,,,I got it!
+2,2/2/24 21:41,elisamarconell@berkeley.edu,5,4,3 - 4 hours,i loved the API! I always wondered how they were used and I finally learned to do so :),,,Stat 20,3,5,,I love it! Super concise and to the point,Nop,I got it!
+2,2/2/24 22:01,zhiningcui1010@berkeley.edu,4,4,2 - 3 hours,get to use functions learned in lectures.,api part is different from what's taught in the lectures.,,"Stat 20, CS 61A/CS 88/CS 61B",3,4,,not complete enough. didn't see the examples given in the lab.,,"There's something wrong, and I will contact the course staff"
+2,2/2/24 22:08,yyzheng@berkeley.edu,4,4,2 - 3 hours,Taught me about how to use API,,I spent a lot of time try to figure out the API part and how to write fetch function,Stat 20,5,5,,,,I got it!
+2,2/2/24 22:11,artemgev@berkeley.edu,3,4,1 - 2 hours,,,,,1,,,,,I got it!
+2,2/2/24 22:13,sineaddecleir@berkeley.edu,5,3,3 - 4 hours,I liked pulling data from a real source and being able to visualize it. I liked that this lab was more applicable to doing research.,"I wish there were sections with graph where there was more practice learning how to make them. 
+I wish there were hints about what form like slice, dataframe that some of the hinted functions require.",,Stat 20,3,3,,,,I got it!
+2,2/2/24 22:20,thgiacalone@berkeley.edu,5,4,2 - 3 hours,,,,"Data 8, Stat 20",5,5,,,,I got it!
+2,2/2/24 22:25,althea9200@berkeley.edu,1,4,2 - 3 hours,taught us about the api key usage,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",2,,,,,I got it!
+2,2/2/24 23:22,jessqwy@berkeley.edu,3,3,1 - 2 hours,,,,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",2,2,,,,I got it!
+2,2/2/24 23:43,andrew49875@berkeley.edu,4,4,1 - 2 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",3,3,There is much sources that I can get from lecture recording.,,,I got it!
+2,2/3/24 12:51,jlee1112@berkeley.edu,4,5,More than 4 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",2,3,,,,I got it!
+2,2/4/24 15:52,mgarcia182@berkeley.edu,3,5,More than 4 hours,,,I feel so lost in this class. I am very unclear on how to complete the problem sets.,Stat 20,5,3,,I feel like the examples should follow the problem sets.,,I got it!
+2,2/4/24 16:06,erenzulfikar@berkeley.edu,4,4,2 - 3 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+2,2/4/24 17:23,brandonbui@berkeley.edu,3,4,More than 4 hours,,,,"CS 61A/CS 88/CS 61B, None of the above",1,2,,,,I got it!
+2,2/4/24 22:17,a.ydenchi@berkeley.edu,3,4,More than 4 hours,,,,,3,2,,,,I got it!
+2,2/4/24 23:00,vrinda26@berkeley.edu,3,5,3 - 4 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",2,,,,,I got it!
+2,2/12/24 23:39,aaravkapur03@berkeley.edu,3,3,3 - 4 hours,,,,"Data 100, Stat 20",3,3,,,,I got it!
+2,2/20/24 20:41,jnpnguyen@berkeley.edu,4,3,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/2/24 10:10,sakkolli@berkeley.edu,2,4,2 - 3 hours,,Too long,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/2/24 15:22,thomashu@berkeley.edu,3,3,2 - 3 hours,I liked the usage of the real-life dataset and connection to Prof Van Dusen's real work!,N/A,Maybe having lecture slides up earlier (or more information to answer some free-response ones) would be nice!,,1,,I did not feel the need to,,,I got it!
+3,2/3/24 17:08,johan.oelgaard@berkeley.edu,2,2,More than 4 hours,,"I am not a fan of this lab – it is long (you might want that – it is not my major problem with it) and goes in too many different directions like you desperately tried to merge several labs together. Thus, it does not simulate a research project where you would go deep into one or two directions. Additionally, I see it as a nuisance to hand us a dataset without providing the full documentation. The appendix groups together some of the data – but this is the easily understandable data as it directly correlates to the questions. Why is 'order_c' ∈ {NaN, 1, 2, 3, 4}? What is '_merge', 'trr1', or 'assWG1'? Which column shows the results of the water analysis, or is this not in the data?
+Q1.3 asks us to asses the granularity of the data – and identify a primary key, but without knowing the exact structure going through the ~7700 rows, it is nothing but a guess or trial and error.
+Additionally, I would prefer an analysis with a more economic focus.","In Q3.8 and Q4, the ""lecture slides"" are where the Hawthorne effect is mentioned. As of Feb 3 we have not seen these slides (I suppose they will come next week), but to give a long assignment like this and then additionally not give us the resources to solve it during the weekend. It is not the way I would go about it...",None of the above,1,,By trial and error I have found it quicker to google stuff than use the text book,,,I got it!
+3,2/3/24 18:17,chanjoo0427@berkeley.edu,4,3,More than 4 hours,real life example and application,,,None of the above,3,3,,,,I got it!
+3,2/3/24 19:52,wjustin9@berkeley.edu,4,4,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/4/24 12:37,mingsennteo@berkeley.edu,3,3,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/4/24 13:59,joanna_li@berkeley.edu,3,5,More than 4 hours,,,,Data 8,5,4,,,,I got it!
+3,2/4/24 15:27,johan.oelgaard@berkeley.edu,3,2,More than 4 hours,,,,None of the above,2,3,,,,I got it!
+3,2/4/24 17:28,nuochen329@berkeley.edu,4,3,2 - 3 hours,too long I feel like and there's repetitive quetsion type,,,,1,,,,,I got it!
+3,2/4/24 21:27,cstec15@berkeley.edu,4,4,2 - 3 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/5/24 21:36,j3n___j3n@berkeley.edu,1,5,3 - 4 hours,None,The codes are really hard especially section 6.,,Stat 20,3,1,,Discussion did better in helping me.,,I got it!
+3,2/6/24 2:09,stephenliu@berkeley.edu,5,4,3 - 4 hours,regression lines :),a lot of data to keep track of - fun but very very hard to keep track of,,"Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/6/24 13:21,aryakrishnan@berkeley.edu,5,4,2 - 3 hours,I liked the EDA and the ability to look through the survey and analyze real economic data,I didn't appreciate how long it was and how hard it was to complete without having been in lecture. It would be nice for the lab to be a little more disconnected from lecture.,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,All information is available online on the Pandas Docs.,,,I got it!
+3,2/6/24 14:58,quang.nguyenln@berkeley.edu,4,5,More than 4 hours,Working with real data,,,"Stat 20, CS 61A/CS 88/CS 61B",4,2,,,,I got it!
+3,2/6/24 15:50,sophiasung@berkeley.edu,3,4,3 - 4 hours,,It was extremely long,,"Data 8, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+3,2/6/24 19:03,tmdals6033@berkeley.edu,3,3,More than 4 hours,,,,None of the above,3,3,,,,I got it!
+3,2/6/24 21:00,adorawen@berkeley.edu,3,4,1 - 2 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",3,4,,,,I got it!
+3,2/6/24 22:03,biancarein@berkeley.edu,4,3,1 - 2 hours,Analysis Questions,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,Analysis questions were supplemented with lecture and I used pandas api documentation for coding help.,,,I got it!
+3,2/6/24 22:46,20020618sxk@berkeley.edu,3,3,More than 4 hours,,,,"Data 8, Data 100, Stat 20",3,3,,,,I got it!
+3,2/6/24 22:58,xesxwindlle@berkeley.edu,1,5,More than 4 hours,,I don't think it is appropriate to design a lab that is like the same time to complete as a project. Understanding a research should take more time to cultivate like a project or multiple. labs instead of cramming everything into a lab assignment.,,"Data 8, Data 100",3,3,,,,I got it!
+3,2/6/24 23:30,lisaycliu@berkeley.edu,3,3,3 - 4 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+3,2/7/24 1:09,david_fan1@berkeley.edu,3,4,2 - 3 hours,,a bit too long,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",2,3,,,,I got it!
+3,2/7/24 12:06,athenahz@berkeley.edu,2,5,More than 4 hours,,,,,1,,,,,I got it!
+3,2/7/24 13:46,qianzzz@berkeley.edu,3,3,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+3,2/7/24 13:50,varmin.44@berkeley.edu,4,5,2 - 3 hours,,"The topic, diarrhea: i feel like there are better topics than poop.",,"Data 8, Data 100, CS 61A/CS 88/CS 61B",2,3,,,,I got it!
+3,2/7/24 15:22,ishani@berkeley.edu,4,4,3 - 4 hours,,way too long. some of the questions were worded confusingly,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/7/24 16:05,minsittaung@berkeley.edu,3,4,More than 4 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",4,4,,,,I got it!
+3,2/7/24 16:31,kavya1106@berkeley.edu,4,4,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",2,,,,,I got it!
+3,2/7/24 19:17,christinechen3993@berkeley.edu,2,4,More than 4 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/7/24 19:59,s_edwards@berkeley.edu,3,4,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/7/24 22:21,leahperez@berkeley.edu,3,4,3 - 4 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/7/24 22:22,ericjm117@berkeley.edu,1,5,More than 4 hours,,,,None of the above,3,2,,,,I got it!
+3,2/7/24 22:23,moria123zhut@berkeley.edu,4,4,More than 4 hours,,,,Stat 20,1,,"I usually use the textbook, but this time worked more with data as it involved more open questions that were related to data and the results of it",,,I got it!
+3,2/8/24 12:30,lorene.li@berkeley.edu,4,4,2 - 3 hours,,,,Data 8,2,,,,,I got it!
+3,2/8/24 14:39,bluemgzn@berkeley.edu,3,3,3 - 4 hours,,,,,3,3,,,,I got it!
+3,2/8/24 15:07,emmaeeckhout@berkeley.edu,2,4,3 - 4 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+3,2/8/24 15:25,krxxll@berkeley.edu,3,3,3 - 4 hours,,,,Stat 20,3,4,,,,I got it!
+3,2/8/24 15:27,lilile@berkeley.edu,4,4,More than 4 hours,,,,Stat 20,2,,,,,I got it!
+3,2/8/24 16:14,weissik@berkeley.edu,5,4,More than 4 hours,Interesting but def confusing at first. Needed lots of help in OH and section to complete it.,,,Data 8,3,4,,,,I got it!
+3,2/8/24 16:46,pmelnick@berkeley.edu,3,4,3 - 4 hours,Interesting application,,,Stat 20,3,5,,,,I got it!
+3,2/8/24 16:53,khadija2002@berkeley.edu,5,4,2 - 3 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/8/24 17:05,jingyaxia@berkeley.edu,4,3,1 - 2 hours,cool example! I like how the professor actually conducted the experiment!,,,"Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,I didn't need it :0,,,I got it!
+3,2/8/24 17:49,alice.modica@berkeley.edu,3,2,2 - 3 hours,,,,Stat 20,2,2,,,,I got it!
+3,2/8/24 17:57,bennettfees@berkeley.edu,4,4,More than 4 hours,practical skills,very time consuming,no,None of the above,2,2,,,,I got it!
+3,2/8/24 17:59,elisamarconell@berkeley.edu,5,4,3 - 4 hours,the diharrea topic was very funny,n/a,n/a,"Data 8, Stat 20",4,5,,,,I got it!
+3,2/8/24 18:09,malvesn25@berkeley.edu,3,2,3 - 4 hours,,Questions were very misleading at some points. Unsure which dataframe I was supposed to use during phase 3. I had to guess and check. Some of the written questions seemed to have no significance.,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,Was able to do the coding without the book.,,,I got it!
+3,2/8/24 19:30,jgte29@berkeley.edu,5,3,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",2,4,,,,I got it!
+3,2/8/24 20:09,alexramos@berkeley.edu,4,4,2 - 3 hours,,,,Stat 20,4,4,,,,I got it!
+3,2/8/24 20:32,jocelynquach@berkeley.edu,4,5,3 - 4 hours,,,,Data 8,5,5,,,,I got it!
+3,2/8/24 20:51,zaiyana@berkeley.edu,2,2,1 - 2 hours,,,,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+3,2/8/24 23:27,michaelyip0219@berkeley.edu,4,3,2 - 3 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",3,,,,,I got it!
+3,2/8/24 23:29,atticus.ginsborg@berkeley.edu,4,2,3 - 4 hours,,,I really wish there was more discussion of survey design beyond `2.1`. I understand this isn't a survey research class but I wish we hadn't just glossed over how they handled child deaths or gave out gifts to participants.,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,Already very comfortable with pandas.,,,I got it!
+3,2/9/24 0:34,maxgm@berkeley.edu,4,5,More than 4 hours,I think it was very interesting using the example from the real world.,I found some of the free-response questions to be very repetitive.,,None of the above,1,,Preferred going to office hours and asking others for help.,,,I got it!
+3,2/9/24 0:59,yyzheng@berkeley.edu,3,4,More than 4 hours,It allows me to work with real world data and allows me to think as a researcher,"Instructions for some problems are unclear (3.3, 5.3) and I ended up spending quite a lot of time trying to figure out what I'm supposed to do. A mini example of how the result should look like would really help!",,Stat 20,3,5,,,,I got it!
+3,2/9/24 1:07,annyshe@berkeley.edu,5,5,2 - 3 hours,I learned a lot about Hawthorne's effect and coding.,The column names were kind of obscure. It was also just really long for a lab. I might've understood if it was a project.,,"Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/9/24 1:10,milenalu@berkeley.edu,4,4,2 - 3 hours,None,none,None,Stat 20,5,,,None,None,I got it!
+3,2/9/24 1:11,arianasiordia@berkeley.edu,2,4,3 - 4 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/9/24 1:52,asrithd@berkeley.edu,3,5,More than 4 hours,,,,,5,,,,,I got it!
+3,2/9/24 1:54,shuran1030@berkeley.edu,5,4,2 - 3 hours,A wonderful project that guides me on analyzing a survey. First time experience and learned a lot.,"Some questions may be more clear. for example: be clear on what raw dataset it wants to use, is it only relevant rounds or the raw raw datasets with all rounds.",,,1,,,,,I got it!
+3,2/9/24 2:07,alexisbala@berkeley.edu,5,4,More than 4 hours,"I really liked using real data from a project that Professor Van Dusen worked on, and it was really cool to be able to replicate the results we discussed in lecture.","The length, but it honestly wasn't too bad.",,"Data 8, Stat 20",3,5,,,,I got it!
+3,2/9/24 3:02,arnavgurudatt@berkeley.edu,4,4,2 - 3 hours,Very interesting topic!,Way too long 😭 (but to be fair I didn't realize that question 6 was optional until I was halfway through with it),Could you label the line plots of the 4 additional diseases?,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/9/24 3:15,luyi0915@berkeley.edu,3,3,2 - 3 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+3,2/9/24 4:06,chiarapilato@berkeley.edu,3,5,More than 4 hours,,,,Stat 20,4,4,,,,I got it!
+3,2/9/24 4:17,pkq2002@berkeley.edu,2,5,More than 4 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,1,,,,I got it!
+3,2/9/24 10:23,felipe_mach@berkeley.edu,5,4,3 - 4 hours,Understanding how a study is conducted.,To long.,,"Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/9/24 10:36,saiftali@berkeley.edu,2,4,1 - 2 hours,,I think the directions for what to put in the code-cell should be more direct.,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/9/24 11:11,nbrewer@berkeley.edu,5,4,3 - 4 hours,I thought the real-world subject matter was fascinating.,It was on the longer side.,,None of the above,3,3,,,,I got it!
+3,2/9/24 12:12,mollypigot@berkeley.edu,3,5,2 - 3 hours,,It was very long,,Data 8,5,3,,,,I got it!
+3,2/9/24 12:14,serena.gu@berkeley.edu,4,4,2 - 3 hours,,,,"Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/9/24 13:14,joshua.gunning@berkeley.edu,3,4,More than 4 hours,The given code helped a lot.,Too long,,Stat 20,2,3,N/A,N/A,N/A,I got it!
+3,2/9/24 13:14,gaelf.gutierrez@berkeley.edu,4,3,2 - 3 hours,,,,Stat 20,2,4,,,,I got it!
+3,2/9/24 14:04,varunagarwal004@berkeley.edu,4,4,3 - 4 hours,,It was too long.,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/9/24 14:06,erinlakshmanan@berkeley.edu,1,5,1 - 2 hours,,I feel like we are learning barely any coding in lecture which makes the labs very difficult to complete,,"Data 8, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+3,2/9/24 14:36,mileschun@berkeley.edu,3,5,More than 4 hours,Interesting topic,Very long,,Data 8,4,3,I used Pandas api instead,n/a,n/a,I got it!
+3,2/9/24 15:55,zakpuno@berkeley.edu,2,5,3 - 4 hours,,,,Data 8,1,,,,,I got it!
+3,2/9/24 16:12,tenleygonor@berkeley.edu,5,4,3 - 4 hours,I like how we were analyzing a real-world issue and experiment. I also liked working with a survey we could refer to during the lab.,"Although it was an important step, writing down the context of each survey section felt a little tedious.",,"Stat 20, CS 61A/CS 88/CS 61B",2,,I felt all the help I needed could be found in the lecture slides.,,,I got it!
+3,2/9/24 16:24,vincen_le@berkeley.edu,5,4,2 - 3 hours,,,,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+3,2/9/24 16:24,andrew.zhang38@berkeley.edu,5,3,3 - 4 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",4,4,,,,I got it!
+3,2/9/24 16:39,michelle-hom@berkeley.edu,3,2,3 - 4 hours,the real world data - how it incorporates finding insights or understanding the data,Just lots of writing and interpretations (although those are good practice),,Stat 20,3,5,Used less of the textbook because of the Lecture Notebooks to practice or understand the code,,,I got it!
+3,2/9/24 17:21,andrew49875@berkeley.edu,3,4,2 - 3 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",4,2,,,,I got it!
+3,2/9/24 17:25,cissycai615@berkeley.edu,3,3,3 - 4 hours,,,,Data 8,3,,,,,I got it!
+3,2/9/24 17:34,reubencochrane@berkeley.edu,4,3,2 - 3 hours,Cool research topic,,,None of the above,2,3,,"It is good, I like, keep it up!",,I got it!
+3,2/9/24 18:11,gulianxiao@berkeley.edu,5,3,2 - 3 hours,,"Too many free response, almost the length of a project. Also, I think there are some typos in the lab.",,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,1,,,,I got it!
+3,2/9/24 18:14,jlee1112@berkeley.edu,3,3,More than 4 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+3,2/9/24 18:15,delatorredk@berkeley.edu,3,3,More than 4 hours,,,,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",4,4,,,,I got it!
+3,2/9/24 18:15,yini21@berkeley.edu,4,5,More than 4 hours,,,,"Data 8, Stat 20",3,3,,,,I got it!
+3,2/9/24 18:18,ariti@berkeley.edu,3,4,3 - 4 hours,,,,Stat 20,3,3,,,,I got it!
+3,2/9/24 18:18,sineaddecleir@berkeley.edu,5,4,3 - 4 hours,,,,Stat 20,2,1,,,,I got it!
+3,2/9/24 18:21,mgarcia182@berkeley.edu,3,5,More than 4 hours,,,,Stat 20,5,2,,,,I got it!
+3,2/9/24 18:31,jingnan_yu@berkeley.edu,5,4,More than 4 hours,,,,Stat 20,3,4,,,,I got it!
+3,2/9/24 18:42,mckenziediep@berkeley.edu,2,4,3 - 4 hours,I thought there were cool applications for data collection and cleaning.,I feel like the methods that I had to use were not taught in class.,,Stat 20,4,4,,,,I got it!
+3,2/9/24 18:59,ventimdg@berkeley.edu,3,3,2 - 3 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/9/24 19:08,sejalgoel@berkeley.edu,5,4,2 - 3 hours,I loved analyzing an actual survey - I feel like this helped me gain a lot of practical research skills!,A lot of bugs :(,,"Data 8, Stat 20",2,1,,,,I got it!
+3,2/9/24 19:10,gdeng24@berkeley.edu,4,5,3 - 4 hours,Great practicality,some of the coding questions were very long,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",4,4,,good,no,I got it!
+3,2/9/24 19:18,madelinedm@berkeley.edu,4,2,2 - 3 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/9/24 19:24,jelee25@berkeley.edu,4,4,3 - 4 hours,,,,"Data 8, Stat 20",5,5,,,,I got it!
+3,2/9/24 19:24,caglakirdar@berkeley.edu,3,2,2 - 3 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/9/24 19:45,zhiningcui1010@berkeley.edu,4,4,3 - 4 hours,,,,"Stat 20, CS 61A/CS 88/CS 61B",3,2,,,,I got it!
+3,2/9/24 19:47,casbill@berkeley.edu,4,3,1 - 2 hours,,,,"Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/9/24 19:57,chloebyun@berkeley.edu,3,4,More than 4 hours,,This lab was definitely long!,,Stat 20,2,4,,,,I got it!
+3,2/9/24 20:03,adibose@berkeley.edu,3,4,2 - 3 hours,,"Some of the questions were worded unclear. I had to go on Ed to find out what the question was asking for. It may be helpful to be more specific about the desired output. For example, we want a row with bwm_round=1 and validated_wg=0 and also a row of bwm_round=1 and validated_wg=1. This would have helped me interpret the question and be more efficient with my time.",,CS 61A/CS 88/CS 61B,1,,,,,I got it!
+3,2/9/24 20:04,shine_like_ruby@berkeley.edu,3,3,2 - 3 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/9/24 20:14,zhaohungtan1209@berkeley.edu,1,3,2 - 3 hours,Narrative context,"Long, Confusing, Lots of Errors. I feel like this lab should be a project instead.",,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/9/24 20:35,alexcal2025@berkeley.edu,3,4,More than 4 hours,graphical analysis,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,mostly cleared up confusion from ed,,"some #ed code that was left in, missing cells for written responses",I got it!
+3,2/9/24 20:37,oduk5732@berkeley.edu,4,5,3 - 4 hours,,,,"Data 100, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+3,2/9/24 21:00,alexisdang@berkeley.edu,4,5,3 - 4 hours,,,,"Stat 20, CS 61A/CS 88/CS 61B",4,5,,,,I got it!
+3,2/9/24 21:29,eduardohinojosa@berkeley.edu,2,4,3 - 4 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/9/24 21:41,maphan1402@berkeley.edu,5,5,More than 4 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",5,1,,,,I got it!
+3,2/9/24 22:05,zmfong@berkeley.edu,2,4,3 - 4 hours,interesting survey and nice graphs,,I didn't feel like lecture content helped me do this lab very well.,Data 8,3,3,,,,I got it!
+3,2/9/24 22:08,yigao@berkeley.edu,5,4,3 - 4 hours,,,,Data 8,4,,,,,I got it!
+3,2/9/24 22:24,thgiacalone@berkeley.edu,5,4,2 - 3 hours,,"Very, very long",,"Data 8, Stat 20",3,5,,,,I got it!
+3,2/9/24 22:26,czycai@berkeley.edu,1,5,More than 4 hours,,,,,3,3,,,,I got it!
+3,2/9/24 22:29,anup.nadesan@berkeley.edu,3,3,3 - 4 hours,,,,"Data 8, Stat 20",4,5,,,,I got it!
+3,2/9/24 22:47,mjyoshida@berkeley.edu,3,3,3 - 4 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+3,2/9/24 22:49,hoon1130@berkeley.edu,4,5,3 - 4 hours,,,,,4,,,,,I got it!
+3,2/9/24 22:49,alec.morgan@berkeley.edu,4,4,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",2,2,,,,I got it!
+3,2/9/24 22:54,sgutta@berkeley.edu,3,3,3 - 4 hours,,,,,3,2,,,,I got it!
+3,2/9/24 22:59,82sookim@berkeley.edu,4,4,More than 4 hours,,,,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",4,4,,,,I got it!
+3,2/9/24 23:09,vrinda26@berkeley.edu,4,5,More than 4 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/9/24 23:13,wilsonlai@berkeley.edu,4,4,3 - 4 hours,It's interesting,Variable names of the dataset were confusing,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/9/24 23:25,dedeliu@berkeley.edu,5,5,3 - 4 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+3,2/9/24 23:29,ryan.liou@berkeley.edu,4,4,3 - 4 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",3,,,,,I got it!
+3,2/9/24 23:32,althea9200@berkeley.edu,3,3,3 - 4 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+3,2/9/24 23:43,yifanbao@berkeley.edu,3,3,More than 4 hours,,,,"Data 8, Data 100, Stat 20",3,3,,,,I got it!
+3,2/10/24 14:13,juicyucbkid_zhz@berkeley.edu,3,3,2 - 3 hours,everything,no,-,Data 8,3,3,google,its perfect,no,I got it!
+3,2/10/24 16:10,walton_bullard25@berkeley.edu,3,3,More than 4 hours,,,,Stat 20,2,2,,,,I got it!
+3,2/10/24 17:06,jessqwy@berkeley.edu,3,5,3 - 4 hours,,,,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",2,,,,,I got it!
+3,2/10/24 17:20,anasannia@berkeley.edu,3,3,2 - 3 hours,,,,Stat 20,3,3,,,,I got it!
+3,2/10/24 19:32,kikihu1209@berkeley.edu,5,5,More than 4 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",1,1,,,,I got it!
+3,2/11/24 18:28,laiching06@berkeley.edu,3,5,More than 4 hours,,,,Stat 20,3,3,,,,I got it!
+3,2/11/24 21:56,a.ydenchi@berkeley.edu,5,5,More than 4 hours,,,,,1,,,,,I got it!
+3,2/11/24 23:40,angelali28@berkeley.edu,5,4,More than 4 hours,,"It was extremely long, though I did learn a lot.",,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+3,2/11/24 23:59,qilizhang@berkeley.edu,5,5,More than 4 hours,,,,Stat 20,5,5,,,,I got it!
+3,2/12/24 0:01,aneeshpatel@berkeley.edu,3,3,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",2,,,,,I got it!
+3,2/12/24 22:45,aaravkapur03@berkeley.edu,3,3,3 - 4 hours,,,,"Data 100, Stat 20",3,3,,,,I got it!
+3,2/21/24 2:06,jnpnguyen@berkeley.edu,5,3,2 - 3 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/8/24 22:38,kavya1106@berkeley.edu,4,3,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",2,,,,,I got it!
+4,2/9/24 0:20,johan.oelgaard@berkeley.edu,3,2,1 - 2 hours,I liked working with SQL and the more economic perspective,Unpopular opinion: It could have been longer :),,None of the above,4,4,,There were a few things like writing subqueries or inserting results in a table to use in the next task that could have been neat.,,I got it!
+4,2/9/24 3:37,ishani@berkeley.edu,4,2,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/9/24 10:41,sakkolli@berkeley.edu,3,3,1 - 2 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/9/24 12:50,xesxwindlle@berkeley.edu,4,2,3 - 4 hours,no,too long,,"Data 8, Data 100, Stat 20",4,2,,,,I got it!
+4,2/9/24 16:03,mingsennteo@berkeley.edu,3,2,Less than 30 minutes,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/9/24 22:59,michaelyip0219@berkeley.edu,4,4,2 - 3 hours,,,,,5,,,,,I got it!
+4,2/10/24 12:51,thomashu@berkeley.edu,3,3,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,Didnt feel the need to!,,,I got it!
+4,2/10/24 12:54,s_edwards@berkeley.edu,4,2,30 minutes - 1 hour,I like the exposure to SQL since it is used in industry.,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/10/24 20:08,varunagarwal004@berkeley.edu,4,3,2 - 3 hours,,,,,1,,,,,I got it!
+4,2/10/24 22:01,quang.nguyenln@berkeley.edu,4,4,More than 4 hours,,,,"Stat 20, CS 61A/CS 88/CS 61B",4,4,,,,I got it!
+4,2/11/24 12:55,wjustin9@berkeley.edu,3,3,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",2,3,,,,I got it!
+4,2/11/24 15:56,zhaohungtan1209@berkeley.edu,3,3,1 - 2 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/11/24 16:02,mckenziediep@berkeley.edu,3,3,2 - 3 hours,I liked learning SQL and i feel like it is very applicable for jobs.,We should have the lectures before the lab is released so that we know the content taught in the lab instead of vice versa.,,Stat 20,3,4,,,,I got it!
+4,2/11/24 23:30,jgte29@berkeley.edu,4,3,Less than 30 minutes,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/11/24 23:53,stephenliu@berkeley.edu,4,2,30 minutes - 1 hour,,,,"Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/12/24 11:06,nbrewer@berkeley.edu,3,3,1 - 2 hours,The length was better than the last one.,,,None of the above,5,5,,"The textbook was very helpful for this lab as the section on SQL was easily searchable to find exactly what I needed. I like how it was organized by the statements like ""SELECT"", ""GROUP BY"", etc.",,I got it!
+4,2/12/24 12:59,egalindo@berkeley.edu,5,3,3 - 4 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/12/24 13:02,pkq2002@berkeley.edu,3,1,1 - 2 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,1,,,,I got it!
+4,2/12/24 14:04,pmelnick@berkeley.edu,4,2,2 - 3 hours,Loved the multiple choice. Super fun,,,Stat 20,5,5,,"Super great SQL section, didn't take a ton of supplementing from the internet but enough to make me have to think",,I got it!
+4,2/12/24 14:21,andrew49875@berkeley.edu,4,2,30 minutes - 1 hour,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",4,3,,,,I got it!
+4,2/12/24 14:23,hoon1130@berkeley.edu,4,4,3 - 4 hours,,,,,4,,,,,I got it!
+4,2/12/24 15:21,tenleygonor@berkeley.edu,4,3,1 - 2 hours,"I think I prefer SQL to Pandas, it is more straightforward.",I would have liked some more questions on basic SQL contents to get really familiar with it before beginning more challenging code.,,"Stat 20, CS 61A/CS 88/CS 61B",1,,I had a lot of old notes from SQL from other classes,,,I got it!
+4,2/12/24 18:13,maxgm@berkeley.edu,3,3,2 - 3 hours,,,,,1,,,,,I got it!
+4,2/12/24 18:17,christinechen3993@berkeley.edu,3,1,2 - 3 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",4,4,,,,I got it!
+4,2/12/24 18:33,ericjm117@berkeley.edu,2,5,More than 4 hours,,,,None of the above,3,,,,,I got it!
+4,2/12/24 18:47,sophiasung@berkeley.edu,4,2,1 - 2 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",4,4,,,,I got it!
+4,2/12/24 21:03,ariti@berkeley.edu,4,4,2 - 3 hours,,,,Stat 20,3,4,,,,I got it!
+4,2/12/24 22:08,atticus.ginsborg@berkeley.edu,4,1,1 - 2 hours,,,"1.3: tests aren't specific enough selecting the indicator codes rather than names also passes
+
+1.8: I wished you could have linked to somewhere that I could quickly learn more about what the different indicators from 1.7 were. It wasn't really clear and I found it hard to google.
+
+2.3: maybe link to round function or sql docs on round as not intuitive in anyway otherwise.
+
+2.5: fix issues with summing debt not working","Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,Not needed.,,,I got it!
+4,2/12/24 23:20,20020618sxk@berkeley.edu,2,4,3 - 4 hours,,,,"Data 8, Data 100, Stat 20",3,3,,,,I got it!
+4,2/13/24 0:27,joanna_li@berkeley.edu,3,3,2 - 3 hours,,,,"Data 8, Stat 20",4,3,,,,I got it!
+4,2/13/24 1:56,j3n___j3n@berkeley.edu,1,4,3 - 4 hours,none,the textbook didn't help too much,,Stat 20,3,2,"it didn't include codes for filtering a newly made column, etc",add more codes for every section of the lab,,I got it!
+4,2/13/24 9:47,alexisbala@berkeley.edu,5,3,3 - 4 hours,I liked learning a new coding language!,,,"Data 8, Stat 20",5,5,,,,I got it!
+4,2/13/24 10:53,sarahkiefer@berkeley.edu,3,4,2 - 3 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",2,5,,,,I got it!
+4,2/13/24 13:51,minsittaung@berkeley.edu,3,3,3 - 4 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",3,3,I used Data88 references to help me with this as well as my own koledge,,,I got it!
+4,2/13/24 14:59,aryakrishnan@berkeley.edu,5,4,1 - 2 hours,I liked the walkthrough of SQL as it is a skill that is very important for data scientists,I did not like the instructions for part 3 as it was a little confusing to understand.,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",2,5,,It was a great place to reference all the SQL commands.,no,I got it!
+4,2/13/24 15:11,david_fan1@berkeley.edu,5,2,30 minutes - 1 hour,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,Already familiar with SQL syntax,,,I got it!
+4,2/13/24 15:12,biancarein@berkeley.edu,3,3,1 - 2 hours,,,"2.4: I was able to complete the question with summing up the debt column even though the clarification said not to
+2.5 & 2.6: however, summing up does not work for these two questions","Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,Previous SQL knowledge,,,I got it!
+4,2/13/24 15:14,madelinedm@berkeley.edu,4,2,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/13/24 15:20,serena.gu@berkeley.edu,5,2,30 minutes - 1 hour,,,,"Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/13/24 15:21,lilile@berkeley.edu,4,2,More than 4 hours,,,,Stat 20,4,4,,,,I got it!
+4,2/13/24 15:26,nabeelq@berkeley.edu,4,2,1 - 2 hours,,,,,1,,,,,I got it!
+4,2/13/24 15:51,zmfong@berkeley.edu,2,3,2 - 3 hours,cool stuff SQL,,,Data 8,5,5,,,,I got it!
+4,2/13/24 16:10,qianzzz@berkeley.edu,3,3,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+4,2/13/24 17:21,leahperez@berkeley.edu,5,4,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/13/24 17:37,cstec15@berkeley.edu,5,3,2 - 3 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/13/24 17:39,adorawen@berkeley.edu,3,3,2 - 3 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",5,5,,,,I got it!
+4,2/13/24 18:20,adibose@berkeley.edu,5,3,30 minutes - 1 hour,,,,CS 61A/CS 88/CS 61B,1,,,,,I got it!
+4,2/13/24 18:44,jingyaxia@berkeley.edu,3,2,30 minutes - 1 hour,cool practice!,,,"Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/13/24 18:59,sineaddecleir@berkeley.edu,5,3,1 - 2 hours,I liked learning a new skill.,Many of the functions that I needed weren't brought up in lecture or discussion.,,Stat 20,2,3,,,,I got it!
+4,2/13/24 20:48,moria123zhut@berkeley.edu,5,4,3 - 4 hours,Part 3,,,Stat 20,4,3,,,,I got it!
+4,2/13/24 20:56,aneeshpatel@berkeley.edu,4,2,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/13/24 21:21,lorene.li@berkeley.edu,4,4,1 - 2 hours,,,,Data 8,3,4,,,,I got it!
+4,2/14/24 0:15,cmurran26@berkeley.edu,4,4,2 - 3 hours,na,na,na,"Stat 20, CS 61A/CS 88/CS 61B",1,,I usually do,na,na,I got it!
+4,2/14/24 1:13,michelle-hom@berkeley.edu,3,2,2 - 3 hours,makes SQL seem simple (easy to code with) based on how we have used Python previously,,,Stat 20,4,4,,,,I got it!
+4,2/14/24 16:06,tmdals6033@berkeley.edu,2,5,More than 4 hours,,,,None of the above,1,2,,,,I got it!
+4,2/14/24 17:54,andrew.zhang38@berkeley.edu,3,3,2 - 3 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/14/24 18:01,vincen_le@berkeley.edu,5,3,30 minutes - 1 hour,,,,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",3,4,,,,I got it!
+4,2/14/24 18:20,angelali28@berkeley.edu,4,3,3 - 4 hours,"SQL is fun because ""words have meaning."" and it's very intuitive to me.",,,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",2,5,,,,I got it!
+4,2/14/24 19:38,bennettfees@berkeley.edu,3,3,2 - 3 hours,SQL,SQL,Nope,Stat 20,3,3,,,,I got it!
+4,2/14/24 20:42,milenalu@berkeley.edu,4,2,1 - 2 hours,This lab I like the best,None,None,Stat 20,4,5,None,None,None,I got it!
+4,2/14/24 22:01,khadija2002@berkeley.edu,5,2,30 minutes - 1 hour,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/14/24 22:03,gulianxiao@berkeley.edu,5,3,1 - 2 hours,,,,,3,,,,,I got it!
+4,2/14/24 23:32,jelee25@berkeley.edu,3,3,3 - 4 hours,,,,"Data 8, Stat 20",5,,,,,I got it!
+4,2/14/24 23:35,annyshe@berkeley.edu,5,3,2 - 3 hours,It helped me review SQL and bridge the connection between Pandas and SQL.,,,"Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,I looked at Pandas and SQL documentation instead.,,,I got it!
+4,2/15/24 0:09,eduardohinojosa@berkeley.edu,5,4,2 - 3 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/15/24 0:22,arnavgurudatt@berkeley.edu,4,3,30 minutes - 1 hour,,The bug in question 2 was pretty confusing (sum vs. no sum from 2.2 to 2.4),,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/15/24 1:27,reubencochrane@berkeley.edu,4,2,2 - 3 hours,I found it intuitive,,,None of the above,4,4,,,,I got it!
+4,2/15/24 2:09,lilile@berkeley.edu,4,2,3 - 4 hours,,,,Stat 20,3,3,,,,I got it!
+4,2/15/24 2:15,zaiyana@berkeley.edu,4,2,30 minutes - 1 hour,,,,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",2,4,,,,I got it!
+4,2/15/24 12:53,gaelf.gutierrez@berkeley.edu,4,2,1 - 2 hours,,,,Stat 20,1,,,,,I got it!
+4,2/15/24 13:20,erinlakshmanan@berkeley.edu,2,5,2 - 3 hours,,,"The level of difficulty that is being tested here is way out of line with what was taught in lecture. Lecture barely covered the most basic queries, and in the lab I had to learn how to use the CASE argument which was not even covered in CS88 which had at least 3 different lectures on SQL alone. Please teach us things in lecture that will help us with the labs because it has become unreasonable at this point.","Data 8, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+4,2/15/24 14:14,asrithd@berkeley.edu,5,2,1 - 2 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",2,,,,,I got it!
+4,2/15/24 14:19,lisaycliu@berkeley.edu,3,3,2 - 3 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+4,2/15/24 14:22,krxxll@berkeley.edu,3,3,2 - 3 hours,,,,Stat 20,3,3,,,,I got it!
+4,2/15/24 14:22,thgiacalone@berkeley.edu,4,2,30 minutes - 1 hour,I like SQL,,,"Data 8, Stat 20",3,5,,,,I got it!
+4,2/15/24 14:29,elaine.shi@berkeley.edu,4,3,1 - 2 hours,,,I'd like to learn more SQL!,Stat 20,4,4,,,,I got it!
+4,2/15/24 14:31,ventimdg@berkeley.edu,4,3,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/15/24 14:34,malvesn25@berkeley.edu,4,3,1 - 2 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",2,5,,,,I got it!
+4,2/15/24 14:36,alexramos@berkeley.edu,5,3,1 - 2 hours,SQL is fun,strange errors when using Joins and then filtering,,Stat 20,4,4,,add a tag for lab relevance,,I got it!
+4,2/15/24 14:56,alexcal2025@berkeley.edu,4,2,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",4,4,,,,I got it!
+4,2/15/24 15:12,althea9200@berkeley.edu,1,3,2 - 3 hours,,too many bugs,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/15/24 15:12,dedeliu@berkeley.edu,4,2,1 - 2 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",3,5,,,,I got it!
+4,2/15/24 15:21,emmaeeckhout@berkeley.edu,2,3,30 minutes - 1 hour,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B, None of the above",3,3,,,,I got it!
+4,2/15/24 16:17,weissik@berkeley.edu,5,2,1 - 2 hours,I think it was neat that we get to learn SQL since it seems to be used a ton in industry!,The bug :( but its okay!!,,Data 8,2,5,,,,I got it!
+4,2/15/24 16:34,bluemgzn@berkeley.edu,3,3,More than 4 hours,,,,,3,,,,,I got it!
+4,2/15/24 16:48,yyzheng@berkeley.edu,3,3,1 - 2 hours,Good practice for SQL,,,Stat 20,5,5,,,,I got it!
+4,2/15/24 17:00,caglakirdar@berkeley.edu,5,3,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/15/24 17:26,artemgev@berkeley.edu,5,4,2 - 3 hours,,,,,1,,,,,I got it!
+4,2/15/24 17:27,chiarapilato@berkeley.edu,5,2,2 - 3 hours,I like SQL,,,Stat 20,3,4,,,,I got it!
+4,2/15/24 17:36,saiftali@berkeley.edu,2,2,30 minutes - 1 hour,,"For question 2.4 you say that the columns should be the same as 2.2. However, in the auto grader you expect the column to be ""year"" instead of ""TIME"". This took me some time to debug and I only resolved it because I looked at the auto-grader and saw there was a key error for ""year"".",,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/15/24 17:40,anasannia@berkeley.edu,3,3,2 - 3 hours,,,,Stat 20,1,,,,,I got it!
+4,2/15/24 21:19,joshua.gunning@berkeley.edu,4,3,More than 4 hours,Very straight forward and understandable directions,N/A,N/A,Stat 20,2,3,N/A,N/A,N/A,I got it!
+4,2/15/24 21:38,athenahz@berkeley.edu,5,3,30 minutes - 1 hour,,,,,1,,,,,I got it!
+4,2/15/24 21:43,yigao@berkeley.edu,5,5,2 - 3 hours,,,,Data 8,5,,,,,I got it!
+4,2/15/24 22:22,mgarcia182@berkeley.edu,5,4,More than 4 hours,,,,Stat 20,5,5,,,,I got it!
+4,2/15/24 22:24,varmin.44@berkeley.edu,3,3,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+4,2/15/24 22:38,delatorredk@berkeley.edu,3,3,2 - 3 hours,,,,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",4,4,,,,I got it!
+4,2/15/24 22:48,a.ydenchi@berkeley.edu,5,4,3 - 4 hours,,,,Stat 20,1,,,,,I got it!
+4,2/15/24 23:14,bharathr@berkeley.edu,4,3,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",2,,,,,I got it!
+4,2/15/24 23:15,huaxiao@berkeley.edu,3,4,2 - 3 hours,,,,,3,,,,,I got it!
+4,2/16/24 1:20,davidcao8717@berkeley.edu,3,4,3 - 4 hours,,,,"Data 8, Stat 20",4,4,,,,I got it!
+4,2/16/24 1:40,wilsonlai@berkeley.edu,4,3,1 - 2 hours,,,,Data 100,1,,,,,I got it!
+4,2/16/24 2:31,jlee1112@berkeley.edu,3,3,More than 4 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+4,2/16/24 9:28,alice.modica@berkeley.edu,4,4,2 - 3 hours,,,,Stat 20,4,4,,,,I got it!
+4,2/16/24 12:49,alexisdang@berkeley.edu,3,4,2 - 3 hours,,,,,4,,,,,I got it!
+4,2/16/24 13:27,zhiningcui1010@berkeley.edu,4,4,2 - 3 hours,,"there is an autograder bug for 2.5, 2.6, which makes me waste a lot of time.","next time, check the bug for autograder will save students a lot of time.","Stat 20, CS 61A/CS 88/CS 61B",1,2,,,,I got it!
+4,2/16/24 14:40,mjyoshida@berkeley.edu,3,3,2 - 3 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",2,2,,,,I got it!
+4,2/16/24 15:00,felipe_mach@berkeley.edu,5,2,30 minutes - 1 hour,"SQL is a very useful language, I used on my internship a lot.",,,"Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/16/24 17:14,walton_bullard25@berkeley.edu,4,3,1 - 2 hours,,,,Stat 20,2,,,,,I got it!
+4,2/16/24 17:58,yini21@berkeley.edu,3,5,2 - 3 hours,,,,"Data 8, Stat 20",3,3,,,,I got it!
+4,2/16/24 18:33,czycai@berkeley.edu,5,5,More than 4 hours,,,,,5,,,,,I got it!
+4,2/16/24 18:42,jocelynquach@berkeley.edu,3,5,3 - 4 hours,,,,Data 8,5,5,,,,I got it!
+4,2/16/24 18:45,mollypigot@berkeley.edu,4,3,1 - 2 hours,,,,Data 8,4,4,,,,I got it!
+4,2/16/24 18:56,chloebyun@berkeley.edu,2,2,1 - 2 hours,,,,Stat 20,1,,,,,I got it!
+4,2/16/24 19:14,zakpuno@berkeley.edu,2,4,1 - 2 hours,Learning SQL seems like its going to be quite useful in professional spaces.,The lecture content has not synced sufficiently with the past couple labs. There was a function in this lab that I had to learn on my own that was never covered in lecture.,,Data 8,3,3,,,,I got it!
+4,2/16/24 19:16,82sookim@berkeley.edu,4,4,1 - 2 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",3,4,,,,I got it!
+4,2/16/24 19:18,mileschun@berkeley.edu,5,4,More than 4 hours,no,question 2.6 was very tough,no,Data 8,4,3,,,,I got it!
+4,2/16/24 19:40,cissycai615@berkeley.edu,3,3,3 - 4 hours,,,,,3,,,,,I got it!
+4,2/16/24 19:40,luyi0915@berkeley.edu,3,3,2 - 3 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+4,2/16/24 19:41,elisamarconell@berkeley.edu,5,3,3 - 4 hours,,,,"Data 8, Stat 20",2,5,,,,I got it!
+4,2/16/24 19:44,ryan.liou@berkeley.edu,5,3,30 minutes - 1 hour,,,,"Data 8, Data 100",3,4,,,,I got it!
+4,2/16/24 19:58,shuran1030@berkeley.edu,4,4,1 - 2 hours,,,,,2,,,,,I got it!
+4,2/16/24 20:19,sejalgoel@berkeley.edu,5,3,1 - 2 hours,,,,,2,2,,,,I got it!
+4,2/16/24 21:07,anup.nadesan@berkeley.edu,4,2,2 - 3 hours,,,,,4,5,,,,I got it!
+4,2/16/24 21:08,aaravkapur03@berkeley.edu,3,3,3 - 4 hours,,,,"Stat 20, CS 61A/CS 88/CS 61B",4,4,,,,I got it!
+4,2/16/24 21:20,erenzulfikar@berkeley.edu,3,4,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,1,,,,I got it!
+4,2/16/24 21:27,dolgormaabasbayar@berkeley.edu,3,4,More than 4 hours,,,,"Stat 20, CS 61A/CS 88/CS 61B",4,3,,,,I got it!
+4,2/16/24 21:35,jessqwy@berkeley.edu,3,4,1 - 2 hours,,,,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/16/24 21:39,vrinda26@berkeley.edu,4,3,2 - 3 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/16/24 21:52,qilizhang@berkeley.edu,2,4,More than 4 hours,,,It would be great if the lecture mention more about SQL concepts.,Stat 20,5,2,,,,I got it!
+4,2/16/24 21:56,maphan1402@berkeley.edu,4,4,2 - 3 hours,,,,,4,,,,,I got it!
+4,2/16/24 22:09,juicyucbkid_zhz@berkeley.edu,3,4,2 - 3 hours,everything,none,no,Data 8,3,3,I use google,its perfect,no,I got it!
+4,2/16/24 22:15,kikihu1209@berkeley.edu,4,3,1 - 2 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/16/24 22:20,ianseklawi@berkeley.edu,4,5,More than 4 hours,,,,Data 8,4,5,,,,I got it!
+4,2/16/24 22:25,laiching06@berkeley.edu,4,3,3 - 4 hours,,,,Stat 20,3,4,,,,I got it!
+4,2/16/24 23:00,alec.morgan@berkeley.edu,4,5,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/16/24 23:16,shine_like_ruby@berkeley.edu,4,3,1 - 2 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/16/24 23:17,sgutta@berkeley.edu,3,5,3 - 4 hours,,,,,3,,,,,I got it!
+4,2/16/24 23:22,arianasiordia@berkeley.edu,3,3,1 - 2 hours,the length,the learning sql,,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+4,2/16/24 23:49,oduk5732@berkeley.edu,4,5,More than 4 hours,,,,"Data 100, CS 61A/CS 88/CS 61B",5,4,,,,I got it!
+4,2/16/24 23:57,christianw@berkeley.edu,3,4,1 - 2 hours,Clear cut,none,helpful introduction.,"Stat 20, CS 61A/CS 88/CS 61B",2,2,,it's moderately helpful for reference,none,I got it!
+4,2/18/24 19:05,brandonbui@berkeley.edu,4,3,More than 4 hours,,,,"CS 61A/CS 88/CS 61B, None of the above",1,,Used lecture slides + google,,,I got it!
+4,2/19/24 17:59,gdeng24@berkeley.edu,3,4,30 minutes - 1 hour,overall good,not bad,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",3,3,,all good,no,I got it!
+4,2/21/24 3:07,jnpnguyen@berkeley.edu,5,2,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/16/24 18:24,johan.oelgaard@berkeley.edu,3,3,2 - 3 hours,,,Just fyi in the conclusion it says that this is lab 4,None of the above,2,3,,,,I got it!
+5,2/16/24 22:51,jgte29@berkeley.edu,4,3,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",3,,,,,I got it!
+5,2/17/24 17:23,mingsennteo@berkeley.edu,4,2,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",2,3,,,,I got it!
+5,2/17/24 17:42,thomashu@berkeley.edu,3,3,1 - 2 hours,,,,,1,,,,,I got it!
+5,2/17/24 19:12,varunagarwal004@berkeley.edu,4,3,2 - 3 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/17/24 23:15,quang.nguyenln@berkeley.edu,4,5,More than 4 hours,,,,"Stat 20, CS 61A/CS 88/CS 61B",5,5,,,,I got it!
+5,2/18/24 1:12,alexisbala@berkeley.edu,4,3,2 - 3 hours,I liked that you included what the graphs should look like - it made it easier to adjust my code if something was off.,"I understand that a lot of visualization is about interpreting what you see, but it was a little tedious to have so many written questions. Again, I completely understand why we had to do it!",,"Data 8, Stat 20",4,5,,,,I got it!
+5,2/18/24 1:57,stephenliu@berkeley.edu,4,3,1 - 2 hours,,,,"Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/18/24 14:10,zhaohungtan1209@berkeley.edu,3,3,1 - 2 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+5,2/18/24 15:17,kavya1106@berkeley.edu,4,2,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",2,,,,,I got it!
+5,2/18/24 17:22,joanna_li@berkeley.edu,2,3,3 - 4 hours,,,,"Data 8, Stat 20",2,2,,,,I got it!
+5,2/18/24 20:03,ishani@berkeley.edu,3,3,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/18/24 20:38,asrithd@berkeley.edu,3,3,1 - 2 hours,,,,,3,4,,,,I got it!
+5,2/18/24 21:06,xesxwindlle@berkeley.edu,3,3,More than 4 hours,Too long,Too long,,"Data 100, Stat 20, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+5,2/19/24 11:08,atticus.ginsborg@berkeley.edu,3,1,1 - 2 hours,Visualizations are fun!,"At times seemed like a little too much copy and paste especiallly for labels. Doing plt.xlabel 3 or 4 times cements doing it almost 10+ times just becomes annoying.
+
+2.11 you describe a density histogram but then have us make an unnormalized histogram which was a touch confusing.",Hope you had a great three day weekend! Also not sure if this is relevant to lecture given I completed this in advance so may want to remove my response.,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,Was not needed already prepared.,,,I got it!
+5,2/19/24 11:51,sakkolli@berkeley.edu,4,3,1 - 2 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",3,4,,,,I got it!
+5,2/19/24 12:32,mckenziediep@berkeley.edu,3,3,3 - 4 hours,,,,Stat 20,5,5,,,,I got it!
+5,2/19/24 13:33,zmfong@berkeley.edu,3,3,2 - 3 hours,cool visualizations,,,Data 8,5,5,,,,I got it!
+5,2/19/24 14:08,nabeelq@berkeley.edu,4,3,1 - 2 hours,,,,,1,,,,,I got it!
+5,2/19/24 18:16,joshua.gunning@berkeley.edu,2,2,2 - 3 hours,,,,Stat 20,2,2,,,,I got it!
+5,2/19/24 21:39,20020618sxk@berkeley.edu,3,3,2 - 3 hours,,,,"Data 8, Data 100, Stat 20",3,3,,,,I got it!
+5,2/19/24 23:59,chanjoo0427@berkeley.edu,4,3,3 - 4 hours,,,,None of the above,3,4,,,,I got it!
+5,2/20/24 0:52,milenalu@berkeley.edu,4,4,3 - 4 hours,None,None,None,Stat 20,5,5,None,None,None,I got it!
+5,2/20/24 10:55,sarahkiefer@berkeley.edu,4,3,2 - 3 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/20/24 13:38,saiftali@berkeley.edu,3,2,Less than 30 minutes,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/20/24 14:35,krxxll@berkeley.edu,3,3,3 - 4 hours,,,,Stat 20,4,3,,,,I got it!
+5,2/20/24 14:59,j3n___j3n@berkeley.edu,3,3,3 - 4 hours,,,,Stat 20,4,3,,,,I got it!
+5,2/20/24 16:08,aryakrishnan@berkeley.edu,5,4,2 - 3 hours,I liked how we were able to work through all the different forms of visualizations and see them in practice how they would be used using real world data.,The autograder had a few bugs with question 2 for me. It took a while to figure out what I was doing wrong although everything looked right.,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,Everything is available on online documentation and it is much easier to just look up.,,,I got it!
+5,2/20/24 16:37,biancarein@berkeley.edu,5,3,1 - 2 hours,Learning different libraries and plots,repetition of adding labels and titles,,,1,,Used the documentation on the website of these packages more,,,I got it!
+5,2/20/24 18:01,adorawen@berkeley.edu,4,4,1 - 2 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",3,5,,,,I got it!
+5,2/20/24 18:17,aneeshpatel@berkeley.edu,5,2,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/20/24 21:09,felipe_mach@berkeley.edu,5,2,1 - 2 hours,,,,"Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/20/24 21:37,ariti@berkeley.edu,3,2,2 - 3 hours,,,,Stat 20,3,4,,,,I got it!
+5,2/20/24 23:09,david_fan1@berkeley.edu,4,3,1 - 2 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+5,2/20/24 23:11,wjustin9@berkeley.edu,3,3,1 - 2 hours,,The pictures for the model graphs were way too big,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",4,4,,,,I got it!
+5,2/20/24 23:49,cstec15@berkeley.edu,5,3,1 - 2 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/21/24 0:01,yini21@berkeley.edu,5,4,2 - 3 hours,,,,"Data 8, Stat 20",5,5,,,,I got it!
+5,2/21/24 10:33,christinechen3993@berkeley.edu,4,2,2 - 3 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/21/24 13:18,anasannia@berkeley.edu,3,3,1 - 2 hours,,,,,1,,,,,I got it!
+5,2/21/24 16:07,cmurran26@berkeley.edu,4,4,1 - 2 hours,na,na,na,"Stat 20, CS 61A/CS 88/CS 61B",1,,na,na,na,I got it!
+5,2/21/24 17:27,tmdals6033@berkeley.edu,3,3,3 - 4 hours,,,,None of the above,3,3,,,,I got it!
+5,2/21/24 18:46,moria123zhut@berkeley.edu,5,5,More than 4 hours,,,,None of the above,3,4,,,,I got it!
+5,2/21/24 19:11,cissycai615@berkeley.edu,3,3,3 - 4 hours,,,,Data 8,3,,,,,I got it!
+5,2/21/24 19:40,lorene.li@berkeley.edu,5,4,1 - 2 hours,,,,Data 8,1,,,,,I got it!
+5,2/21/24 21:26,malvesn25@berkeley.edu,4,3,1 - 2 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",2,,,,,I got it!
+5,2/21/24 22:06,jingyaxia@berkeley.edu,4,3,1 - 2 hours,,It's super long haha,,"Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/21/24 22:28,lilile@berkeley.edu,4,4,3 - 4 hours,,,,Stat 20,4,4,,,,I got it!
+5,2/21/24 23:26,chloebyun@berkeley.edu,3,2,1 - 2 hours,,,,Stat 20,4,3,,,,I got it!
+5,2/22/24 0:30,reubencochrane@berkeley.edu,4,2,2 - 3 hours,,,,None of the above,3,3,,,,I got it!
+5,2/22/24 3:01,michaelyip0219@berkeley.edu,4,4,3 - 4 hours,,,,,4,,,,,I got it!
+5,2/22/24 11:24,weissik@berkeley.edu,4,3,3 - 4 hours,I liked creating all the charts! Very useful skill.,,,"Data 8, Stat 20",2,3,,,,I got it!
+5,2/22/24 12:09,mollypigot@berkeley.edu,4,4,1 - 2 hours,,,,Data 8,4,4,,,,I got it!
+5,2/22/24 13:27,bennettfees@berkeley.edu,3,3,3 - 4 hours,graphs,tedius,na,Stat 20,3,3,,,,I got it!
+5,2/22/24 13:39,tenleygonor@berkeley.edu,3,2,2 - 3 hours,"I like how the plots were given for us to match, so we knew what our final product should look like.",,,"Stat 20, CS 61A/CS 88/CS 61B",1,,I used other online resources provided.,,,I got it!
+5,2/22/24 14:12,alexisdang@berkeley.edu,4,3,1 - 2 hours,,,,,4,,,,,I got it!
+5,2/22/24 14:29,leahperez@berkeley.edu,3,3,2 - 3 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/22/24 14:29,caglakirdar@berkeley.edu,4,2,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/22/24 14:44,qilizhang@berkeley.edu,3,3,2 - 3 hours,,,,"Stat 20, CS 61A/CS 88/CS 61B",2,2,,,,I got it!
+5,2/22/24 14:46,serena.gu@berkeley.edu,3,4,1 - 2 hours,,,,"Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/22/24 14:55,ventimdg@berkeley.edu,3,2,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/22/24 15:01,minsittaung@berkeley.edu,2,3,3 - 4 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",5,5,,,,I got it!
+5,2/22/24 15:13,shine_like_ruby@berkeley.edu,3,3,2 - 3 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/22/24 15:35,dedeliu@berkeley.edu,4,3,1 - 2 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+5,2/22/24 15:38,andrew.zhang38@berkeley.edu,3,3,2 - 3 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/22/24 15:53,gulianxiao@berkeley.edu,3,3,1 - 2 hours,,,,,3,,,,,I got it!
+5,2/22/24 15:57,walton_bullard25@berkeley.edu,3,4,1 - 2 hours,,,,"Stat 20, CS 61A/CS 88/CS 61B",2,,,,,I got it!
+5,2/22/24 16:10,qianzzz@berkeley.edu,3,3,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+5,2/22/24 16:29,lisaycliu@berkeley.edu,3,3,2 - 3 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+5,2/22/24 16:38,nbrewer@berkeley.edu,5,3,1 - 2 hours,I liked how we got to try a little bit of everything with many types of plots.,,,None of the above,5,4,,,,I got it!
+5,2/22/24 17:08,alexramos@berkeley.edu,4,4,1 - 2 hours,,It was difficult to figure out what did what and we were kind of expected to figure out the basics on our own.,,Stat 20,2,2,,,,I got it!
+5,2/22/24 17:11,arnavgurudatt@berkeley.edu,3,3,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/22/24 17:27,alec.morgan@berkeley.edu,4,3,30 minutes - 1 hour,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/22/24 18:27,jnpnguyen@berkeley.edu,5,3,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/22/24 18:41,laiching06@berkeley.edu,4,4,3 - 4 hours,,,,Stat 20,3,,,,,I got it!
+5,2/22/24 18:47,vincen_le@berkeley.edu,5,4,1 - 2 hours,,,,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",4,3,,,,I got it!
+5,2/22/24 20:03,vrinda26@berkeley.edu,4,3,3 - 4 hours,,,,,1,,,,,I got it!
+5,2/22/24 20:46,madelinedm@berkeley.edu,4,4,2 - 3 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/22/24 22:46,casbill@berkeley.edu,3,3,1 - 2 hours,,,,"Stat 20, CS 61A/CS 88/CS 61B",2,2,,,,I got it!
+5,2/22/24 23:24,huaxiao@berkeley.edu,3,3,2 - 3 hours,,,,,3,,,,,I got it!
+5,2/22/24 23:28,jlee1112@berkeley.edu,3,3,More than 4 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+5,2/23/24 0:36,jelee25@berkeley.edu,4,4,2 - 3 hours,,,,"Data 8, Stat 20",5,5,,,,I got it!
+5,2/23/24 1:21,egalindo@berkeley.edu,4,4,3 - 4 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/23/24 3:06,artemgev@berkeley.edu,4,3,3 - 4 hours,,,It does not feel as if there is support anywhere and it just feels like I am alone and the only chance I get to get clarifications is during the discussion section. Very limited resources and it feels many other students have an edge by having take data 100 and the class conforms towards them rather than conforming for the people this class was intended for.,,1,,,,,I got it!
+5,2/23/24 11:39,annyshe@berkeley.edu,5,3,2 - 3 hours,,,,"Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,"I used Lecture slides, matplotlib documentation, seaborn documentation, and pandas documentation.",,,I got it!
+5,2/23/24 12:45,juicyucbkid_zhz@berkeley.edu,5,3,1 - 2 hours,everything,none,none,Data 8,3,3,i use google,its perfect,no,I got it!
+5,2/23/24 13:21,alexcal2025@berkeley.edu,4,3,2 - 3 hours,went over all the graphs,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",5,5,,,,I got it!
+5,2/23/24 13:58,emmaeeckhout@berkeley.edu,3,3,2 - 3 hours,,"There are many ways to come to the right graph and the autogravder didn't account for these. 
+",,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+5,2/23/24 14:32,yifanbao@berkeley.edu,1,3,3 - 4 hours,,,,,2,,,,,I got it!
+5,2/23/24 14:41,s_edwards@berkeley.edu,5,4,1 - 2 hours,,,,,1,,,,,I got it!
+5,2/23/24 14:42,pmelnick@berkeley.edu,4,3,2 - 3 hours,,,,Stat 20,3,5,,,,I got it!
+5,2/23/24 14:44,elaine.shi@berkeley.edu,2,3,2 - 3 hours,,It was really long,,Stat 20,3,4,,,,I got it!
+5,2/23/24 15:34,82sookim@berkeley.edu,4,2,1 - 2 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",4,5,,,,I got it!
+5,2/23/24 15:37,mileschun@berkeley.edu,4,3,2 - 3 hours,N/A,N/A,N/A,Data 8,4,4,,,,I got it!
+5,2/23/24 15:53,jocelynquach@berkeley.edu,4,4,2 - 3 hours,,,,Data 8,4,4,,,,I got it!
+5,2/23/24 16:17,gaelf.gutierrez@berkeley.edu,4,3,1 - 2 hours,,,,Stat 20,1,,,,,I got it!
+5,2/23/24 16:24,bharathr@berkeley.edu,5,3,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/23/24 16:33,kikihu1209@berkeley.edu,3,3,3 - 4 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",2,2,,,,I got it!
+5,2/23/24 16:39,michelle-hom@berkeley.edu,3,2,2 - 3 hours,I like the variety of graph types exposed to us in this lab.,,,Stat 20,3,5,I used the Matplot.lib and Seaborn documentation instead,,,I got it!
+5,2/23/24 16:40,mjyoshida@berkeley.edu,3,3,2 - 3 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+5,2/23/24 16:48,khadija2002@berkeley.edu,5,2,Less than 30 minutes,,,,"Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/23/24 17:21,sineaddecleir@berkeley.edu,5,2,2 - 3 hours,I liked using a variety of visualizations and how the lab built up from a lot of skeleton code at the beginning to less in later questions.,I didn't like that questions had to be done a certain way to pass the autograder.,,Stat 20,1,,I prefer to look up documentation.,,,I got it!
+5,2/23/24 17:28,zakpuno@berkeley.edu,3,3,2 - 3 hours,,,,Data 8,4,4,,,,I got it!
+5,2/23/24 17:35,adibose@berkeley.edu,4,4,2 - 3 hours,,,,CS 61A/CS 88/CS 61B,1,,,,,I got it!
+5,2/23/24 17:44,zaiyana@berkeley.edu,3,1,30 minutes - 1 hour,,,,,1,3,,,,I got it!
+5,2/23/24 17:58,a.ydenchi@berkeley.edu,4,4,3 - 4 hours,,,,Stat 20,1,3,,,,I got it!
+5,2/23/24 18:10,althea9200@berkeley.edu,1,3,1 - 2 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",3,2,,,,I got it!
+5,2/23/24 18:54,maphan1402@berkeley.edu,4,4,2 - 3 hours,,,,"Stat 20, CS 61A/CS 88/CS 61B",4,4,,,,I got it!
+5,2/23/24 19:28,andrew49875@berkeley.edu,4,3,1 - 2 hours,,,,"Data 8, Data 100, Stat 20",2,3,,,,I got it!
+5,2/23/24 19:44,chiarapilato@berkeley.edu,2,4,3 - 4 hours,,,,Stat 20,3,3,,,,I got it!
+5,2/23/24 19:49,ericjm117@berkeley.edu,2,5,More than 4 hours,,,,None of the above,4,1,,,,I got it!
+5,2/23/24 19:52,erenzulfikar@berkeley.edu,3,3,1 - 2 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",3,,,,,I got it!
+5,2/23/24 20:19,gdeng24@berkeley.edu,3,3,1 - 2 hours,all good,all good,all good,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",3,3,,good info,no,I got it!
+5,2/23/24 20:28,shuran1030@berkeley.edu,4,4,1 - 2 hours,,,,,2,,,,,I got it!
+5,2/23/24 20:43,athenahz@berkeley.edu,3,5,More than 4 hours,,,,,1,,,,,I got it!
+5,2/23/24 21:06,hoon1130@berkeley.edu,4,4,More than 4 hours,,,,,3,,,,,I got it!
+5,2/23/24 21:42,czycai@berkeley.edu,1,5,More than 4 hours,,,,,3,,,,,I got it!
+5,2/23/24 22:09,eduardohinojosa@berkeley.edu,5,4,2 - 3 hours,,,,"Data 8, Data 100, Stat 20, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/23/24 22:15,yyzheng@berkeley.edu,4,2,1 - 2 hours,,"The grade check sometimes returns mistake when my plot look exactly the same as the one provided, but this doesn't happen very often and the lab was good overall.",,Stat 20,5,5,,,,I got it!
+5,2/23/24 23:01,oduk5732@berkeley.edu,5,4,More than 4 hours,,,,"Data 100, CS 61A/CS 88/CS 61B",4,4,,,,I got it!
+5,2/23/24 23:12,wilsonlai@berkeley.edu,4,3,2 - 3 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",1,,,,,I got it!
+5,2/23/24 23:20,ianseklawi@berkeley.edu,4,4,2 - 3 hours,,,,Data 8,2,4,,,,I got it!
+5,2/23/24 23:21,jessqwy@berkeley.edu,3,3,1 - 2 hours,,,,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",3,,,,,I got it!
+5,2/23/24 23:21,erinlakshmanan@berkeley.edu,2,3,2 - 3 hours,,,,"Data 8, CS 61A/CS 88/CS 61B",2,3,,,,I got it!
+5,2/23/24 23:28,thgiacalone@berkeley.edu,3,3,1 - 2 hours,,,,"Data 8, Stat 20",3,3,,,,I got it!
+5,2/23/24 23:33,anup.nadesan@berkeley.edu,3,4,2 - 3 hours,,,,,4,5,,,,I got it!
+5,2/23/24 23:37,ryan.liou@berkeley.edu,4,3,1 - 2 hours,,,,Data 8,3,3,,,,I got it!
+5,2/23/24 23:51,angelali28@berkeley.edu,3,3,2 - 3 hours,,,,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",3,3,,,,I got it!
+5,2/23/24 23:54,delatorredk@berkeley.edu,4,4,2 - 3 hours,,,,"Data 8, Stat 20, CS 61A/CS 88/CS 61B",4,4,,,,I got it!
+5,2/24/24 0:39,yigao@berkeley.edu,5,4,2 - 3 hours,,,,Data 8,3,3,,,,I got it!
+5,2/24/24 12:54,maxgm@berkeley.edu,3,3,3 - 4 hours,,,,,1,,,,,I got it!
+5,2/24/24 15:48,varmin.44@berkeley.edu,3,3,2 - 3 hours,,,,"Data 8, Data 100, CS 61A/CS 88/CS 61B",2,3,,,,I got it!
+5,2/25/24 10:12,bluemgzn@berkeley.edu,3,3,2 - 3 hours,,,,,3,,,,,I got it!
+5,2/25/24 23:15,aaravkapur03@berkeley.edu,3,3,3 - 4 hours,,,,"Data 100, CS 61A/CS 88/CS 61B",4,3,,,,I got it!
+5,2/25/24 23:48,sgutta@berkeley.edu,2,5,More than 4 hours,,,,,1,,,,,I got it!
+5,2/25/24 23:52,davidcao8717@berkeley.edu,5,5,More than 4 hours,,,,"Data 8, Stat 20",5,5,,,,I got it!
